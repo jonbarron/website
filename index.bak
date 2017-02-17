@@ -1,0 +1,204 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<style type="text/css">
+/* Stolen from Sergey */
+a {
+ color: #1772d0;
+ text-decoration:none;
+}
+a:focus, a:hover {
+  color: #f09228;
+}
+a#red {
+	color: #d01717;
+}
+a:focus, a:hover#red {
+	color: #f09228;
+}
+</style>
+
+<link rel="icon" 
+      type="image/png" 
+      href="./JonBarron_icon.png">
+
+<title>Jon Barron - UC Berkeley</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+}
+.style3 {font-size: 14px}
+-->
+</style></head>
+
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+<body>
+<p></a></p>
+<table width="800" border="0" align="center" cellpadding="20">
+  <tr>
+    <td><table width="95%" align="center" border="0" cellpadding="10">
+      <tr>
+        <td width="67%" valign="top">
+	<p align="center">&nbsp;</p>
+	<p align="center">
+		<font size="6">Jon Barron</font>
+		<br>
+		barron@eecs.berkeley.edu
+		</p>	
+		  <p class="style3">I am a fifth year PhD candidate in <a href="http://www.eecs.berkeley.edu/">EECS</a> at <a href="http://www.berkeley.edu/">UC Berkeley</a>. My advisor is <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I am funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>.
+			<br> <br>
+			I've spent time at 
+<a href="http://en.wikipedia.org/wiki/Google_X_Lab">Google[x]</a>,
+<a href="http://groups.csail.mit.edu/vision/welcome/">MIT CSAIL</a>,
+<a href="http://www.captricity.com/">Captricity</a>,
+			<a href="http://ti.arc.nasa.gov/tech/asr/intelligent-robotics/">NASA Ames Research Center</a>, 
+			<a href="http://www.google.com/">Google NYC</a>, the <a href="http://mrl.nyu.edu/">NYU Media Research Lab</a>, and the <a href="http://www.nibr.com/">Novartis Institutes for BioMedical Research</a>. I've worked on <a href="http://www.astrometry.net/">Astrometry.net</a>. I did my bachelors at <a href="http://web.cs.toronto.edu/dcs/">the University of Toronto</a>.
+			<br> <br> 
+			I have a <a href="JonBarron-CV.pdf">CV</a>.
+			<br>
+			</td>
+        <td width="33%"><img src="JonBarron.png"></td>
+      </tr>
+    </table>
+<br>
+      <h4>Research</h4>
+      <p class="style3">I'm interested in computer vision, machine-learning, and computational photography. Most of my research is about figuring out the physical world (shape, paint, light, etc) that created a single image. I also work in biomedical image analysis and astronomy.</p>
+      <table width="100%" border="0" cellpadding="20">
+
+		      <tr>
+		        <td><a href="ECCV2012.mp4"><img src="ECCV2012_small.gif" alt="ECCV_anim" style="border-style: none"></a></td>
+		        <td><p class="style3"><a href="BarronMalikECCV2012.pdf"><strong>Color Constancy, Intrinsic Images, and Shape Estimation</strong></a><br>
+		          <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> <br>
+		<em>European Conference on Computer Vision (ECCV)</em>, 2012 <br> 
+		<a href="BarronMalikECCV2012_supplementary.pdf">supplementary material</a> /
+		<a href="BarronMalikECCV2012.bib">bibtex</a> / 
+		<a href="BarronMalikECCV2012_poster.pdf">poster</a> / 
+		<a href="https://www.youtube.com/watch?v=NnePYprvFvA">movie</a> / 
+		<a href="BarronMalikECCV2012_code.zip"> code & data </a>
+		          </p>
+		          <p class="style3">
+		            We present  <strong>SIRFS</strong> (shape, illumination, and reflectance from shading), the first unified model for recovering shape, chromatic illumination, and reflectance from a single image.<br>
+		          </p></td>
+		  </tr>
+
+		      <tr>
+		        <td><a href="Jitendra_face_big.png"><img src="Jitendra_face_160.png" alt="Big J" width="160" height="160" style="border-style: none"></a></td>
+		        <td><p class="style3"><a href="BarronMalikCVPR2012.pdf"><strong>Shape, Albedo, and Illumination from a Single Image of an Unknown Object</strong></a><br>
+		          <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> <br>
+		<em>Computer Vision and Pattern Recognition (CVPR)</em>, 2012 <br> 
+		<a href="BarronMalikCVPR2012_supplementary.pdf">supplementary material</a> / <a href="BarronMalikCVPR2012.bib">bibtex</a> / <a href="BarronMalikCVPR2012_poster.pdf">poster</a>
+		          </p>
+		          <p class="style3">
+		            We present <strong>SAIFS</strong> (shape, albedo, and illumination from shading), which produces reasonable results on arbitrary grayscale images of masked objects, and outperforms all previous grayscale "intrinsic images" algorithms.<br>
+		          </p></td>
+		  </tr>
+
+		      <tr>
+		        <td><img src="B3DO.png" alt="b3do" width="160" style="border-style: none"></td>
+		        <td><p class="style3"><a href="B3DO_ICCV_2011.pdf"><strong>A Category-Level 3-D Object Dataset: Putting the Kinect to Work</strong></a><br>
+		          <a href="http://www.eecs.berkeley.edu/%7Eallie/">Allison Janoch</a>, <a href="http://sergeykarayev.com/">Sergey Karayev</a>, <a href="http://www.eecs.berkeley.edu/%7Ejiayq/">Yangqing Jia</a>, <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/%7Emfritz/">Mario Fritz</a>, <a href="http://www.icsi.berkeley.edu/%7Esaenko/">Kate Saenko</a>, <a href="http://www.eecs.berkeley.edu/%7Etrevor/">Trevor Darrell</a> <br>
+		<em> International Conference on Computer Vision (ICCV) 3DRR Workshop</em>, 2011  <br> <a href="B3DO_ICCV_2011.bib">bibtex</a>
+		          </p>
+		          <p class="style3">
+			Using the Microsoft Kinect, we gather a large dataset of indoor crowded scenes. We investigate ways to unify state-of-the-art object detection systems and improve them with depth information.
+		           <br>
+		          </p></td>
+		  </tr>
+	
+		      <tr>
+		        <td><a href="safs_640.gif"><img src="safs_160.gif" alt="safs_small" width="160" height="160" style="border-style: none"></a></td>
+		        <td><p class="style3"><a href="BarronMalikCVPR2011.pdf"><strong>High-Frequency Shape and Albedo from Shading using Natural Image Statistics</strong></a><br>
+		          <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> <br>
+		<em>Computer Vision and Pattern Recognition (CVPR)</em>, 2011  <br> 
+		<a href="BarronMalikCVPR2011.bib">bibtex</a>
+		          </p>
+		          <p class="style3">
+		            To solve shape-from-shading and intrinsic images simultaneously, we impose "naturalness" priors over albedo and shape and recover the most likely albedo and shape that together explain a single image.<br>
+		          </p></td>
+		  </tr>
+	
+	      <tr>
+	        <td><img src="fast_texture.png" alt="fast-texture" width="160" height="160"></td>
+	        <td><p class="style3"><a href="fast_texture.pdf"><strong>Discovering Efficiency in Coarse-To-Fine Texture Classification</strong></a><br>
+	          <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> <br>
+	<em>Technical Report</em>, 2010 <br> 
+	<a href="fast_texture.bib">bibtex</a>
+	          </p>
+	          <p class="style3">
+	            We introduce a model and feature representation for joint texture classification and segmentation that learns how to classify accurately and when to classify efficiently. This allows for sub-linear coarse-to-fine classification.<br>
+              </p></td>
+	  </tr>
+      <tr>
+        <td><img src="bd_promo.png" alt="blind-date" width="160" height="160"></td>
+        <td><p class="style3"><a href="aj_136_4_1490.pdf"><strong>Blind Date: Using proper motions to determine the ages of historical images</strong></a><br>
+          <strong>Jonathan T. Barron</strong>, <a href="http://cosmo.nyu.edu/hogg/"> David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a><br>
+          <em>The Astronomical Journal</em>, 136, 2008</p>
+          <p class="style3">
+            Using only raw pixel data and known catalog proper motions, it is possible to accurately estimate the date of origin of historical imagery. This allows us to retrieve lost meta-data, improve astrometric calibration, and re-estimate proper motions.</p></td>
+      </tr>
+      <tr>
+        <td width="26%"><img src="clean_promo.png" alt="clean-usnob" width="160" height="160"></td>
+        <td width="74%" valign="top"><div align="left" class="style3">
+          <p><a href="aj_135_1_414.pdf"><strong>Cleaning the USNO-B Catalog through automatic detection of optical artifacts</strong></a><br>
+  <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/"> David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a><br>
+            <em>The Astronomical Journal</em>, 135, 2008</p>
+          <p class="style3">
+            We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog. </p>
+          <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a> <br>  
+            <br>
+          </p>
+        </div></td>
+      </tr>
+    </table>
+      <br>
+      <h4>Course Projects      </h4>
+      <table width="95%" border="0" cellpadding="10">
+
+
+      <tr>
+        <td width="26%"><img src="prl.png" alt="prl" width="160" height="160"></td>
+        <td width="74%" valign="top"><div align="left" class="style3">
+<a href="Barron-ParallelizingRL.pdf"><strong>Parallelizing Reinforcement Learning</strong></a><br>
+         <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/~dsg/">Dave Golland</a>, <a href="http://www.cs.berkeley.edu/~nickjhay/">Nicholas J. Hay</a>, 2009</p>
+          <p><br>
+           Markov Decision Problems can be decomposed, and generic RL algorithms can be modified to run in parallel over such decompositions. For certain problems which lie in a low-dimensional latent space, our parallelized policy iteration is orders of magnitude faster. <br>  
+            <br>
+          </p>
+        </div></td>
+      </tr>
+</table>
+
+<br>
+
+      <h4>Teaching      </h4>
+      <table width="95%" border="0" cellpadding="10">
+
+
+      <tr>
+        <td width="26%"><img src="pacman.png" alt="pacman" width="160" height="160"></td>
+        <td width="74%" valign="center"><div align="left" class="style3">
+<a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html"><strong>CS188 - Fall 2010 (GSI)</strong></a><br>
+<a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html"><strong>CS188 - Spring 2011 (GSI)</strong></a><br>
+        </div></td>
+      </tr>
+</table>
+
+<br>
+
+<p align="right"><font size="2"> (Erd&#246;s = 3) </font></p>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7580334-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

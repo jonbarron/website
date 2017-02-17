@@ -1,0 +1,17 @@
+This TPAMI paper has the same content as our 2013 tech report of the same
+name. We released the tech report the same day that we submitted this paper to
+TPAMI, and the paper spent nearly two years in review. Not because it was
+rejected --- we just didn't hear anything from the publisher for months, and
+only after repeated prodding did we finally get an "accept with no changes"
+review. So why did this paper spend nearly two years in review? I wish I could
+say, kind reader; one cannot hope to fully understand the mysterious ways of
+"Ye Olde Transactions Regarding Patterns and the Wits of Machines". Maybe the
+letterpress operators were stricken with dysentery, or perhaps the carrier
+pigeon relaying the reviews were gunned down by one of the Kaiser's
+sharpshooters. This is one of the great mysteries of life that we must accept,
+like "why do computer scientists still publish journal papers instead of just
+posting things to Arxiv", or "why would talented researchers freely volunteer
+their time to review papers for journals that put articles behind paywalls and
+charge open-access fees". It's best to just accept the simple fact that all
+good papers must be kept secret for at least eighteen months, so that all of
+the theorems and statistics contained therein have time to ferment and mature.
