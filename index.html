@@ -104,12 +104,42 @@
       </table>
   
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-		<tr>
-		  <td width="25%">
-		    <img src='loss.png'>
-		  </td>
-		  <td valign="top" width="75%">
-		    <p><a href="https://arxiv.org/abs/1701.03077">
+
+    <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'hdrnet_image'><img src='hdrnet_after.jpg'></div>
+        <img src='hdrnet_before.jpg'>
+        </div>                
+        <script type="text/javascript">
+        function hdrnet_start() {
+        document.getElementById('hdrnet_image').style.opacity = "1";
+        }
+        function hdrnet_stop() {
+        document.getElementById('hdrnet_image').style.opacity = "0";
+        }
+        hdrnet_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="GharbiSIGGRAPH2017.pdf">
+        <papertitle>Deep Bilateral Learning for Real-Time Image Enhancement</papertitle></a><br>
+  	  <a href="http://www.mgharbi.com">Micha&euml;l Gharbi</a>, <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>, <strong>Jonathan T. Barron</strong>, <a href="https://people.csail.mit.edu/hasinoff/">Samuel W. Hasinoff</a>, <a href="http://people.csail.mit.edu/fredo/">Fr&eacute;do Durand </a> <br>
+        <em>SIGGRAPH</em>, 2017 <br>
+        <a href ="https://groups.csail.mit.edu/graphics/hdrnet/">project page</a>
+        /
+        <a href ="GharbiSIGGRAPH2017.bib">bibtex</a>
+        <p></p>
+        <p>By training a deep network in bilateral space we can learn a model for high-resolution and real-time image enhancement.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="25%">
+        <img src='loss.png'>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/abs/1701.03077">
 		    <papertitle>A More General Robust Loss Function</papertitle></a><br>
 		    <strong>Jonathan T. Barron</strong> <br>
 		    <em>arXiv Preprint</em>, 2017 <br>
