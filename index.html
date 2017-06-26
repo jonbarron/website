@@ -105,6 +105,33 @@
   
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+    <tr onmouseout="friendly_stop()" onmouseover="friendly_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'friendly_image'><img src='friendly_after.png'></div>
+        <img src='friendly_before.png'>
+        </div>                
+        <script type="text/javascript">
+        function friendly_start() {
+        document.getElementById('friendly_image').style.opacity = "1";
+        }
+        function friendly_stop() {
+        document.getElementById('friendly_image').style.opacity = "0";
+        }
+        friendly_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="MazumdarHPG17.pdf">
+        <papertitle>A Hardware-Friendly Bilateral Solver for Real-Time Virtual Reality Video</papertitle></a><br>
+          <a href="https://homes.cs.washington.edu/~amrita/">Amrita Mazumdar</a>, <a href="http://homes.cs.washington.edu/~armin/">Armin Alaghi</a>, <strong>Jonathan T. Barron</strong>, <a href="https://www.cs.unc.edu/~gallup/">David Gallup</a>, <a href="https://homes.cs.washington.edu/~luisceze/">Luis Ceze</a>, <a href="https://homes.cs.washington.edu/~oskin/">Mark Oskin</a>, <a href="http://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>  <br>
+        <em>High-Performance Graphics (HPG)</em>, 2017 <br>
+        <a href="https://sampa.cs.washington.edu/projects/vr-hw.html">project page</a>
+        <p></p>
+        <p>A reformulation of the bilateral solver can be implemented efficiently on GPUs and FPGAs.</p>
+      </td>
+    </tr>
+	
     <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()" >
       <td width="25%">
         <div class="one">
@@ -176,7 +203,7 @@
         <a href ="https://youtu.be/rZCXSfl13rY">video</a>
         /
         <a href ="BarronTsaiCVPR2017.bib">bibtex</a>
-	/
+        /
         <a href="https://drive.google.com/open?id=0B4nuwEMaEsnmWkJQMlFPSFNzbEk">output</a>
         /
         <a href="https://blog.google/products/photos/six-tips-make-your-photos-pop/">blog post</a>
