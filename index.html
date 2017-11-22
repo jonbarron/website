@@ -105,6 +105,39 @@
 
   <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+    <tr onmouseout="aperture_stop()" onmouseover="aperture_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'aperture_image'><img src='aperture_after.png'></div>
+        <img src='aperture_before.png'>
+        </div>
+        <script type="text/javascript">
+        function aperture_start() {
+        document.getElementById('aperture_image').style.opacity = "1";
+        }
+        function aperture_stop() {
+        document.getElementById('aperture_image').style.opacity = "0";
+        }
+        aperture_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p>
+	  <a href="https://arxiv.org/abs/1711.07933">
+            <papertitle>Aperture Supervision for Monocular Depth Estimation</papertitle>
+	  </a>
+	  <br>
+          <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>,
+	  <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
+	  <a href="http://people.csail.mit.edu/nwadhwa/">Neal Wadhwa</a>,
+	  <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
+	  <strong>Jonathan T. Barron</strong> <br>
+        <em>arXiv Preprint</em>, 2017 <br>
+        <p></p>
+        <p>Varying a camera's aperture provides a supervisory signal that can teach a neural network to do monocular depth estimation.</p>
+      </td>
+    </tr>
+	  
     <tr onmouseout="friendly_stop()" onmouseover="friendly_start()" >
       <td width="25%">
         <div class="one">
