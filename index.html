@@ -122,7 +122,6 @@
         </script>
       </td>
       <td valign="top" width="75%">
-        <p>
 	  <a href="https://arxiv.org/abs/1711.07933">
             <papertitle>Aperture Supervision for Monocular Depth Estimation</papertitle>
 	  </a>
@@ -135,6 +134,39 @@
         <em>arXiv Preprint</em>, 2017 <br>
         <p></p>
         <p>Varying a camera's aperture provides a supervisory signal that can teach a neural network to do monocular depth estimation.</p>
+      </td>
+    </tr>
+		
+    <tr onmouseout="deepburst_stop()" onmouseover="deepburst_start()" >
+      <td width="25%">
+        <div class="one">
+        <div class="two" id = 'deepburst_image'><img src='deepburst_after.png'></div>
+        <img src='deepburst_before.png'>
+        </div>
+        <script type="text/javascript">
+        function deepburst_start() {
+        document.getElementById('deepburst_image').style.opacity = "1";
+        }
+        function deepburst_stop() {
+        document.getElementById('deepburst_image').style.opacity = "0";
+        }
+        deepburst_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <a href="https://arxiv.org/abs/1712.02327">
+        <papertitle>Burst Denoising with Kernel Prediction Networks</papertitle>
+        </a>
+        <br>
+        <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+        <strong>Jonathan T. Barron</strong>,
+        <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+        Dillon Sharlet,
+        <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
+        Robert Carroll <br>
+        <em>arXiv Preprint</em>, 2017 <br>
+        <p></p>
+        <p>We train a network to predict linear kernels that denoise noisy bursts from cellphone cameras.</p>
       </td>
     </tr>
 	  
