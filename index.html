@@ -140,6 +140,45 @@
                    and allows training to automatically adapt the robustness of its own loss.</p>
             </td>
           </tr>
+
+
+
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/unprocessing_after.jpg'></div>
+                <img src='images/unprocessing_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1811.11127">
+                <papertitle>Unprocessing Images for Learned Raw Denoising</papertitle>
+              </a>
+              <br>
+              <a href="http://people.csail.mit.edu/nwadhwa/">Tim Brooks</a>,
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>arXiv Preprint</em>, 2018
+              <br>
+              <a href="http://timothybrooks.com/tech/unprocessing/">project page</a>
+              <p></p>
+              <p>We can learn a better denoising model by processing and unprocessing images the same way a camera does.</p>
+            </td>
+          </tr>
           
           <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
             <td width="25%">
