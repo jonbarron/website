@@ -120,26 +120,6 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          
-          <tr>
-            <td width="25%">
-              <img src='images/loss.png'>
-            </td>
-            <td valign="top" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/1701.03077">
-                  <papertitle>A General and Adaptive Robust Loss Function</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>arXiv Preprint</em>, 2018
-                <br>
-                <p></p>
-                <p>A single robust loss function is a superset of many other common robust loss functions,
-                   and allows training to automatically adapt the robustness of its own loss.</p>
-            </td>
-          </tr>
 
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
             <td width="25%">
@@ -177,7 +157,61 @@
               <p>We can learn a better denoising model by processing and unprocessing images the same way a camera does.</p>
             </td>
           </tr>
+
+		  <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='motionblur_image'><img src='images/motionblur_after.jpg'></div>
+                <img src='images/motionblur_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function motionblur_start() {
+                  document.getElementById('motionblur_image').style.opacity = "1";
+                }
+
+                function motionblur_stop() {
+                  document.getElementById('motionblur_image').style.opacity = "0";
+                }
+                motionblur_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1811.11745">
+                <papertitle>Learning to Synthesize Motion Blur</papertitle>
+              </a>
+              <br>
+              <a href="http://timothybrooks.com/">Tim Brooks</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>arXiv Preprint</em>, 2018
+              <br>
+              <a href="http://timothybrooks.com/tech/motion-blur/">project page</a> / 
+              <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8">video</a>
+              <p></p>
+              <p>Frame interpolation techniques can be used to train a network to directly synthesize linear motion blur.</p>
+            </td>
+          </tr>
           
+          <tr bgcolor="#ffffd0">
+            <td width="25%">
+              <img src='images/loss.png'>
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/1701.03077">
+                  <papertitle>A General and Adaptive Robust Loss Function</papertitle>
+                </a>
+                <br>
+                <strong>Jonathan T. Barron</strong>
+                <br>
+                <em>arXiv Preprint</em>, 2018
+                <br>
+                <p></p>
+                <p>A single robust loss function is a superset of many other common robust loss functions,
+                   and allows training to automatically adapt the robustness of its own loss.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
             <td width="25%">
               <div class="one">
