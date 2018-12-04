@@ -212,6 +212,41 @@
             </td>
           </tr>
 
+          <tr onmouseout="motionstereo_stop()" onmouseover="motionstereo_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='motionstereo_image'><img src='images/motionstereo_after.png'></div>
+                <img src='images/motionstereo_before.png'>
+              </div>
+              <script type="text/javascript">
+                function motionstereo_start() {
+                  document.getElementById('motionstereo_image').style.opacity = "1";
+                }
+
+                function motionstereo_stop() {
+                  document.getElementById('motionstereo_image').style.opacity = "0";
+                }
+                motionstereo_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://drive.google.com/file/d/1AABFJ3NgD5DAo5JEpEjWZrcQNzjZnvW9/view?usp=sharing">
+              <papertitle>Depth from Motion for Smartphone AR</papertitle>
+              </a>
+              <br>
+              <a href="https://www.linkedin.com/in/valentinjulien/">Julien Valentin</a>,
+              <a href="https://www.linkedin.com/in/adarshkowdle/">Adarsh Kowdle</a>,
+              <strong>Jonathan T. Barron</strong>, <a href="http://people.csail.mit.edu/nwadhwa/">Neal Wadhwa</a>,
+              and others
+              <br>
+              <em>SIGGRAPH Asia</em>, 2018
+              <br>
+              <a href="data/Valentin2018.bib">bibtex</a>
+              <p></p>
+              <p>Depth cues from camera motion allow for real-time occlusion effects in augmented reality applications.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
             <td width="25%">
               <div class="one">
