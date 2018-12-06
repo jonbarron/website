@@ -192,9 +192,22 @@
             </td>
           </tr>
           
-          <tr bgcolor="#ffffd0">
+		  <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
             <td width="25%">
-              <img src='images/loss.png'>
+              <div class="one">
+                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
+                <img src='images/loss_before.png'>
+              </div>
+              <script type="text/javascript">
+                function loss_start() {
+                  document.getElementById('loss_image').style.opacity = "1";
+                }
+
+                function loss_stop() {
+                  document.getElementById('loss_image').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
             </td>
             <td valign="top" width="75%">
               <p>
