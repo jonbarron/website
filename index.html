@@ -121,6 +121,42 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+          <tr onmouseout="darkflash_stop()" onmouseover="darkflash_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='darkflash_image'><img src='images/darkflash_after.png'></div>
+                <img src='images/darkflash_before.png'>
+              </div>
+              <script type="text/javascript">
+                function darkflash_start() {
+                  document.getElementById('darkflash_image').style.opacity = "1";
+                }
+
+                function darkflash_stop() {
+                  document.getElementById('darkflash_image').style.opacity = "0";
+                }
+                darkflash_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1901.01370">
+                <papertitle>Stereoscopic Dark Flash for Low-light Photography</papertitle>
+              </a>
+              <br>
+              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <strong>Jonathan T. Barron</strong>
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+              <br>
+              <em>arXiv Preprint</em>, 2019
+              <br>
+              <p></p>
+              <p>
+              	By making one camera in a stereo pair hyperspectral we can multiplex dark flash pairs in space instead of time.
+              </p>
+            </td>
+          </tr>
+		
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
             <td width="25%">
               <div class="one">
