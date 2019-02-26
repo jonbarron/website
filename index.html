@@ -121,6 +121,142 @@
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 
+          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='unprocessing_image'><img src='images/unprocessing_after.jpg'></div>
+                <img src='images/unprocessing_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function unprocessing_start() {
+                  document.getElementById('unprocessing_image').style.opacity = "1";
+                }
+
+                function unprocessing_stop() {
+                  document.getElementById('unprocessing_image').style.opacity = "0";
+                }
+                unprocessing_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1811.11127">
+                <papertitle>Unprocessing Images for Learned Raw Denoising</papertitle>
+              </a>
+              <br>
+              <a href="http://timothybrooks.com/">Tim Brooks</a>,
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>CVPR</em>, 2019
+              <br>
+              <a href="http://timothybrooks.com/tech/unprocessing/">project page</a>
+              <p></p>
+              <p>We can learn a better denoising model by processing and unprocessing images the same way a camera does.</p>
+            </td>
+          </tr>
+
+      <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='motionblur_image'><img src='images/motionblur_after.jpg'></div>
+                <img src='images/motionblur_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function motionblur_start() {
+                  document.getElementById('motionblur_image').style.opacity = "1";
+                }
+
+                function motionblur_stop() {
+                  document.getElementById('motionblur_image').style.opacity = "0";
+                }
+                motionblur_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1811.11745">
+                <papertitle>Learning to Synthesize Motion Blur</papertitle>
+              </a>
+              <br>
+              <a href="http://timothybrooks.com/">Tim Brooks</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>CVPR</em>, 2019
+              <br>
+              <a href="http://timothybrooks.com/tech/motion-blur/">project page</a> / 
+              <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8">video</a>
+              <p></p>
+              <p>Frame interpolation techniques can be used to train a network to directly synthesize linear motion blur.</p>
+            </td>
+          </tr>
+          
+      <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='mpi_image'><img src='images/mpi_after.jpg'></div>
+                <img src='images/mpi_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function mpi_start() {
+                  document.getElementById('mpi_image').style.opacity = "1";
+                }
+
+                function mpi_stop() {
+                  document.getElementById('mpi_image').style.opacity = "0";
+                }
+                mpi_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="TODO">
+                <papertitle>Pushing the Boundaries of View Extrapolation with Multiplane Images</papertitle>
+              </a>
+              <br>			  
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>, Richard Tucker, <strong>Jonathan T. Barron</strong>, <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>, <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+              <br>
+              <em>CVPR</em>, 2019
+              <br>
+              <a href="TODO">video</a>
+              <p></p>
+              <p>View extrapolation with multiplane images works better if you reason about disocclusions and disparity sampling frequencies.</p>
+            </td>
+          </tr>
+          
+      <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
+                <img src='images/loss_before.png'>
+              </div>
+              <script type="text/javascript">
+                function loss_start() {
+                  document.getElementById('loss_image').style.opacity = "1";
+                }
+
+                function loss_stop() {
+                  document.getElementById('loss_image').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <p>
+                <a href="https://arxiv.org/abs/1701.03077">
+                  <papertitle>A General and Adaptive Robust Loss Function</papertitle>
+                </a>
+                <br>
+                <strong>Jonathan T. Barron</strong>
+                <br>
+                <em>CVPR</em>, 2019
+                <br>
+                <p></p>
+                <p>A single robust loss function is a superset of many other common robust loss functions,
+                   and allows training to automatically adapt the robustness of its own loss.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="darkflash_stop()" onmouseover="darkflash_start()">
             <td width="25%">
               <div class="one">
@@ -157,110 +293,6 @@
             </td>
           </tr>
     
-          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='unprocessing_image'><img src='images/unprocessing_after.jpg'></div>
-                <img src='images/unprocessing_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function unprocessing_start() {
-                  document.getElementById('unprocessing_image').style.opacity = "1";
-                }
-
-                function unprocessing_stop() {
-                  document.getElementById('unprocessing_image').style.opacity = "0";
-                }
-                unprocessing_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/abs/1811.11127">
-                <papertitle>Unprocessing Images for Learned Raw Denoising</papertitle>
-              </a>
-              <br>
-              <a href="http://timothybrooks.com/">Tim Brooks</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
-              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2019
-              <br>
-              <a href="http://timothybrooks.com/tech/unprocessing/">project page</a>
-              <p></p>
-              <p>We can learn a better denoising model by processing and unprocessing images the same way a camera does.</p>
-            </td>
-          </tr>
-
-      <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='motionblur_image'><img src='images/motionblur_after.jpg'></div>
-                <img src='images/motionblur_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function motionblur_start() {
-                  document.getElementById('motionblur_image').style.opacity = "1";
-                }
-
-                function motionblur_stop() {
-                  document.getElementById('motionblur_image').style.opacity = "0";
-                }
-                motionblur_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-              <a href="https://arxiv.org/abs/1811.11745">
-                <papertitle>Learning to Synthesize Motion Blur</papertitle>
-              </a>
-              <br>
-              <a href="http://timothybrooks.com/">Tim Brooks</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2019
-              <br>
-              <a href="http://timothybrooks.com/tech/motion-blur/">project page</a> / 
-              <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8">video</a>
-              <p></p>
-              <p>Frame interpolation techniques can be used to train a network to directly synthesize linear motion blur.</p>
-            </td>
-          </tr>
-          
-      <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
-                <img src='images/loss_before.png'>
-              </div>
-              <script type="text/javascript">
-                function loss_start() {
-                  document.getElementById('loss_image').style.opacity = "1";
-                }
-
-                function loss_stop() {
-                  document.getElementById('loss_image').style.opacity = "0";
-                }
-                loss_stop()
-              </script>
-            </td>
-            <td valign="top" width="75%">
-              <p>
-                <a href="https://arxiv.org/abs/1701.03077">
-                  <papertitle>A General and Adaptive Robust Loss Function</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2019
-                <br>
-                <p></p>
-                <p>A single robust loss function is a superset of many other common robust loss functions,
-                   and allows training to automatically adapt the robustness of its own loss.</p>
-            </td>
-          </tr>
-
           <tr onmouseout="motionstereo_stop()" onmouseover="motionstereo_start()">
             <td width="25%">
               <div class="one">
@@ -364,7 +396,7 @@
               <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
               <strong>Jonathan T. Barron</strong>
               <br>
-              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018
+              <em>CVPR</em>, 2018
               <br>
               <a href="https://github.com/google/aperture_supervision">code</a> /
               <a href="data/Srinivasan2018.bib">bibtex</a>
@@ -401,7 +433,7 @@
               <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
               <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>, Robert Carroll
               <br>
-              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>
+              <em>CVPR</em>, 2018 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>
               <br>
               <a href="https://drive.google.com/file/d/1aqk3Q-L2spjLZh2yRWKUWIDcZkGjQ7US/view?usp=sharing">supplement</a> /
               <a href="https://github.com/google/burst-denoising">code</a> /
@@ -505,7 +537,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, Yun-Ta Tsai
                 <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2017
+                <em>CVPR</em>, 2017
                 <br>
                 <a href="https://drive.google.com/file/d/1b5zdR5UYPTkXa2UgiLhi-PP89bzINJSR/view?usp=sharing">supplement</a> /
                 <a href="https://youtu.be/rZCXSfl13rY">video</a> /
@@ -628,7 +660,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>
                 <br>
-                <em>European Conference on Computer Vision (ECCV)</em>, 2016 &nbsp <font color="red"><strong>(Best Paper Honorable Mention)</strong></font>
+                <em>ECCV</em>, 2016 &nbsp <font color="red"><strong>(Best Paper Honorable Mention)</strong></font>
                 <br>
                 <a href="http://arxiv.org/abs/1511.03296">arXiv</a> /
                 <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmdEREcjhlSXM2NGs/view?usp=sharing">supplement</a> /
@@ -673,7 +705,7 @@
                 <a href="http://www.stephendiverdi.com/">Stephen DiVerdi</a>,
                 <strong>Jonathan T. Barron</strong>
                 <br>
-                <em>Winter Conference on Applications of Computer Vision (WACV)</em>, 2016
+                <em>WACV</em>, 2016
                 <br>
                 <a href="data/Diverdi2016.bib">bibtex</a>
                 <p></p>
@@ -706,7 +738,7 @@
                   <papertitle>Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform</papertitle>
                 </a>
                 <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2016
+                <em>CVPR</em>, 2016
                 <br>
                 <a href="http://liangchiehchen.com/">Liang-Chieh Chen</a>, <strong>Jonathan T. Barron</strong>, <a href="http://ttic.uchicago.edu/~gpapan/">George Papandreou</a>, <a href="http://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a>, <a href="http://www.stat.ucla.edu/~yuille/">Alan L. Yuille</a>
                 <br>
@@ -743,7 +775,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>
                 <br>
-                <em>International Conference on Computer Vision (ICCV)</em>, 2015
+                <em>ICCV</em>, 2015
                 <br>
                 <a href="https://drive.google.com/file/d/1vO3sVOMihmpNqsuASeR46Y_iME0lOANR/view?usp=sharing">supplement</a> / <a href="data/BarronICCV2015.bib">bibtex</a> / <a href="https://youtu.be/saHwKY9rfx0">video</a> </a> (or <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmalBNUzlENUJSVDg/view?usp=sharing">mp4</a>)
                 <p></p>
@@ -763,7 +795,7 @@
                 <br>
                 <a href="http://imaginarynumber.net/">Evan Shelhamer</a>, <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/%7Etrevor/">Trevor Darrell</a>
                 <br>
-                <em>International Conference on Computer Vision (ICCV) Workshop</em>, 2015
+                <em>ICCV Workshop</em>, 2015
                 <br>
                 <a href="data/Shelhamer2015.bib">bibtex</a>
                 <p></p>
@@ -798,7 +830,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://people.csail.mit.edu/abadams/">Andrew Adams</a>, <a href="http://people.csail.mit.edu/yichangshih/">YiChang Shih, <a href="http://carlos-hernandez.org/">Carlos Hern&aacutendez</a>
                 <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2015 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2015 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://drive.google.com/file/d/125qgMdqeT1vojMIijIKcOF099LjUgUOL/view?usp=sharing">abstract</a> / <a href="https://drive.google.com/file/d/1HGGvVOGxmPjvgdK5q3UD1Qb5Nttg6kq9/view?usp=sharing">supplement</a> / <a href="data/BarronCVPR2015.bib">bibtex</a> /
                 <a href="http://techtalks.tv/talks/fast-bilateral-space-stereo-for-synthetic-defocus/61624/">talk</a> /
@@ -822,7 +854,7 @@
                   <br>
                   <a href="http://imatge.upc.edu/web/people/jordi-pont-tuset">Jordi Pont-Tuset</a>, <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <strong>Jonathan T. Barron</strong>, <a href="http://imatge.upc.edu/web/ferran">Ferran Marqu&eacutes</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                   <br>
-                  <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) </em>, 2017
+                  <em>TPAMI</em>, 2017
                   <br>
                   <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/">project page</a> /
                   <a href="data/PontTusetTPAMI2017.bib">bibtex</a> /
@@ -864,7 +896,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                 <br>
-                <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2015
+                <em>TPAMI</em>, 2015
                 <br>
                 <a href="https://drive.google.com/file/d/1D3k6u4Ek2dWm2Yf7kl1Vu_g1HFSxztqF/view?usp=sharing">supplement</a> / <a href="data/BarronMalikTPAMI2015.bib">bibtex</a> / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmVWpfa19mbUxIYW8/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmazJvLXJUb0NuM1U/view?usp=sharing">powerpoint</a>, <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmTDBUWE96VHJndjg/view?usp=sharing">PDF</a>) / <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a> / <a href="https://drive.google.com/file/d/1vg9Rb-kBntSTnTCzVgFlskkPXvTB_5aq/view?usp=sharing">code &amp; data</a> / <a href="data/why_did_this_paper_come_out_in_2015.txt">rant</a> / <a href="https://drive.google.com/file/d/11X5Zfjy7Q7oP_V2rtqy2f5-x9YgQUAFd/view?usp=sharing">kudos</a>
               </p>
@@ -886,7 +918,7 @@
                   <br>
                   <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <a href="http://imatge.upc.edu/web/people/jordi-pont-tuset">Jordi Pont-Tuset</a>, <strong>Jonathan T. Barron</strong>, <a href="http://imatge.upc.edu/web/ferran">Ferran Marqu&eacutes</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                   <br>
-                  <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2014
+                  <em>CVPR</em>, 2014
                   <br>
                   <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/">project page</a> /
                   <a href="data/ArbelaezCVPR2014.bib">bibtex</a>
@@ -924,7 +956,7 @@
                 <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <a href="http://big.lbl.gov/">Soile V. E. Ker&aumlnen</a>, <a href="http://www.lbl.gov/gsd/biggin.html">Mark D. Biggin</a>,
                 <br> <a href="http://dwknowles.lbl.gov/">David W. Knowles</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                 <br>
-                <em>International Conference on Computer Vision (ICCV)</em>, 2013
+                <em>ICCV</em>, 2013
                 <br>
                 <a href="https://drive.google.com/file/d/1htiLpMAcYLtuBthmAb4XHnOYxUbkfnqR/view?usp=sharing">supplement</a> /
                 <a href="https://drive.google.com/file/d/1qoYeFNa443myn2SfcdhmCsYBqE9xQrPD/view?usp=sharing">poster</a> /
@@ -981,13 +1013,13 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                 <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://drive.google.com/file/d/1cLUw72WpgdZ_3TQAjJABdgywqjBfn_Mq/view?usp=sharing">supplement</a> / <a href="data/BarronMalikCVPR2013.bib">bibtex</a> / <a href="http://techtalks.tv/talks/intrinsic-scene-properties-from-a-single-rgb-d-image/58614/">talk</a> / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmWW1CZGJPbi12R0k/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/file/d/19q3EFf6GIb4UFcCN2DVU2jVKpxRj5kxf/view?usp=sharing">powerpoint</a>, <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmMzQ4ZVp1SWdnVkk/view?usp=sharing">PDF</a>) / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmOXFOTm5oUHpRamc/view?usp=sharing">code &amp; data</a>
               </p>
               <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
                 <br>
-                <br> TPAMI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
+                <br>TPAMI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
               </p>
             </td>
           </tr>
@@ -997,7 +1029,7 @@
             <td width="75%" valign="top">
               <p>
                 <a href="https://drive.google.com/file/d/1H4YPovfrvcce3HGMEhidwU2l2fTcNR5y/view?usp=sharing">
-                  <papertitle>Boundary Cues for 3D Object Shape Recovery</papertitle>
+                <papertitle>Boundary Cues for 3D Object Shape Recovery</papertitle>
                 </a>
                 <br>
                 <a href="http://www.kevinkarsch.com/">Kevin Karsch</a>,
@@ -1006,7 +1038,7 @@
                 <strong>Jonathan T. Barron</strong>,
                 <a href="http://www.cs.illinois.edu/homes/dhoiem/">Derek Hoiem</a>
                 <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2013
+                <em>CVPR</em>, 2013
                 <br>
                 <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmLUQ5SVJTcUZIYXc/view?usp=sharing">supplement</a> / <a href="data/KarschCVPR2013.bib">bibtex</a>
               </p>
@@ -1042,7 +1074,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                 <br>
-                <em>European Conference on Computer Vision (ECCV)</em>, 2012
+                <em>ECCV</em>, 2012
                 <br>
                 <a href="https://drive.google.com/file/d/1zuxhWZ3i6THvuRRBeE7dM_BJfDxO72Fq/view?usp=sharing">supplement</a> / <a href="data/BarronMalikECCV2012.bib">bibtex</a> / <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> / <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a>
               </p>
@@ -1075,7 +1107,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                 <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2012
+                <em>CVPR</em>, 2012
                 <br>
                 <a href="https://drive.google.com/file/d/1Im_bUI42AP9VPoNtsjLajvtLRiwv39k3/view?usp=sharing">supplement</a> / <a href="data/BarronMalikCVPR2012.bib">bibtex</a> / <a href="https://drive.google.com/file/d/1IAlSF4k3_CEL9dfbaMiNTFPBoEkLhsRl/view?usp=sharing">poster</a>
               </p>
@@ -1094,7 +1126,7 @@
                 <br>
                 <a href="http://www.eecs.berkeley.edu/%7Eallie/">Allison Janoch</a>, <a href="http://sergeykarayev.com/">Sergey Karayev</a>, <a href="http://www.eecs.berkeley.edu/%7Ejiayq/">Yangqing Jia</a>, <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/%7Emfritz/">Mario Fritz</a>, <a href="http://www.icsi.berkeley.edu/%7Esaenko/">Kate Saenko</a>, <a href="http://www.eecs.berkeley.edu/%7Etrevor/">Trevor Darrell</a>
                 <br>
-                <em>International Conference on Computer Vision (ICCV) 3DRR Workshop</em>, 2011
+                <em>ICCV 3DRR Workshop</em>, 2011
                 <br>
                 <a href="data/B3DO_ICCV_2011.bib">bibtex</a> / <a href="https://drive.google.com/file/d/1qf4-U5RhSw12O7gzQwW66SMQhs2FWYDW/view?usp=sharing">"smoothing" code</a>
               </p>
@@ -1112,7 +1144,7 @@
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                 <br>
-                <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2011
+                <em>CVPR</em>, 2011
                 <br>
                 <a href="data/BarronMalikCVPR2011.bib">bibtex</a>
               </p>
@@ -1252,7 +1284,7 @@
                   <a href="http://www.cs.berkeley.edu/~akar/">&#10025;</a>
                   <a href="http://www.eecs.berkeley.edu/~biancolin">&#10025;</a>
                   <a href="http://www.rossgirshick.info/">&#10025;</a>
-                  <a href="http://people.seas.harvard.edu/~igkiou/">&#10025;</a>
+                  <a href="http://www.cs.cmu.edu/~igkioule/">&#10025;</a>
                   <a href="http://kelvinxu.github.io/">&#10025;</a>
                   <a href="http://imagine.enpc.fr/~groueixt/">&#10025;</a>
                   <a href="https://people.eecs.berkeley.edu/~cbfinn/">&#10025;</a>
@@ -1262,18 +1294,15 @@
                   <a href="https://aseembits93.github.io">&#10025;</a>
                   <a href="http://fuwei.us/">&#10025;</a>
                   <a href="http://www-bcf.usc.edu/~iacopoma/">&#10025;</a>
-                  <a href="http://www.lorisbazzani.info/">&#10025;</a>
-                  <a href="http://www.public.asu.edu/~kkulkar1/">&#10025;</a>
+                  <a href="https://lorisbaz.github.io/">&#10025;</a>
                   <a href="http://ieng6.ucsd.edu/~dplarson/">&#10025;</a>
                   <a href="http://chapiro.net/">&#10025;</a>
                   <a href="https://people.eecs.berkeley.edu/~vitchyr/">&#10025;</a>
-                  <a href="http://nealjean.com/">&#10025;</a>
                   <a href="https://people.eecs.berkeley.edu/~kellman/">&#10025;</a>
                   <a href="http://www0.cs.ucl.ac.uk/staff/C.Godard/">&#10025;</a>
                   <a href="http://www.cs.toronto.edu/~byang/">&#10025;</a>
                   <a href="http://people.kyb.tuebingen.mpg.de/harmeling/">&#10025;</a>
-                  <a href="http://sriramkumarwild.github.io/">&#10025;</a>
-                  <a href="http://prakashmurali.bitbucket.org/">&#10025;</a>
+                  <a href="https://prakashmurali.bitbucket.io/">&#10025;</a>
                   <a href="http://www.cs.bham.ac.uk/~exa371/">&#10025;</a>
                   <a href="http://prosello.com/">&#10025;</a>
                   <a href="http://www.ee.ucr.edu/~nmithun/">&#10025;</a>
@@ -1282,9 +1311,8 @@
                   <a href="https://people.eecs.berkeley.edu/~coline/">&#10025;</a>
                   <a href="https://www.andrew.cmu.edu/user/sjayasur/website.html">&#10025;</a>
                   <a href="http://www.eecs.berkeley.edu/~rakelly/">&#10025;</a>
-                  <a href="http://www.cs.berkeley.edu/~gkioxari/">&#10025;</a>
+                  <a href="https://gkioxari.github.io/">&#10025;</a>
                   <a href="http://ai.stanford.edu/~hsong/">&#10025;</a>
-                  <a href="http://susheels.github.io/">&#10025;</a>
                   <a href="http://www.ee.ucr.edu/~mbappy/">&#10025;</a>
                   <a href="http://adithyamurali.com/">&#10025;</a>
                   <a href="https://people.eecs.berkeley.edu/~khoury/">&#10025;</a>
@@ -1292,7 +1320,6 @@
                   <a href="http://tomhenighan.com/">&#10025;</a>
                   <a href="http://mbchang.github.io/">&#10025;</a>
                   <a href="https://people.eecs.berkeley.edu/~haarnoja/">&#10025;</a>
-                  <a href="http://ishshah.me/">&#10025;</a>
                   <a href="http://web.stanford.edu/~sfort1/">&#10025;</a>
                   <a href="http://www.arkin.xyz/">&#10025;</a>
                   <a href="http://i-am-karan-singh.github.io/">&#10025;</a>
@@ -1303,21 +1330,18 @@
                   <a href="http://nafiz.ml/">&#10025;</a>
                   <a href="http://www.cs.cmu.edu/~aayushb">&#10025;</a>
                   <a href="http://bjornstenger.github.io/">&#10025;</a>
-                  <a href="https://karangrewal.github.io/">&#10025;</a>
                   <a href="http://users.eecs.northwestern.edu/~mif365/">&#10025;</a>
                   <a href="https://www.macs.hw.ac.uk/~ic14/">&#10025;</a>
                   <a href="https://ai.stanford.edu/~kaidicao/">&#10025;</a>
                   <a href="http://hengfan.byethost7.com/">&#10025;</a>
                   <a href="https://reyhaneaskari.github.io/">&#10025;</a>
                   <a href="https://tianheyu927.github.io/">&#10025;</a>
-                  <a href="http://www.cs.princeton.edu/~namana/">&#10025;</a>
                   <a href="http://people.csail.mit.edu/janner/">&#10025;</a>
                   <a href="http://www.sjoerdvansteenkiste.com/">&#10025;</a>
                   <a href="http://joaoloula.github.io/">&#10025;</a>
                   <a href="https://bhairavmehta95.github.io/">&#10025;</a>
-                  <a href="http://www2.informatik.uni-freiburg.de/~palmieri/">&#10025;</a>
+                  <a href="https://palmieri.github.io/">&#10025;</a>
                   <a href="https://psuriana.github.io/">&#10025;</a>
-                  <a href="http://home.iitb.ac.in/~devangthakkar/">&#10025;</a>
                   <a href="http://yushi2.web.engr.illinois.edu/">&#10025;</a>
                   <a href="http://ruthcfong.github.io/">&#10025;</a>
                   <a href="https://shraman-rc.github.io/">&#10025;</a>
@@ -1345,7 +1369,7 @@
                   <a href="http://cgm.technion.ac.il/people/Roey/">&#10025;</a>
                   <a href="https://mancinimassimiliano.github.io/">&#10025;</a>
                   <a href="https://roshanjrajan.me/">&#10025;</a>
-                  <a href="https://fqnchina.github.io/homepage/">&#10025;</a>
+                  <a href="http://irc.cs.sdu.edu.cn/~qingnan/">&#10025;</a>
                   <a href="http://individual.utoronto.ca/yuenj/">&#10025;</a>
                   <a href="https://akhileshgotmare.github.io/">&#10025;</a>
                   <a href="http://vllab.ucmerced.edu/nakul/">&#10025;</a>
