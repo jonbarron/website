@@ -1,14 +1,19 @@
 R1:
 
-My first impression is that this paper might be better reviewed in a machine learning centered conference (i.e. ICML) instead of the computer vision ones, as the major contribution of this paper comes from the loss function that could be potentially applied to any learning task, not specific vision task.
+My first impression is that this paper might be better reviewed in a machine
+learning centered conference (i.e. ICML) instead of the computer vision ones,
+as the major contribution of this paper comes from the loss function that could
+be potentially applied to any learning task, not specific vision task.
 
-I am not sure I can agree that "registration" and "clustering" are not "learning" tasks per the authors' rebuttal feedback.
+I am not sure I can agree that "registration" and "clustering" are not
+"learning" tasks per the authors' rebuttal feedback.
  
 Borderline Reject
 
 
 R2:
 
-Good theoretical development of unified robust loss and extensive experimental evaluation on four vision task.
+Good theoretical development of unified robust loss and extensive experimental
+evaluation on four vision task.
 
 Accept
