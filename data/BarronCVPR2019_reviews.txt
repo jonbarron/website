@@ -5,9 +5,6 @@ learning centered conference (i.e. ICML) instead of the computer vision ones,
 as the major contribution of this paper comes from the loss function that could
 be potentially applied to any learning task, not specific vision task.
 
-I am not sure I can agree that "registration" and "clustering" are not
-"learning" tasks per the authors' rebuttal feedback.
- 
 Borderline Reject
 
 
