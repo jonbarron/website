@@ -120,6 +120,40 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='dpzlearn_image'><img src='images/dpzlearn_after.jpg'></div>
+                <img src='images/dpzlearn_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function dpzlearn_start() {
+                  document.getElementById('dpzlearn_image').style.opacity = "1";
+                }
+
+                function dpzlearn_stop() {
+                  document.getElementById('dpzlearn_image').style.opacity = "0";
+                }
+                dpzlearn_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/abs/1904.05822">
+                <papertitle>Learning Single Camera Depth Estimation using Dual-Pixels
+</papertitle>
+              </a>
+              <br>
+              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
+              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
+              Sameer Ansari,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              arXiv:1904.05822
+              <br>
+              <p></p>
+              <p>Considering the optics of dual-pixel image sensors improves monocular depth estimation techniques.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
             <td width="25%">
