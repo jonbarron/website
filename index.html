@@ -120,6 +120,50 @@
         </table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='porlight_image'><img src='images/porlight_after.jpg'></div>
+                <img src='images/porlight_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function porlight_start() {
+                  document.getElementById('porlight_image').style.opacity = "1";
+                }
+
+                function porlight_stop() {
+                  document.getElementById('porlight_image').style.opacity = "0";
+                }
+                porlight_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/abs/1905.00824">
+                <papertitle>Single Image Portrait Relighting</papertitle>
+              </a>
+              <br>
+              <a href="http://kevinkingo.com/"">Tiancheng Sun</a>,
+              <strong>Jonathan T. Barron</strong>,
+              Yun-Ta Tsai, 
+              <a href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>,
+              Xueming Yu, 
+              <a href="http://ict.usc.edu/profile/graham-fyffe/">Graham Fyffe</a>, 
+              Christoph Rhemann, 
+              Jay Busch, 
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>, 
+              <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
+              <br>
+              <em>SIGGRAPH</em>, 2019
+              <br>
+			  <a href="https://www.youtube.com/watch?v=yxhGWds_g4I">video</a> / 
+			  <a href="data/SunSIGGRAPH2019.bib">bibtex</a>
+              <br>
+              <p></p>
+              <p>Training a neural network on light stage scans and environment maps produces an effective relighting method.</p>
+            </td>
+          </tr>
+
           <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
             <td width="25%">
               <div class="one">
@@ -139,8 +183,7 @@
             </td>
             <td valign="middle" width="75%">
               <a href="https://arxiv.org/abs/1904.05822">
-                <papertitle>Learning Single Camera Depth Estimation using Dual-Pixels
-</papertitle>
+                <papertitle>Learning Single Camera Depth Estimation using Dual-Pixels</papertitle>
               </a>
               <br>
               <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
