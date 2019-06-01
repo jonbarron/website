@@ -189,20 +189,20 @@ Restoration using Conditional Adversarial Networks</papertitle> <font color="red
               <p>Existing methods for cuff-less blood pressure (BP) prediction deal with extracting various features manually from electrophysiological signals like Electrocardiogram and Photoplethysmogram and then using analytical or machine learning models to predict the blood pressure from the extracted features. In this work, an approach that does not need calibration or manual feature extraction is proposed using CNNs and LSTMs for BP prediction. </p>
             </td>
           </tr>
-	  <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+	  <tr onmouseout="cuff_stop()" onmouseover="cuff_start()">
             <td width="35%">
               <div class="one">
-                <div class="two" id='dpzlearn_image'><img src='images/jose/op.PNG' height="200" width="200" ></div>
+                <div class="two" id='cuff_image'><img src='images/jose/op.PNG' height="200" width="200" ></div>
                 <img src='images/jose/ip.PNG' height="200" width="200" >
               </div>
               <script type="text/javascript">
-                function dpzlearn_start() {
-                  document.getElementById('dpzlearn_image').style.opacity = "1";
+                function cuff_start() {
+                  document.getElementById('cuff_image').style.opacity = "1";
                 }
-                function dpzlearn_stop() {
-                  document.getElementById('dpzlearn_image').style.opacity = "0";
+                function cuff_stop() {
+                  document.getElementById('cuff_image').style.opacity = "0";
                 }
-                dpzlearn_stop()
+                cuff_stop()
               </script>
             </td>
             <td valign="middle" width="75%">
@@ -214,24 +214,24 @@ Restoration using Conditional Adversarial Networks</papertitle> <font color="red
               <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
               Hongliang Ren
               
-              <p></p>
+		    <p><a href="https://link.springer.com/chapter/10.1007/978-3-030-11726-9_13>Paper</a> | <a href="https://arxiv.org/abs/1811.02629">ArXiv(Summary)</a> | <a href="https://drive.google.com/open?id=1e5CjKuY2dfRlT5ZEMWl0u1oehvMe_TEy>Poster</a></p>
               <p>Segmentation of brain tumor from magnetic resonance imaging (MRI) is performed using a convolutional neural network (CNN) with hypercolumn technique. Also, a variety of features are extracted from the segmented tumor to predict the overall survival in terms of number of days for each patient. This work was done as a part of BraTS challenge 2018 conducted by University of Pennyslvania.   </p>
             </td>
           </tr>
-	  <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+	  <tr onmouseout="is_stop()" onmouseover="is_start()">
             <td width="35%">
               <div class="one">
                 <div class="two" id='dpzlearn_image'><img src='images/jose/isop.PNG' height="200" width="200" ></div>
                 <img src='images/jose/isip.PNG' height="200" width="200" >
               </div>
               <script type="text/javascript">
-                function dpzlearn_start() {
-                  document.getElementById('dpzlearn_image').style.opacity = "1";
+                function is_start() {
+                  document.getElementById('is_image').style.opacity = "1";
                 }
-                function dpzlearn_stop() {
-                  document.getElementById('dpzlearn_image').style.opacity = "0";
+                function is_stop() {
+                  document.getElementById('is_image').style.opacity = "0";
                 }
-                dpzlearn_stop()
+                is_stop()
               </script>
             </td>
             <td valign="middle" width="75%">
@@ -239,31 +239,31 @@ Restoration using Conditional Adversarial Networks</papertitle> <font color="red
                 <papertitle>Ischemic Stroke Lesion Segmentation Using Adversarial Learning </papertitle>
               
               <br>
-		Mobarakol Islam
-		    Rajiv V
+		Mobarakol Islam,
+		    Rajiv V,
               <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
               Hongliang Ren
               
-              <p></p>
+		    <p><a href="https://link.springer.com/chapter/10.1007/978-3-030-11723-8_29">Paper</a></p>
               <p> A segmentation model with adversarial learning for ischemic lesion segmentation. U-Net with skip connection and dropout is adopted as segmentation baseline network and a fully connected network (FCN) is used as discriminator network. Three modalities (CT, DPWI, CBF) of acute computed tomography (CT) perfusion data provided in ISLES 2018 (Ischemic Stroke Lesion Segmentation) for ischemic lesion segmentation are used to train the net.   </p>
             </td>
           </tr>
 		
 		
-          <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
+          <tr onmouseout="cell_stop()" onmouseover="cell_start()">
             <td width="25%">
               <div class="one">
-                <div class="two" id='porlight_image'><img src='images/jose/cellop.png'height="200" width="200"></div>
+                <div class="two" id='cell_image'><img src='images/jose/cellop.png'height="200" width="200"></div>
                 <img src='images/jose/cellip.png' height="200" width="200">
               </div>
               <script type="text/javascript">
-                function porlight_start() {
-                  document.getElementById('porlight_image').style.opacity = "1";
+                function cell_start() {
+                  document.getElementById('cell_image').style.opacity = "1";
                 }
                 function porlight_stop() {
-                  document.getElementById('porlight_image').style.opacity = "0";
+                  document.getElementById('cell_image').style.opacity = "0";
                 }
-                porlight_stop()
+                cell_stop()
               </script>
             </td>
             <td valign="middle" width="75%">
@@ -275,12 +275,21 @@ Pyramid Pooling for Nuclei Segmentation</papertitle>
 		Mobarakol Islam,
               <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
                Hongliang Ren
-              <p></p>
-              <p> A novel adversarial segmentation model for nuclear segmentation inspired from generative adversarial networks is proposed. Segmentation of nuclei from microscopic images of tumor
+		    
+              <p><a href="https://drive.google.com/open?id=1Z8TlUZKXVuY4rYAkVNLqO_Y0l3Xj2y2R">Paper</a></p>
+              <p> A novel adversarial segmentation model for nuclear segmentation inspired from generative adversarial networks. Segmentation of nuclei from microscopic images of tumor
 cells from affected tissues is of a great use in computational pathology. The dataset used was published by the MoNuSeg Challenge at MICCAI 2018. </p>
 		  </td>
           </tr>
 
+		 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <br>
+              <p align="right">
+                <font size="2">
+			<a href="https://github.com/jonbarron/jonbarron_website">source code</a> </p>
+			
         </td>
     </tr>
   </table>
