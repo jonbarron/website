@@ -130,6 +130,82 @@
               <p>Considering the optics of dual-pixel image sensors improves monocular depth estimation techniques.</p>
             </td>
           </tr>
+          
+          <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
+                <img src='images/loss_before.png'>
+              </div>
+              <script type="text/javascript">
+                function loss_start() {
+                  document.getElementById('loss_image').style.opacity = "1";
+                }
+
+                function loss_stop() {
+                  document.getElementById('loss_image').style.opacity = "0";
+                }
+                loss_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://drive.google.com/open?id=1xpZ0fL9h1y9RfcTyPgVkxUrF3VwdkBvq">
+                <papertitle>A General and Adaptive Robust Loss Function</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Award Finalist)</strong></font>
+              <br>
+              <a href="https://arxiv.org/abs/1701.03077">arxiv</a> /
+              <a href="https://drive.google.com/open?id=1HNveL7xSNh6Ss7sxLK8Mw2L1Fc-rRhL4">supplement</a> /
+              <a href="https://youtu.be/BmNKbnF69eY">video</a> /
+              <a href="https://github.com/google-research/google-research/tree/master/robust_loss">tensorflow code</a> /
+              <a href="https://github.com/jonbarron/robust_loss_pytorch">pytorch code</a> /
+              <a href="data/BarronCVPR2019_reviews.txt">reviews</a> /
+              <a href="data/BarronCVPR2019.bib">bibtex</a>
+              <p></p>
+              <p>A single robust loss function is a superset of many other common robust loss functions, and allows training to automatically adapt the robustness of its own loss.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mpi_image'><img src='images/mpi_after.jpg'></div>
+                <img src='images/mpi_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function mpi_start() {
+                  document.getElementById('mpi_image').style.opacity = "1";
+                }
+
+                function mpi_stop() {
+                  document.getElementById('mpi_image').style.opacity = "0";
+                }
+                mpi_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://drive.google.com/file/d/1TU5L6fnt4Kd49IUOU7aNxor5NIgdHuNG/view?usp=sharing">
+                <papertitle>Pushing the Boundaries of View Extrapolation with Multiplane Images</papertitle>
+              </a>
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>, Richard Tucker,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+              <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
+              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+              <br>
+              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Award Finalist)</strong></font>
+              <br>
+              <a href="https://drive.google.com/file/d/1GUW_n-BAn9Q4VntEA_OTHNJiHO7XfC62/view?usp=sharing">supplement</a> /
+              <a href="https://www.youtube.com/watch?v=aJqAaMNL2m4">video</a> /
+              <a href="data/SrinivasanCVPR2019.bib">bibtex</a>
+              <p></p>
+              <p>View extrapolation with multiplane images works better if you reason about disocclusions and disparity sampling frequencies.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -205,82 +281,6 @@
               <a href="data/BrooksBarronCVPR2019.bib">bibtex</a>
               <p></p>
               <p>Frame interpolation techniques can be used to train a network that directly synthesizes linear blur kernels.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mpi_image'><img src='images/mpi_after.jpg'></div>
-                <img src='images/mpi_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function mpi_start() {
-                  document.getElementById('mpi_image').style.opacity = "1";
-                }
-
-                function mpi_stop() {
-                  document.getElementById('mpi_image').style.opacity = "0";
-                }
-                mpi_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://drive.google.com/file/d/1TU5L6fnt4Kd49IUOU7aNxor5NIgdHuNG/view?usp=sharing">
-                <papertitle>Pushing the Boundaries of View Extrapolation with Multiplane Images</papertitle>
-              </a>
-              <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>, Richard Tucker,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-              <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
-              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
-              <br>
-              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://drive.google.com/file/d/1GUW_n-BAn9Q4VntEA_OTHNJiHO7XfC62/view?usp=sharing">supplement</a> /
-              <a href="https://www.youtube.com/watch?v=aJqAaMNL2m4">video</a> /
-              <a href="data/SrinivasanCVPR2019.bib">bibtex</a>
-              <p></p>
-              <p>View extrapolation with multiplane images works better if you reason about disocclusions and disparity sampling frequencies.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
-                <img src='images/loss_before.png'>
-              </div>
-              <script type="text/javascript">
-                function loss_start() {
-                  document.getElementById('loss_image').style.opacity = "1";
-                }
-
-                function loss_stop() {
-                  document.getElementById('loss_image').style.opacity = "0";
-                }
-                loss_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://drive.google.com/open?id=1xpZ0fL9h1y9RfcTyPgVkxUrF3VwdkBvq">
-                <papertitle>A General and Adaptive Robust Loss Function</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://arxiv.org/abs/1701.03077">arxiv</a> /
-              <a href="https://drive.google.com/open?id=1HNveL7xSNh6Ss7sxLK8Mw2L1Fc-rRhL4">supplement</a> /
-              <a href="https://youtu.be/BmNKbnF69eY">video</a> /
-              <a href="https://github.com/google-research/google-research/tree/master/robust_loss">tensorflow code</a> /
-              <a href="https://github.com/jonbarron/robust_loss_pytorch">pytorch code</a> /
-              <a href="data/BarronCVPR2019_reviews.txt">reviews</a> /
-              <a href="data/BarronCVPR2019.bib">bibtex</a>
-              <p></p>
-              <p>A single robust loss function is a superset of many other common robust loss functions, and allows training to automatically adapt the robustness of its own loss.</p>
             </td>
           </tr>
 
