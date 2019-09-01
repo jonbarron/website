@@ -60,6 +60,40 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="font_stop()" onmouseover="font_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='font_image'><img src='images/font_after.png'></div>
+                <img src='images/font_before.png'>
+              </div>
+              <script type="text/javascript">
+                function font_start() {
+                  document.getElementById('font_image').style.opacity = "1";
+                }
+
+                function font_stop() {
+                  document.getElementById('font_image').style.opacity = "0";
+                }
+                font_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="TODO">
+                <papertitle>A Deep Factorization of Style and Structure in Fonts</papertitle>
+              </a>
+              <br>
+              <a href="http://www.cs.cmu.edu/~asrivats/">Akshay Srivatsan</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://people.eecs.berkeley.edu/~klein/">Dan Klein</a>,
+              <a href="http://cseweb.ucsd.edu/~tberg/">Taylor Berg-Kirkpatrick</a>
+              <br>
+              <em>EMNLP</em>, 2019
+              <br>
+              <p></p>
+              <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
