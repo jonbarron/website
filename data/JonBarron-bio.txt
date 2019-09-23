@@ -1,4 +1,4 @@
-Jonathan T. Barron is a staff research scientist at Google, where he works on
+Jon Barron is a staff research scientist at Google, where he works on
 computer vision and machine learning. He received a PhD in Computer Science
 from the University of California, Berkeley in 2013, where he was advised by
 Jitendra Malik, and he received a Honours BSc in Computer Science from the
