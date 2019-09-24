@@ -60,6 +60,49 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nightsight_image'><img src='images/nightsight_after.jpg'></div>
+                <img src='images/nightsight_before.jpg'>
+              </div>
+              <script type="text/javascript">
+                function nightsight_start() {
+                  document.getElementById('nightsight_image').style.opacity = "1";
+                }
+
+                function nightsight_stop() {
+                  document.getElementById('nightsight_image').style.opacity = "0";
+                }
+                nightsight_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="TODO">
+                <papertitle>Handheld Mobile Photography in Very Low Light</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/site/orlylibaprofessional/">Orly Liba</a>,
+              <a href="https://scholar.google.com/citations?user=6PhlPWMAAAAJ">Kiran Murthy</a>,
+              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,
+              <a href="https://www.timothybrooks.com/">Timothy Brooks</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <a href="https://scholar.google.com/citations?user=qgc_jY0AAAAJ">Nikhil Karnad</a>,
+              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://ai.google/research/people/105641/">Dillon Sharlet</a>,
+              <a href="http://www.geisswerks.com/">Ryan Geiss</a>,
+              <a href="https://people.csail.mit.edu/hasinoff/">Samuel W. Hasinoff</a>,
+              <a href="https://scholar.google.com/citations?user=2jXxOYQAAAAJ">Yael Pritch</a>,
+              <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>
+              <br>
+              <em>SIGGRAPH Asia</em>, 2019
+              <br>
+              <p></p>
+              <p>By rethinking metering, white balance, and tone mapping, we can take pictures in places too dark for humans to see clearly.</p>
+            </td>
+          </tr>
+          
           <tr onmouseout="font_stop()" onmouseover="font_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -1520,6 +1563,7 @@
                 <a href="https://www.cc.gatech.edu/~sfoley30/">&#10025;</a>
                 <a href="https://crockwell.github.io/">&#10025;</a>
                 <a href="https://kritikalcoder.github.io/">&#10025;</a>
+                <a href="https://isrugeek.github.io/">&#10025;</a>
                 <br>
                 Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
               </p>
