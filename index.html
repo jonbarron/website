@@ -21,7 +21,7 @@
     }
     a:focus,
     a:hover {
-      color: #d11b36;
+      color: #af19bf;
       text-decoration: none;
     }
     
@@ -136,7 +136,7 @@
               <div>
 		September 29, 2019 - Awarded <c href="http://cvip2019.mnit.ac.in/Award.aspx" class="text-success"> Best Student Paper award </c> at <c href = "http://cvip2019.mnit.ac.in/Default.aspx" class="text-success"> CVIP 2019 </c>. 
 		    </div>
-		    <div> August 29, 2019 - Joined <c href = "https://www.jhu.edu/" class ="text-succes"> Johns Hopkins University </c> for my Ph.D.
+		    <div> August 29, 2019   -     Joined <c href = "https://www.jhu.edu/" class ="text-succes"> Johns Hopkins University </c> for my Ph.D.
               </div>
             </td>
           </tr>
@@ -149,8 +149,8 @@
 		 <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
             <td width="35%">
               <div class="one">
-                <div class="two" id='dpzlearn_image'><img src='images/CBAS.PNG' height="200" width="250" ></div>
-                <img src='images/MS_SA.PNG' height="200" width="250" >
+                <div class="two" id='dpzlearn_image'><img src='images/jose/CBAS.png' height="200" width="250" ></div>
+                <img src='images/jose/MS_SA.png' height="200" width="250" >
               </div>
               <script type="text/javascript">
                 function dpzlearn_start() {
@@ -174,43 +174,10 @@
 		    Vishal M. Patel
               
 		    <p> <a href="https://arxiv.org/abs/1912.08364">Paper </a></p>
-              <p> Two deep networks, a Multi-Scale Self Attention (MSSA) network for synthesis and a Confidence Based Brain Anatomy (CBAS) network for segmentation has been proposed for ultrasound modality achieving state of the art performance in each of their tasks. Moreover, the synthesis method  </p>
+              <p> Two deep networks, a Multi-Scale Self Attention (MSSA) network for synthesis and a Confidence Based Brain Anatomy (CBAS) network for segmentation has been proposed for ultrasound modality achieving state of the art performance in each of their tasks. Moreover, we show how synthesis aids the segmentation even with less data.  </p>
             </td>
           </tr>
-		 <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-            <td width="35%">
-              <div class="one">
-                <div class="two" id='dpzlearn_image'><img src='images/arch3datn.PNG' height="200" width="200" ></div>
-                <img src='images/brain.PNG' height="200" width="200" >
-              </div>
-              <script type="text/javascript">
-                function dpzlearn_start() {
-                  document.getElementById('dpzlearn_image').style.opacity = "1";
-                }
-                function dpzlearn_stop() {
-                  document.getElementById('dpzlearn_image').style.opacity = "0";
-                }
-                dpzlearn_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://arxiv.org/abs/190822">
-                <papertitle>Brain Tumor Segmentation and SurvivalPrediction using 3D Attention UNet </papertitle>
-              </a>
-		    <p><b href="https://www.med.upenn.edu/cbica/brats2019/registration.html" class="text-danger">BraTS, </b> <b href="http://www.brainlesion-workshop.org/"> MICCAI Workshop 2019 </b></p>
-              <br>
-		    Mobarakol Islam,
-              <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
-		    Vibashan VS,
-		    Navodini Wijethilake,
-		    Uppal Utkarsh,
-		    Hongliang Ren
-             
-              
-		    <p> <a href="https://github.com/jeya-maria-jose/Cuff_less_BP_Prediction">Code </a></p>
-              <p> We adopt a 3D UNet architecture and integrate channel and spatial attention with the decoder network to perform segmen-tation. For survival prediction, we extract some novel radiomic featuresbased on geometry, location, the shape of the segmented tumor and com-bine them with clinical information to estimate the survival duration for each patient. </p>
-            </td>
-          </tr>
+		
           <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
             <td width="35%">
               <div class="one">
@@ -244,11 +211,45 @@
 		<p> Restoring images that are degraded by multiple visual artifacts like noise, blurness and other environmental visual artifacts like shadow, snow, rain and haze is a challenging task. In this work, use of conditional adversarial networks for this task has been explored.  </p>
             </td>
           </tr>
+	   <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
+            <td width="35%">
+              <div class="one">
+                <div class="two" id='dpzlearn_image'><img src='images/arch3datn.png' height="200" width="200" ></div>
+                <img src='images/brain.png' height="200" width="200" >
+              </div>
+              <script type="text/javascript">
+                function dpzlearn_start() {
+                  document.getElementById('dpzlearn_image').style.opacity = "1";
+                }
+                function dpzlearn_stop() {
+                  document.getElementById('dpzlearn_image').style.opacity = "0";
+                }
+                dpzlearn_stop()
+              </script>
+            </td>
+            <td valign="middle" width="75%">
+              <a href="https://arxiv.org/abs/190822">
+                <papertitle>Brain Tumor Segmentation and Survival Prediction using 3D Attention UNet </papertitle>
+              </a>
+		    <div><b href="https://www.med.upenn.edu/cbica/brats2019/registration.html" class="text-danger">BraTS, </b> <b href="http://www.brainlesion-workshop.org/"> MICCAI Workshop 2019 </b></div>
+              <br>
+		    Mobarakol Islam,
+              <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
+		    Vibashan VS,
+		    Navodini Wijethilake,
+		    Uppal Utkarsh,
+		    Hongliang Ren
+             
+              
+		    <p> <a href="https://github.com/jeya-maria-jose/Cuff_less_BP_Prediction">Code </a></p>
+              <p> We adopt a 3D UNet architecture and integrate channel and spatial attention with the decoder network to perform segmen-tation. For survival prediction, we extract some novel radiomic featuresbased on geometry, location, the shape of the segmented tumor and com-bine them with clinical information to estimate the survival duration for each patient. </p>
+            </td>
+          </tr>
           <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
             <td width="35%">
               <div class="one">
-                <div class="two" id='dpzlearn_image'><img src='images/jose/cuff.PNG' height="200" width="200" ></div>
-                <img src='images/jose/arch.PNG' height="200" width="200" >
+                <div class="two" id='dpzlearn_image'><img src='images/jose/arch.PNG' height="200" width="200" ></div>
+                <img src='images/jose/cuff.PNG' height="200" width="200" >
               </div>
               <script type="text/javascript">
                 function dpzlearn_start() {
@@ -296,6 +297,7 @@
               <a href="https://arxiv.og/as/19022">
                 <papertitle>Glioma Prognosis: Segmentation of the Tumor and Survival Prediction using Shape, Geometric and Clinical Information </papertitle>
               </a>
+		    <div><b href="https://www.med.upenn.edu/cbica/brats2019/registration.html" class="text-danger">BraTS, </b> <b href="http://www.brainlesion-workshop.org/"> MICCAI Workshop 2018 </b></div>
               <br>
 		Mobarakol Islam,
               <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
@@ -326,6 +328,7 @@
                 <papertitle>Ischemic Stroke Lesion Segmentation Using Adversarial Learning </papertitle>
 		    </a>
               <br>
+		    <div><b href="https://www.med.upenn.edu/cbica/brats2019/registration.html" class="text-danger">ISLES, </b> <b href="http://www.brainlesion-workshop.org/"> MICCAI Workshop 2018 </b></div>
 		Mobarakol Islam,
 		    Rajiv V,
               <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
@@ -337,37 +340,7 @@
           </tr>
 		
 		
-          <tr onmouseout="cell_stop()" onmouseover="cell_start()">
-            <td width="35%">
-              <div class="one">
-                <div class="two" id='cell_image'><img src='images/jose/cellop.PNG'height="200" width="200"></div>
-                <img src='images/jose/cellip.PNG' height="200" width="200">
-              </div>
-              <script type="text/javascript">
-                function cell_start() {
-                  document.getElementById('cell_image').style.opacity = "1";
-                }
-                function cell_stop() {
-                  document.getElementById('cell_image').style.opacity = "0";
-                }
-                cell_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://arxiv.org/bs/1905.0082">
-                 <papertitle> Adversarial Learning of Dilated Resnet with
-Pyramid Pooling for Nuclei Segmentation</papertitle> 
-              </a>
-              <br>
-		Mobarakol Islam,
-              <strong><a href="https://jeya-maria-jose.github.io/research/">V Jeya Maria Jose</a></strong>,
-               Hongliang Ren
-		    
-              <p><a href="https://drive.google.com/open?id=1Z8TlUZKXVuY4rYAkVNLqO_Y0l3Xj2y2R">Paper</a></p>
-              <p> A novel adversarial segmentation model for nuclear segmentation inspired from generative adversarial networks. Segmentation of nuclei from microscopic images of tumor
-cells from affected tissues is of a great use in computational pathology. The dataset used was published by the MoNuSeg Challenge at MICCAI 2018. </p>
-		  </td>
-          </tr>
+          
 
 		 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
