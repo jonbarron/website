@@ -60,6 +60,93 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    
+          <tr onmouseout="nerf_stop()" onmouseover="nerf_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerf_image'><img src='images/vase_small.gif' width="160"></div>
+                <img src='images/vase_still.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerf_start() {
+                  document.getElementById('nerf_image').style.opacity = "1";
+                }
+
+                function nerf_stop() {
+                  document.getElementById('nerf_image').style.opacity = "0";
+                }
+                nerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://www.matthewtancik.com/nerf">
+                <papertitle>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis
+</papertitle>
+              </a>
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
+              <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
+              <br>
+        <em>arXiv</em>, 2020  
+              <br>
+              <a href="http://www.matthewtancik.com/nerf">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2003.08934">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=JuH79E8rdKc">video</a>
+        /
+              <a href="https://github.com/bmild/nerf">code</a>
+              <p></p>
+              <p>
+              Training a tiny non-convolutional neural network to reproduce a scene using volume rendering achieves photorealistic view synthesis.</p>
+            </td>
+          </tr> 
+    
+          <tr onmouseout="lighthouse_stop()" onmouseover="lighthouse_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lh_image'><img src='images/rings_crop.gif' width="160"></div>
+                <img src='images/rings.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function lighthouse_start() {
+                  document.getElementById('lh_image').style.opacity = "1";
+                }
+
+                function lighthouse_stop() {
+                  document.getElementById('lh_image').style.opacity = "0";
+                }
+                lighthouse_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">
+                <papertitle>Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination</papertitle>
+              </a>
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://research.google/people/RichardTucker/">Richard Tucker</a>,
+              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
+              <br>
+        <em>CVPR</em>, 2020  
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2003.08367">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=KsiZpUFPqIU">video</a>
+              <p></p>
+              <p>We predict a volume from an input stereo pair that can be used to calculate incident lighting at any 3D point within a scene.</p>
+            </td>
+          </tr>  
+
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
