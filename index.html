@@ -108,6 +108,46 @@
               Training a tiny non-convolutional neural network to reproduce a scene using volume rendering achieves photorealistic view synthesis.</p>
             </td>
           </tr> 
+
+          <tr onmouseout="learnaf_stop()" onmouseover="learnaf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='learnaf_image'>
+                  <img src='images/learnaf_after.jpg' width="160"></div>
+                <img src='images/learnaf_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function learnaf_start() {
+                  document.getElementById('learnaf_image').style.opacity = "1";
+                }
+
+                function learnaf_stop() {
+                  document.getElementById('learnaf_image').style.opacity = "0";
+                }
+                learnaf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2004.12260">
+                <papertitle>Learning to Autofocus</papertitle>
+              </a>
+              <br>
+              <a href="">Charles Herrmann</a>,
+              <a href="">Richard Strong Bowen</a>,
+              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
+              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
+              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://www.cs.cornell.edu/~rdz/index.htm">Ramin Zabih</a>,
+              <br>
+              <em>CVPR</em>, 2020  
+              <br>
+              <a href="https://arxiv.org/abs/2004.12260">arXiv</a>
+              <p></p>
+              <p>Machine learning can be used to train cameras to autofocus (which is not the same problem as "depth from defocus").</p>
+            </td>
+          </tr>  
+
     
           <tr onmouseout="lighthouse_stop()" onmouseover="lighthouse_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -255,7 +295,8 @@
               </a>
               <br>
               <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
-              <a href="http://nealwadhwa.com">Neal Wadhwa</a>, Sameer Ansari,
+              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
+              <a href="">Sameer Ansari,</a>,
               <strong>Jonathan T. Barron</strong>
               <br>
               <em>ICCV</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
@@ -290,7 +331,8 @@
               </a>
               <br>
               <a href="http://kevinkingo.com/">Tiancheng Sun</a>,
-              <strong>Jonathan T. Barron</strong>, Yun-Ta Tsai,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,
               <a href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>, Xueming Yu,
               <a href="http://ict.usc.edu/profile/graham-fyffe/">Graham Fyffe</a>, Christoph Rhemann, Jay Busch,
               <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
@@ -737,7 +779,8 @@
                 <papertitle>Fast Fourier Color Constancy</papertitle>
               </a>
               <br>
-              <strong>Jonathan T. Barron</strong>, Yun-Ta Tsai
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,
               <br>
               <em>CVPR</em>, 2017
               <br>
