@@ -109,6 +109,46 @@
             </td>
           </tr> 
 
+          <tr onmouseout="porshadmanip_stop()" onmouseover="porshadmanip_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='porshadmanip_image'>
+                  <img src='images/porshadmanip_after.jpg' width="160"></div>
+                <img src='images/porshadmanip_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function porshadmanip_start() {
+                  document.getElementById('porshadmanip_image').style.opacity = "1";
+                }
+
+                function porshadmanip_stop() {
+                  document.getElementById('porshadmanip_image').style.opacity = "0";
+                }
+                porshadmanip_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~cecilia77/project-pages/portrait">
+                <papertitle>Portrait Shadow Manipulation</papertitle>
+              </a>
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~cecilia77/">Xuaner (Cecilia) Zhang</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,
+              <a href="https://www.linkedin.com/in/rohit-pandey-bab10b7a/">Rohit Pandey</a>,
+              <a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
+              <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
+              <a href="http://graphics.stanford.edu/~dejacobs/">David E. Jacobs</a>
+              <br>
+              <em>SIGGRAPH</em>, 2020  
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~cecilia77/project-pages/portrait">project page</a> / 
+              <a href="https://www.youtube.com/watch?v=M_qYTXhzyac">video</a>
+              <p></p>
+              <p>Networks can be trained to remove shadows cast on human faces and to soften harsh lighting.</p>
+            </td>
+          </tr>  
+
           <tr onmouseout="learnaf_stop()" onmouseover="learnaf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -138,7 +178,7 @@
               <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
               <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,
               <strong>Jonathan T. Barron</strong>,
-              <a href="http://www.cs.cornell.edu/~rdz/index.htm">Ramin Zabih</a>,
+              <a href="http://www.cs.cornell.edu/~rdz/index.htm">Ramin Zabih</a>
               <br>
               <em>CVPR</em>, 2020  
               <br>
