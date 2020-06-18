@@ -61,6 +61,46 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="uflow_stop()" onmouseover="uflow_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='uflow_image'>
+                  <img src='images/uflow_after.png' width="160"></div>
+                <img src='images/uflow_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function uflow_start() {
+                  document.getElementById('uflow_image').style.opacity = "1";
+                }
+
+                function uflow_stop() {
+                  document.getElementById('uflow_image').style.opacity = "0";
+                }
+                uflow_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2006.04902">
+                <papertitle>What Matters in Unsupervised Optical Flow</papertitle>
+              </a>
+              <br>
+              <a href="http://ricojonschkowski.com/">Rico Jonschkowski</a>,
+              <a href="https://www.linkedin.com/in/austin-charles-stone-1ba33b138/">Austin Stone</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://research.google/people/ArielGordon/">Ariel Gordon</a>,
+              <a href="https://www.linkedin.com/in/kurt-konolige/">Kurt Konolige</a>,
+              <a href="https://research.google/people/AneliaAngelova/">Anelia Angelova</a>,
+              <br>
+              <em>arXiv</em>, 2020  
+              <br>
+              <a href="https://github.com/google-research/google-research/tree/master/uflow">code</a>
+              <br>
+              <p></p>
+              <p>
+              Extensive experimentation yields a simple optical flow technique that is trained on only unlabeled videos, but still works as well as supervised techniques.
+              </p>
+            </td>
+          </tr>  
     
           <tr onmouseout="nerf_stop()" onmouseover="nerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
