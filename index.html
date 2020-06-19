@@ -61,6 +61,53 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="ff_stop()" onmouseover="ff_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ff_image'>
+                  <img src='images/lion_ff.jpg' width="160"></div>
+                <img src='images/lion_none.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function ff_start() {
+                  document.getElementById('ff_image').style.opacity = "1";
+                }
+
+                function ff_stop() {
+                  document.getElementById('ff_image').style.opacity = "0";
+                }
+                ff_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="fourfeat/index.html">
+                <papertitle>Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains</papertitle>
+              </a>
+              <br>
+              <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="https://people.eecs.berkeley.edu/~sfk/">Sara Fridovich-Keil</a>,
+              <a href="https://www.linkedin.com/in/nithinraghavan">Nithin Raghavan</a>,
+              <a href="https://scholar.google.com/citations?user=lvA86MYAAAAJ&hl=en">Utkarsh Singhal</a>,
+              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
+              <br>
+        <em>arXiv</em>, 2020  
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/index.html">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2006.10739">arXiv</a>
+        /
+              <a href="https://github.com/tancik/fourier-feature-networks">code</a>
+              <p></p>
+              <p>Composing neural networks with a simple Fourier feature mapping allows them to learn detailed high-frequency functions.</p>
+            </td>
+          </tr> 
+    
+    
           <tr onmouseout="uflow_stop()" onmouseover="uflow_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
