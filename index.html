@@ -109,6 +109,43 @@
               <p>Composing neural networks with a simple Fourier feature mapping allows them to learn detailed high-frequency functions.</p>
             </td>
           </tr> 
+
+    
+          <tr onmouseout="thresh_stop()" onmouseover="thresh_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='thresh_image'>
+                  <img src='images/thresh_after.png' width="160"></div>
+                <img src='images/thresh_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function thresh_start() {
+                  document.getElementById('thresh_image').style.opacity = "1";
+                }
+
+                function thresh_stop() {
+                  document.getElementById('thresh_image').style.opacity = "0";
+                }
+                thresh_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2007.07350">
+                <papertitle>A Generalization of Otsu's Method and Minimum Error Thresholding</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan T. Barron</strong>,
+              <br>
+              <em>ECCV</em>, 2020 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>
+              <br>
+              <a href="https://github.com/jonbarron/hist_thresh">code</a>
+              <br>
+              <p></p>
+              <p>
+              A simple and fast Bayesian algorithm that can be written in ~10 lines of code outperforms or matches giant CNNs on image binarization, and unifies three classic thresholding algorithms.
+              </p>
+            </td>
+          </tr>  
     
     
           <tr onmouseout="uflow_stop()" onmouseover="uflow_start()">
