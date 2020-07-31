@@ -364,6 +364,46 @@
             </td>
           </tr>  
 
+          <tr onmouseout="skyopt_stop()" onmouseover="skyopt_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='skyopt_image'>
+                  <img src='images/skyopt_after.jpg' width="160"></div>
+                <img src='images/skyopt_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function skyopt_start() {
+                  document.getElementById('skyopt_image').style.opacity = "1";
+                }
+
+                function skyopt_stop() {
+                  document.getElementById('skyopt_image').style.opacity = "0";
+                }
+                skyopt_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2006.10172">
+                <papertitle>Sky Optimization: Semantically Aware Image Processing of Skies in Low-Light Photography</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/corp/view/orly-liba/">Orly Liba</a>,
+              <a href="https://www.linkedin.com/in/longqicai/en-us">Longqi Cai</a>,
+              <a href="https://ai.google/research/people/105312/">Yun-Ta Tsai</a>,
+              <a href="https://research.google/people/EladEban/">Elad Eban</a>,
+              <a href="https://research.google/people/YairMovshovitzAttias/">Yair Movshovitz-Attias</a>,
+              <a href="https://scholar.google.com/citations?user=2jXxOYQAAAAJ">Yael Pritch</a>,
+              <a href="https://www.linkedin.com/in/huizhong-chen-00776432">Huizhong Chen</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>NTIRE CVPRW</em>, 2020  
+              <br>
+              <a href="https://google.github.io/sky-optimization/">project page</a>
+              <p></p>
+              <p>If you want to photograph the sky, it helps to know where the sky is.</p>
+            </td>
+          </tr>  
+
           <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
