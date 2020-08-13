@@ -64,6 +64,47 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="nerfw_stop()" onmouseover="nerfw_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfw_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerfw_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerfw_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfw_start() {
+                  document.getElementById('nerfw_image').style.opacity = "1";
+                }
+
+                function nerfw_stop() {
+                  document.getElementById('nerfw_image').style.opacity = "0";
+                }
+                nerfw_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://nerf-w.github.io/">
+                <papertitle>NeRF in the Wild: Neural Radiance Fields for Unconstrained Photo Collections</papertitle>
+              </a>
+              <br>
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla*</a>,
+              <a href="https://scholar.google.com/citations?user=g98QcZUAAAAJ&hl=en">Noha Radwan*</a>,
+              <a href="https://research.google/people/105804/">Mehdi S. M. Sajjadi*</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>,
+              <a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth</a>
+              <br>
+              <em>arXiv</em>, 2020  
+              <br>
+              <a href="https://nerf-w.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2008.02268">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=yPKIxoN2Vf0">video</a>
+              <p></p>
+              <p>Letting NeRF reason about occluders and appearance variation produces photorealistic view synthesis using only unstructured internet photos.</p>
+            </td>
+          </tr> 
 
           <tr onmouseout="ff_stop()" onmouseover="ff_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -98,12 +139,10 @@
               <strong>Jonathan T. Barron</strong>,
               <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
               <br>
-        <em>arXiv</em>, 2020  
+              <em>arXiv</em>, 2020  
               <br>
-              <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2006.10739">arXiv</a>
-        /
+              <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/">project page</a> /
+              <a href="https://arxiv.org/abs/2006.10739">arXiv</a> /
               <a href="https://github.com/tancik/fourier-feature-networks">code</a>
               <p></p>
               <p>Composing neural networks with a simple Fourier feature mapping allows them to learn detailed high-frequency functions.</p>
