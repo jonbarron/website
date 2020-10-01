@@ -1,4 +1,22 @@
 /* latin-ext */
+
+.animated-text span {
+  display: none;
+  line-height: 1;
+}
+.animated-text span.active {
+  display: inline-block;
+}
+.animated-text:after {
+  content: ".";
+  display: inline-block;
+  width: 10px;
+  text-indent: 0;
+  /* overflow: hidden; */
+  background:var(--col-icon);
+  animation: blink 0.3s infinite alternate;
+}
+
 @font-face {
   font-family: 'Lato';
   font-style: italic;
