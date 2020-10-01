@@ -1,3 +1,100 @@
+/*Social icons*/
+
+:root {
+  --link-size: 64px;
+  --trans-props: all 0.3s ease;
+  --link-size-footer-b: 40px;
+  --link-size-footer-s: 30px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.social-icon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: var(--bg-icon);
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px var(--shadow-col);
+  text-decoration: none;
+  transition: var(--trans-props);
+}
+.social-icon i {
+  margin: auto;
+  font-size: 24px;
+  color: var(--col-icon);
+  z-index: 1;
+  transition: var(--trans-props);
+}
+
+.social-icon:after {
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-props);
+}
+
+.social-icon.twitter:after {
+  background-color: #1da1f2;
+  box-shadow: var(--twitter);
+}
+
+.social-icon.github:after {
+  background-color: #24292e;
+  box-shadow: var(--github);
+}
+
+.social-icon.linkedin:after {
+  background-color: #0e76a8;
+  box-shadow: var(--linkedin);
+}
+
+.social-icon.kaggle:after {
+  background-color: #41aff3;
+  box-shadow: var(--kaggle);
+}
+
+.social-icon.dribbble:after {
+  background-color: #ea4c89;
+  box-shadow: var(--kaggle);
+}
+
+.social-icon.medium:after {
+  background-color: #00ab6c;
+  box-shadow: var(--medium);
+}
+
+/*** Social Icon Animations ***/
+
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+}
+
+.social-icon:hover i {
+  color: #fff;
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+a:hover {
+  color: transparent;
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Lato';
