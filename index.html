@@ -15,13 +15,36 @@
   
   <meta name="author" content="Jon Barron">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+   <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/seal_icon.png">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#darkbutton").click(function () {
+          $("body").toggleClass("darkmode");
+          $("a").toggleClass("acolor");
+          $(".dark").toggleClass("darked");
+        });
+      });
+    </script>
 </head>
 
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+     <div
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    cursor: pointer;
+                  "
+                  id="darkbutton"
+                >
+                  <i class="material-icons">brightness_high</i>
+                </div>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -45,7 +68,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/JonBarron.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/JonBarron_circle.jpg" class="hoverZoomLink"></a>
+              <a href="images/JonBarron.jpg" style="border-radius: 50%"><img style="width:100%;max-width:100%;border-radius: 50%" alt="profile photo" src="images/JonBarron_circle.jpg" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
