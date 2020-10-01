@@ -1,3 +1,4 @@
-# Hacktoberfest 2020 T-Shirt Seekers: Small aesthetic changes to this repo will be reported and flagged as spam.
+# Hacktoberfest 2020 T-Shirt Seekers: Small Aesthetic Changes To This Repo Will Be Reported And Flagged As Spam
+# Hacktoberfest it Amizing Fest 
 
-# This repo is only open to the public so that people who clone it for personal use can add a link to their downstream website. All other PRs will be rejected.
+# This Repo Is Only Open To The Public So That People Who Clone It For Personal Use Can Add A Link To Their Downstream Website. All Other PRs will Be Rejected.
