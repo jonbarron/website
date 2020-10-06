@@ -63,6 +63,48 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dualrefl_image'>
+                  <img src='images/dualrefl_after.jpg' width="160"></div>
+                <img src='images/dualrefl_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function dualrefl_start() {
+                  document.getElementById('dualrefl_image').style.opacity = "1";
+                }
+
+                function dualrefl_stop() {
+                  document.getElementById('dualrefl_image').style.opacity = "0";
+                }
+                dualrefl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://sniklaus.com/dualref">
+                <papertitle>Learned Dual-View Reflection Removal</papertitle>
+              </a>
+              <br>
+              <a href="http://sniklaus.com/welcome">Simon Niklaus</a>,
+              <a href="https://people.eecs.berkeley.edu/~cecilia77/">Xuaner (Cecilia) Zhang</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
+              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
+              <a href="http://web.cecs.pdx.edu/~fliu/">Feng Liu</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <br>
+              <em>arXiv</em>, 2020  
+              <br>
+              <a href="http://sniklaus.com/dualref">project page</a> /
+              <a href="https://arxiv.org/abs/2010.00702">arXiv</a>
+              <p></p>
+              <p>
+                Reflections and the things behind them often exhibit parallax, and this lets you remove reflections from stereo pairs.
+              </p>
+            </td>
+          </tr> 
+
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
