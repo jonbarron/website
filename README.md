@@ -1,3 +1,1 @@
-# Hacktoberfest 2020 T-Shirt Seekers: Small aesthetic changes to this repo will be reported and flagged as spam, and this will make you ineligible to win any prize.
-
-# This repo is only open to the public so that people who clone it for personal use can add a link to their downstream website. All other PRs will be rejected.
+This is the source code to Jon Barron's public academic website: https://jonbarron.info/. You are welcome to clone this code for your own personal use, just please attribute the source to the original website or to this repo. If you do clone this website, feel free to add an attribution link to your own downstream website in index.html if you want.
