@@ -53,6 +53,44 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="c5_stop()" onmouseover="c5_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='c5_image'>
+                  <img src='images/c5_after.jpg' width="160"></div>
+                <img src='images/c5_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function c5_start() {
+                  document.getElementById('c5_image').style.opacity = "1";
+                }
+
+                function c5_stop() {
+                  document.getElementById('c5_image').style.opacity = "0";
+                }
+                c5_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2011.11890">
+                <papertitle>Cross-Camera Convolutional Color Constancy</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/corp/view/mafifi">Mahmoud Afifi</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://www.chloelegendre.com/">Chloe LeGendre</a>,
+              <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
+              <a href="https://www.linkedin.com/in/fbleibel/">Francois Bleibel</a>
+              <br>
+              <em>arXiv</em>, 2020  
+              <br>
+              <p></p>
+              <p>
+                With some extra (unlabeled) test-set images, you can build a hypernetwork that calibrates itself at test time to previously-unseen cameras.
+              </p>
+            </td>
+          </tr> 
+
 
           <tr onmouseout="lssr_stop()" onmouseover="lssr_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
