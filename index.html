@@ -100,6 +100,46 @@
             </td>
           </tr> 
 
+          <tr onmouseout="flare_stop()" onmouseover="flare_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='flare_image'>
+                  <img src='images/flare_after.jpg' width="160"></div>
+                <img src='images/flare_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function flare_start() {
+                  document.getElementById('flare_image').style.opacity = "1";
+                }
+
+                function flare_stop() {
+                  document.getElementById('flare_image').style.opacity = "0";
+                }
+                flare_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2011.12485">
+                <papertitle>Single-Image Lens Flare Removal</papertitle>
+              </a>
+              <br>
+              <a href="http://yicheng.rice.edu/">Yicheng Wu</a>,
+              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+              <a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>arXiv</em>, 2020  
+              <br>
+              <p></p>
+              <p>
+                Simulating the optics of a camera's lens lets you train a model that removes lens flare from a single image.
+              </p>
+            </td>
+          </tr> 
+
           <tr onmouseout="c5_stop()" onmouseover="c5_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
