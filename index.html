@@ -55,6 +55,94 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerv_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/hotdog.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/hotdog.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerv_start() {
+                  document.getElementById('nerv_image').style.opacity = "1";
+                }
+
+                function nerv_stop() {
+                  document.getElementById('nerv_image').style.opacity = "0";
+                }
+                nerv_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+                <papertitle>NeRV: Neural Reflectance and Visibility Fields for Relighting and View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
+              <a href="https://boyangdeng.com/">Boyang Deng</a>,
+              <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              </br>
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">project page</a> /
+              <a href="https://www.youtube.com/watch?v=4XyDdvhhjVo">video</a> /
+              <a href="https://arxiv.org/abs/2012.03927">arXiv</a>
+              <p></p>
+              <p>We recover relightable NeRF-like models using neural approximations of expensive visibility integrals, so we can simulate complex volumetric light transport during training.</p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="winr_stop()" onmouseover="winr_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='winr_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/notre_160.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/notre.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function winr_start() {
+                  document.getElementById('winr_image').style.opacity = "1";
+                }
+                function winr_stop() {
+                  document.getElementById('winr_image').style.opacity = "0";
+                }
+                winr_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://www.matthewtancik.com/learnit">
+                <papertitle>Learned Initializations for Optimizing Coordinate-Based Neural Representations</papertitle>
+              </a>
+              <br>
+              <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
+              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="https://www.linkedin.com/in/terrance-wang/">Terrance Wang</a>,
+              <a href="https://www.linkedin.com/in/divi-schmidt-262044180/">Divi Schmidt</a>,
+              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
+              </br>
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              <a href="http://www.matthewtancik.com/learnit">project page</a> /
+              <a href="https://www.youtube.com/watch?v=A-r9itCzcyo">video</a> /
+              <a href="https://arxiv.org/abs/2012.02189">arXiv</a> 
+              <p></p>
+              <p>We use meta-learning to find weight initializations for coordinate-based MLPs that allow them to converge faster and generalize better.</p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -68,7 +156,6 @@
                 function nerfie_start() {
                   document.getElementById('nerfie_image').style.opacity = "1";
                 }
-
                 function nerfie_stop() {
                   document.getElementById('nerfie_image').style.opacity = "0";
                 }
