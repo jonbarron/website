@@ -54,6 +54,52 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerd_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerd_160.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerd_160.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerd_start() {
+                  document.getElementById('nerd_image').style.opacity = "1";
+                }
+
+                function nerd_stop() {
+                  document.getElementById('nerd_image').style.opacity = "0";
+                }
+                nerd_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-nerd/">
+                <papertitle>NeRD: Neural Reflectance Decomposition from Image Collections</papertitle>
+              </a>
+              <br>
+
+              <a href="https://markboss.me">Mark Boss</a>, 
+              <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/raphael-braun/">Raphael Braun</a>,
+              <a href="https://varunjampani.github.io">Varun Jampani</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://people.csail.mit.edu/celiu/">Ce Liu</a>,
+              <a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/computergrafik/computer-graphics/staff/prof-dr-ing-hendrik-lensch/">Hendrik P. A. Lensch</a>
+              <br>
+              <em>arXiv</em>, 2020
+              <br>
+              <a href="https://markboss.me/publication/2021-nerd/">project page</a> /
+              <a href="https://www.youtube.com/watch?v=JL-qMTXw9VU">video</a> /
+              <a href="https://github.com/cgtuebingen/NeRD-Neural-Reflectance-Decomposition">code</a> /
+              <a href="https://arxiv.org/abs/2012.03918">arXiv</a>
+              <p></p>
+              <p>
+              A NeRF-like model that can decompose (and mesh) objects with non-Lambertian reflectances, complex geometry, and unknown illumination.
+              </p>
+            </td>
+          </tr>
+
 
           <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
