@@ -54,6 +54,50 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='inerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/inerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/inerf_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function inerf_start() {
+                  document.getElementById('inerf_image').style.opacity = "1";
+                }
+                function inerf_stop() {
+                  document.getElementById('inerf_image').style.opacity = "0";
+                }
+                inerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://yenchenlin.me/inerf/">
+                <papertitle>iNeRF: Inverting Neural Radiance Fields for Pose Estimation</papertitle>
+              </a>
+              <br>
+              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
+              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
+              <strong>Jonathan T. Barron</strong>, 
+              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>, <br>
+              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>
+              <br>
+              <em>arXiv</em>, 2020  
+              <br>
+              <a href="http://yenchenlin.me/inerf/">project page</a> /
+              <a href="https://arxiv.org/abs/2012.05877">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=eQuCZaQN0tI">video</a>
+              <p></p>
+              <p>Given an image of an object and a NeRF of that object, you can estimate that object's pose.
+              </p>
+            </td>
+          </tr> 
+
+
           <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
