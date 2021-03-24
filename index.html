@@ -54,6 +54,50 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mipnerf_ipe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mipnerf_ipe.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mipnerf_start() {
+                  document.getElementById('mipnerf_image').style.opacity = "1";
+                }
+
+                function mipnerf_stop() {
+                  document.getElementById('mipnerf_image').style.opacity = "0";
+                }
+                mipnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jonbarron.info/mipnerf">
+                <papertitle>Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>, <br>
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+              <br>
+              <em>arXiv</em>, 2021 
+              <br>
+              <a href="http://jonbarron.info/mipnerf">project page</a>
+              /
+              <a href="TODO">arXiv</a>
+              /
+              <a href="TODO">video</a>
+              <p></p>
+              <p>NeRF is aliased, but we can anti-alias it by prefiltering positional encoding.</p>
+            </td>
+          </tr> 
+
           <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -128,7 +172,7 @@
               <a href="https://boyangdeng.com/">Boyang Deng</a>,
               <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>, <br>
               <a href="http://matthewtancik.com/">Matthew Tancik</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
               <strong>Jonathan T. Barron</strong>
               <br>
               <em>CVPR</em>, 2021
@@ -167,7 +211,7 @@
               </a>
               <br>
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
               <a href="https://www.linkedin.com/in/terrance-wang/">Terrance Wang</a>,
               <a href="https://www.linkedin.com/in/divi-schmidt-262044180/">Divi Schmidt</a>, <br>
               <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
@@ -595,13 +639,13 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/index.html">
+              <a href="https://bmild.github.io/fourfeat/index.html">
                 <papertitle>Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains</papertitle>
               </a>
               <br>
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
               <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
               <a href="https://people.eecs.berkeley.edu/~sfk/">Sara Fridovich-Keil</a>,
               <a href="https://www.linkedin.com/in/nithinraghavan">Nithin Raghavan</a>,
               <a href="https://scholar.google.com/citations?user=lvA86MYAAAAJ&hl=en">Utkarsh Singhal</a>,
@@ -611,7 +655,7 @@
               <br>
               <em>NeurIPS</em>, 2020 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~bmild/fourfeat/">project page</a> /
+              <a href="https://bmild.github.io/fourfeat/">project page</a> /
               video: <a href="https://www.youtube.com/watch?v=nVA6K6Sn2S4">3 min</a>, <a href="https://www.youtube.com/watch?v=iKyIJ_EtSkw">10 min</a> /
               <a href="https://arxiv.org/abs/2006.10739">arXiv</a> /
               <a href="https://github.com/tancik/fourier-feature-networks">code</a>
@@ -726,7 +770,7 @@
                 <papertitle>NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</papertitle>
               </a>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
               <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
               <strong>Jonathan T. Barron</strong>,
@@ -856,7 +900,7 @@
               </a>
               <br>
               <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
               <a href="http://matthewtancik.com/">Matthew Tancik</a>,
               <strong>Jonathan T. Barron</strong>,
               <a href="https://research.google/people/RichardTucker/">Richard Tucker</a>,
@@ -1174,7 +1218,7 @@
               </a>
               <br>
               <a href="http://timothybrooks.com/">Tim Brooks</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
               <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
               <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
               <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
@@ -1399,7 +1443,7 @@
                 <papertitle>Burst Denoising with Kernel Prediction Networks</papertitle>
               </a>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
               <strong>Jonathan T. Barron</strong>,
               <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
               <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
@@ -2286,7 +2330,7 @@
                 <a href="http://www.seas.ucla.edu/~sahba/">&#10025;</a>
                 <a href="https://pages.jh.edu/~falambe1/">&#10025;</a>
                 <a href="http://www.dcc.fc.up.pt/~vitor.cerqueira/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~bmild/">&#10025;</a>
+                <a href="https://bmild.github.io/">&#10025;</a>
                 <a href="https://web.eecs.umich.edu/~subh/">&#10025;</a>
                 <a href="http://www.cs.utexas.edu/~pgoyal/">&#10025;</a>
                 <a href="http://www.eecs.wsu.edu/~fchowdhu/">&#10025;</a>
