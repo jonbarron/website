@@ -54,6 +54,52 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerfbake_15.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerfbake_160.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfbake_start() {
+                  document.getElementById('nerfbake_image').style.opacity = "1";
+                }
+
+                function nerfbake_stop() {
+                  document.getElementById('nerfbake_image').style.opacity = "0";
+                }
+                nerfbake_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://nerf.live">
+              <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
+              <br>
+              <em>arXiv</em>, 2021 
+              <br>
+              <a href="http://nerf.live">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2103.14645">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
+              /
+              <a href="https://nerf.live/#demos">demo</a>
+              <p></p>
+              <p>Baking a trained NeRF into a sparse voxel grid of colors and features lets you render it in real-time in your browser.</p>
+            </td>
+
+
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
