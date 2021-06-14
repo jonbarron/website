@@ -45,9 +45,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in computer vision, machine learning, optimization, and image processing.
-                Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images.
-                Representative papers are <span class="highlight">highlighted</span>.
+                I'm interested in computer vision, machine learning, optimization, and image processing. Much of my research is about inferring the physical world (shape, motion, color, light, etc) from images. Representative papers are <span class="highlight">highlighted</span>.
               </p>
             </td>
           </tr>
@@ -55,50 +53,47 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+          <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfbake_15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfbake_160.png' width="160">
+                <div class="two" id='nerfactor_image'>
+                  <img src='images/nerfactor_after.png' width="160"></div>
+                <img src='images/nerfactor_before.png' width="160">
               </div>
               <script type="text/javascript">
-                function nerfbake_start() {
-                  document.getElementById('nerfbake_image').style.opacity = "1";
+                function nerfactor_start() {
+                  document.getElementById('nerfactor_image').style.opacity = "1";
                 }
 
-                function nerfbake_stop() {
-                  document.getElementById('nerfbake_image').style.opacity = "0";
+                function nerfactor_stop() {
+                  document.getElementById('nerfactor_image').style.opacity = "0";
                 }
-                nerfbake_stop()
+                nerfactor_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://nerf.live">
-              <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
+              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">
+              <papertitle>NeRFactor: Neural Factorization of Shape <br> and Reflectance
+Under an Unknown Illumination</papertitle>
               </a>
               <br>
-              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
               <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
+              <a href="https://boyangdeng.com/">Boyang Deng</a>,<br>
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
+              <a href="http://billf.mit.edu/">William T. Freeman</a>,
+							<strong>Jonathan T. Barron</strong>,
               <br>
               <em>arXiv</em>, 2021 
               <br>
-              <a href="http://nerf.live">project page</a>
+              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">project page</a>
               /
-              <a href="https://arxiv.org/abs/2103.14645">arXiv</a>
+              <a href="https://arxiv.org/abs/2106.01970">arXiv</a>
               /
-              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
-              /
-              <a href="https://nerf.live/#demos">demo</a>
+              <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a>
               <p></p>
-              <p>Baking a trained NeRF into a sparse voxel grid of colors and features lets you render it in real-time in your browser.</p>
+              <p>By placing priors on illumination and material, we can recover NeRF-like models of the intrinsics of a scene from a single multi-image capture.</p>
             </td>
-
 
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -146,6 +141,50 @@
             </td>
           </tr> 
 
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerfbake_15.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerfbake_160.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfbake_start() {
+                  document.getElementById('nerfbake_image').style.opacity = "1";
+                }
+
+                function nerfbake_stop() {
+                  document.getElementById('nerfbake_image').style.opacity = "0";
+                }
+                nerfbake_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://nerf.live">
+              <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
+              <br>
+              <em>arXiv</em>, 2021 
+              <br>
+              <a href="http://nerf.live">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2103.14645">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
+              /
+              <a href="https://nerf.live/#demos">demo</a>
+              <p></p>
+              <p>Baking a trained NeRF into a sparse voxel grid of colors and features lets you render it in real-time in your browser.</p>
+            </td>
+
           <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -174,7 +213,7 @@
               <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a>,
               <a href="https://www.linkedin.com/in/zhicheng-wang-96116897/">Zhicheng Wang</a>,
               <a href="https://www.kylegenova.com/">Kyle Genova</a>,
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
               <a href="https://scholar.google.com/citations?user=Rh9T3EcAAAAJ&hl=en">Howard Zhou</a>, <br>
               <strong>Jonathan T. Barron</strong>, 
               <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
@@ -213,11 +252,11 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">
+              <a href="https://pratulsrinivasan.github.io/nerv/">
                 <papertitle>NeRV: Neural Reflection and Visibility Fields for Relighting and View Synthesis</papertitle>
               </a>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
               <a href="https://boyangdeng.com/">Boyang Deng</a>,
               <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>, <br>
               <a href="http://matthewtancik.com/">Matthew Tancik</a>,
@@ -226,7 +265,7 @@
               <br>
               <em>CVPR</em>, 2021
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/nerv/">project page</a> /
+              <a href="https://pratulsrinivasan.github.io/nerv/">project page</a> /
               <a href="https://www.youtube.com/watch?v=4XyDdvhhjVo">video</a> /
               <a href="https://arxiv.org/abs/2012.03927">arXiv</a>
               <p></p>
@@ -263,7 +302,7 @@
               <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
               <a href="https://www.linkedin.com/in/terrance-wang/">Terrance Wang</a>,
               <a href="https://www.linkedin.com/in/divi-schmidt-262044180/">Divi Schmidt</a>, <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
               <strong>Jonathan T. Barron</strong>,
               <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
               <br>
@@ -693,7 +732,7 @@
               </a>
               <br>
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan*</a>,
               <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
               <a href="https://people.eecs.berkeley.edu/~sfk/">Sara Fridovich-Keil</a>,
               <a href="https://www.linkedin.com/in/nithinraghavan">Nithin Raghavan</a>,
@@ -820,7 +859,7 @@
               </a>
               <br>
               <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan*</a>,
               <a href="http://matthewtancik.com/">Matthew Tancik*</a>,
               <strong>Jonathan T. Barron</strong>,
               <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
@@ -946,11 +985,11 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">
+              <a href="https://pratulsrinivasan.github.io/lighthouse/">
                 <papertitle>Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination</papertitle>
               </a>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan*</a>,
               <a href="https://bmild.github.io/">Ben Mildenhall*</a>,
               <a href="http://matthewtancik.com/">Matthew Tancik</a>,
               <strong>Jonathan T. Barron</strong>,
@@ -959,7 +998,7 @@
               <br>
         <em>CVPR</em>, 2020  
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/lighthouse/">project page</a>
+              <a href="https://pratulsrinivasan.github.io/lighthouse/">project page</a>
         /
               <a href="https://github.com/pratulsrinivasan/lighthouse">code</a>
         /
@@ -1230,7 +1269,7 @@
                 <papertitle>Pushing the Boundaries of View Extrapolation with Multiplane Images</papertitle>
               </a>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>, Richard Tucker,
+              <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>, Richard Tucker,
               <strong>Jonathan T. Barron</strong>,
               <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
               <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
@@ -1457,7 +1496,7 @@
                 <papertitle>Aperture Supervision for Monocular Depth Estimation</papertitle>
               </a>
               <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
               <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
               <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
               <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
@@ -2576,7 +2615,7 @@
                 <a href="http://people.uncw.edu/dogang/">&#10025;</a>
                 <a href="http://hal9000.space">&#10025;</a>
                 <a href="http://web.stanford.edu/~yjiang05/">&#10025;</a>
-                <a href="https://people.eecs.berkeley.edu/~pratul/">&#10025;</a>
+                <a href="https://pratulsrinivasan.github.io/">&#10025;</a>
                 <a href="http://linuxdeveloper.io">&#10025;</a>
                 <a href="http://umiacs.umd.edu/~kdbrant">&#10025;</a>
                 <a href="https://adityassrana.github.io/blog/about">&#10025;</a>
