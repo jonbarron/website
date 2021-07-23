@@ -52,6 +52,313 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mipnerf_ipe_yellow.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function mipnerf_start() {
+                  document.getElementById('mipnerf_image').style.opacity = "1";
+                }
+
+                function mipnerf_stop() {
+                  document.getElementById('mipnerf_image').style.opacity = "0";
+                }
+                mipnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jonbarron.info/mipnerf">
+                <papertitle>Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>, <br>
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+              <br>
+							<em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="http://jonbarron.info/mipnerf">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2103.13415">arXiv</a>
+              /
+              <a href="https://youtu.be/EpH175PY1A0">video</a>
+							/
+              <a href="https://github.com/google/mipnerf">code</a>
+              <p></p>
+              <p>NeRF is aliased, but we can anti-alias it by casting cones and prefiltering the positional encoding function.</p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerfbake_15.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerfbake_160.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfbake_start() {
+                  document.getElementById('nerfbake_image').style.opacity = "1";
+                }
+
+                function nerfbake_stop() {
+                  document.getElementById('nerfbake_image').style.opacity = "0";
+                }
+                nerfbake_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://nerf.live">
+              <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
+              <br>
+							<em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="http://nerf.live">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2103.14645">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
+              /
+              <a href="https://nerf.live/#demos">demo</a>
+              <p></p>
+              <p>Baking a trained NeRF into a sparse voxel grid of colors and features lets you render it in real-time in your browser.</p>
+            </td>
+
+
+
+          <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfie_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerfie_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerfie_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfie_start() {
+                  document.getElementById('nerfie_image').style.opacity = "1";
+                }
+                function nerfie_stop() {
+                  document.getElementById('nerfie_image').style.opacity = "0";
+                }
+                nerfie_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://nerfies.github.io/">
+                <papertitle>Nerfies: Deformable Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              
+              <a href="https://keunhong.com">Keunhong Park</a>,
+              <a href="https://utkarshsinha.com">Utkarsh Sinha</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a>, <br>
+              <a href="https://www.danbgoldman.com">Dan B Goldman</a>,
+              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>,
+              <a href="http://www.ricardomartinbrualla.com">Ricardo-Martin Brualla</a>
+              <br>
+							<em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <a href="https://nerfies.github.io/">project page</a> /
+              <a href="https://arxiv.org/abs/2011.12948">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA">video</a>
+              <p></p>
+              <p>Building deformation fields into NeRF lets you capture non-rigid subjects, like people.
+              </p>
+            </td>
+          </tr> 
+
+
+          <tr onmouseout="c5_stop()" onmouseover="c5_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='c5_image'>
+                  <img src='images/c5_after.jpg' width="160"></div>
+                <img src='images/c5_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function c5_start() {
+                  document.getElementById('c5_image').style.opacity = "1";
+                }
+
+                function c5_stop() {
+                  document.getElementById('c5_image').style.opacity = "0";
+                }
+                c5_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2011.11890">
+                <papertitle>Cross-Camera Convolutional Color Constancy</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/corp/view/mafifi">Mahmoud Afifi</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://www.chloelegendre.com/">Chloe LeGendre</a>,
+              <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
+              <a href="https://www.linkedin.com/in/fbleibel/">Francois Bleibel</a>
+              <br>
+							<em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+              <br>
+              <p></p>
+              <p>
+                With some extra (unlabeled) test-set images, you can build a hypernetwork that calibrates itself at test time to previously-unseen cameras.
+              </p>
+            </td>
+          </tr> 
+
+
+          <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerd_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/nerd_160.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/nerd_160.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerd_start() {
+                  document.getElementById('nerd_image').style.opacity = "1";
+                }
+
+                function nerd_stop() {
+                  document.getElementById('nerd_image').style.opacity = "0";
+                }
+                nerd_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2021-nerd/">
+                <papertitle>NeRD: Neural Reflectance Decomposition from Image Collections</papertitle>
+              </a>
+              <br>
+
+              <a href="https://markboss.me">Mark Boss</a>, 
+              <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/raphael-braun/">Raphael Braun</a>,
+              <a href="https://varunjampani.github.io">Varun Jampani</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://people.csail.mit.edu/celiu/">Ce Liu</a>,
+              <a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/computergrafik/computer-graphics/staff/prof-dr-ing-hendrik-lensch/">Hendrik P. A. Lensch</a>
+              <br>
+							<em>ICCV</em>, 2021
+              <br>
+              <a href="https://markboss.me/publication/2021-nerd/">project page</a> /
+              <a href="https://www.youtube.com/watch?v=JL-qMTXw9VU">video</a> /
+              <a href="https://github.com/cgtuebingen/NeRD-Neural-Reflectance-Decomposition">code</a> /
+              <a href="https://arxiv.org/abs/2012.03918">arXiv</a>
+              <p></p>
+              <p>
+              A NeRF-like model that can decompose (and mesh) objects with non-Lambertian reflectances, complex geometry, and unknown illumination.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="flare_stop()" onmouseover="flare_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='flare_image'>
+                  <img src='images/flare_after.jpg' width="160"></div>
+                <img src='images/flare_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function flare_start() {
+                  document.getElementById('flare_image').style.opacity = "1";
+                }
+
+                function flare_stop() {
+                  document.getElementById('flare_image').style.opacity = "0";
+                }
+                flare_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2011.12485">
+                <papertitle>How to Train Neural Networks for Flare Removal</papertitle>
+              </a>
+              <br>
+              <a href="http://yicheng.rice.edu/">Yicheng Wu</a>,
+              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>, <br>
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+              <a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+							<em>ICCV</em>, 2021
+              <br>
+              <a href="https://yichengwu.github.io/flare-removal/">project page</a>  / 
+              <a href="https://arxiv.org/abs/2011.12485">arXiv</a> 
+              <p></p>
+              <p>
+                Simulating the optics of a camera's lens lets you train a model that removes lens flare from a single image.
+              </p>
+            </td>
+          </tr> 
+
+
+          <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='inerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/inerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/inerf_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function inerf_start() {
+                  document.getElementById('inerf_image').style.opacity = "1";
+                }
+                function inerf_stop() {
+                  document.getElementById('inerf_image').style.opacity = "0";
+                }
+                inerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://yenchenlin.me/inerf/">
+                <papertitle>iNeRF: Inverting Neural Radiance Fields for Pose Estimation</papertitle>
+              </a>
+              <br>
+              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
+              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
+              <strong>Jonathan T. Barron</strong>,  <br>
+              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
+              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
+              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>
+              <br>
+              <em>IROS</em>, 2021  
+              <br>
+              <a href="http://yenchenlin.me/inerf/">project page</a> /
+              <a href="https://arxiv.org/abs/2012.05877">arXiv</a> /
+              <a href="https://www.youtube.com/watch?v=eQuCZaQN0tI">video</a>
+              <p></p>
+              <p>Given an image of an object and a NeRF of that object, you can estimate that object's pose.
+              </p>
+            </td>
+          </tr> 
+
 
           <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -138,96 +445,6 @@ Under an Unknown Illumination</papertitle>
               <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a>
               <p></p>
               <p>By placing priors on illumination and materials, we can recover NeRF-like models of the intrinsics of a scene from a single multi-image capture.</p>
-            </td>
-
-          <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/mipnerf_ipe_yellow.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function mipnerf_start() {
-                  document.getElementById('mipnerf_image').style.opacity = "1";
-                }
-
-                function mipnerf_stop() {
-                  document.getElementById('mipnerf_image').style.opacity = "0";
-                }
-                mipnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/mipnerf">
-                <papertitle>Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="http://matthewtancik.com/">Matthew Tancik</a>, <br>
-              <a href="https://phogzone.com/">Peter Hedman</a>,
-              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-              <br>
-              <em>arXiv</em>, 2021 
-              <br>
-              <a href="http://jonbarron.info/mipnerf">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2103.13415">arXiv</a>
-              /
-              <a href="https://youtu.be/EpH175PY1A0">video</a>
-							/
-              <a href="https://github.com/google/mipnerf">code</a>
-              <p></p>
-              <p>NeRF is aliased, but we can anti-alias it by casting cones and prefiltering the positional encoding function.</p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfbake_15.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfbake_160.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfbake_start() {
-                  document.getElementById('nerfbake_image').style.opacity = "1";
-                }
-
-                function nerfbake_stop() {
-                  document.getElementById('nerfbake_image').style.opacity = "0";
-                }
-                nerfbake_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://nerf.live">
-              <papertitle>Baking Neural Radiance Fields for Real-Time View Synthesis</papertitle>
-              </a>
-              <br>
-              <a href="https://phogzone.com/">Peter Hedman</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://www.pauldebevec.com/">Paul Debevec</a>
-              <br>
-              <em>arXiv</em>, 2021 
-              <br>
-              <a href="http://nerf.live">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2103.14645">arXiv</a>
-              /
-              <a href="https://www.youtube.com/watch?v=5jKry8n5YO8">video</a>
-              /
-              <a href="https://nerf.live/#demos">demo</a>
-              <p></p>
-              <p>Baking a trained NeRF into a sparse voxel grid of colors and features lets you render it in real-time in your browser.</p>
             </td>
 
           <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
@@ -400,220 +617,6 @@ Under an Unknown Illumination</papertitle>
               <a href="https://www.youtube.com/watch?v=mRAKVQj5LRA">video</a>
               <p></p>
               <p>Letting NeRF reason about occluders and appearance variation produces photorealistic view synthesis using only unstructured internet photos.</p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='inerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/inerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/inerf_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function inerf_start() {
-                  document.getElementById('inerf_image').style.opacity = "1";
-                }
-                function inerf_stop() {
-                  document.getElementById('inerf_image').style.opacity = "0";
-                }
-                inerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://yenchenlin.me/inerf/">
-                <papertitle>iNeRF: Inverting Neural Radiance Fields for Pose Estimation</papertitle>
-              </a>
-              <br>
-              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
-              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
-              <strong>Jonathan T. Barron</strong>,  <br>
-              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
-              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>,
-              <a href="https://scholar.google.com/citations?user=_BPdgV0AAAAJ&hl=en">Tsung-Yi Lin</a>
-              <br>
-              <em>arXiv</em>, 2020  
-              <br>
-              <a href="http://yenchenlin.me/inerf/">project page</a> /
-              <a href="https://arxiv.org/abs/2012.05877">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=eQuCZaQN0tI">video</a>
-              <p></p>
-              <p>Given an image of an object and a NeRF of that object, you can estimate that object's pose.
-              </p>
-            </td>
-          </tr> 
-
-
-          <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerd_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerd_160.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerd_160.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerd_start() {
-                  document.getElementById('nerd_image').style.opacity = "1";
-                }
-
-                function nerd_stop() {
-                  document.getElementById('nerd_image').style.opacity = "0";
-                }
-                nerd_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://markboss.me/publication/2021-nerd/">
-                <papertitle>NeRD: Neural Reflectance Decomposition from Image Collections</papertitle>
-              </a>
-              <br>
-
-              <a href="https://markboss.me">Mark Boss</a>, 
-              <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/raphael-braun/">Raphael Braun</a>,
-              <a href="https://varunjampani.github.io">Varun Jampani</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://people.csail.mit.edu/celiu/">Ce Liu</a>,
-              <a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/computergrafik/computer-graphics/staff/prof-dr-ing-hendrik-lensch/">Hendrik P. A. Lensch</a>
-              <br>
-              <em>arXiv</em>, 2020
-              <br>
-              <a href="https://markboss.me/publication/2021-nerd/">project page</a> /
-              <a href="https://www.youtube.com/watch?v=JL-qMTXw9VU">video</a> /
-              <a href="https://github.com/cgtuebingen/NeRD-Neural-Reflectance-Decomposition">code</a> /
-              <a href="https://arxiv.org/abs/2012.03918">arXiv</a>
-              <p></p>
-              <p>
-              A NeRF-like model that can decompose (and mesh) objects with non-Lambertian reflectances, complex geometry, and unknown illumination.
-              </p>
-            </td>
-          </tr>
-
-
-          <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfie_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/nerfie_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/nerfie_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfie_start() {
-                  document.getElementById('nerfie_image').style.opacity = "1";
-                }
-                function nerfie_stop() {
-                  document.getElementById('nerfie_image').style.opacity = "0";
-                }
-                nerfie_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://nerfies.github.io/">
-                <papertitle>Nerfies: Deformable Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              
-              <a href="https://keunhong.com">Keunhong Park</a>,
-              <a href="https://utkarshsinha.com">Utkarsh Sinha</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://sofienbouaziz.com">Sofien Bouaziz</a>, <br>
-              <a href="https://www.danbgoldman.com">Dan B Goldman</a>,
-              <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>,
-              <a href="http://www.ricardomartinbrualla.com">Ricardo-Martin Brualla</a>
-              <br>
-              <em>arXiv</em>, 2020  
-              <br>
-              <a href="https://nerfies.github.io/">project page</a> /
-              <a href="https://arxiv.org/abs/2011.12948">arXiv</a> /
-              <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA">video</a>
-              <p></p>
-              <p>Building deformation fields into NeRF lets you capture non-rigid subjects, like people.
-              </p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="flare_stop()" onmouseover="flare_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='flare_image'>
-                  <img src='images/flare_after.jpg' width="160"></div>
-                <img src='images/flare_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function flare_start() {
-                  document.getElementById('flare_image').style.opacity = "1";
-                }
-
-                function flare_stop() {
-                  document.getElementById('flare_image').style.opacity = "0";
-                }
-                flare_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2011.12485">
-                <papertitle>Single-Image Lens Flare Removal</papertitle>
-              </a>
-              <br>
-              <a href="http://yicheng.rice.edu/">Yicheng Wu</a>,
-              <a href="https://scholar.google.com/citations?user=BxqV_RsAAAAJ">Qiurui He</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>, <br>
-              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
-              <a href="https://computationalimaging.rice.edu/team/ashok-veeraraghavan/">Ashok Veeraraghavan</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              <em>arXiv</em>, 2020  
-              <br>
-              <a href="https://yichengwu.github.io/flare-removal/">project page</a>  / 
-              <a href="https://arxiv.org/abs/2011.12485">arXiv</a> 
-              <p></p>
-              <p>
-                Simulating the optics of a camera's lens lets you train a model that removes lens flare from a single image.
-              </p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="c5_stop()" onmouseover="c5_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='c5_image'>
-                  <img src='images/c5_after.jpg' width="160"></div>
-                <img src='images/c5_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function c5_start() {
-                  document.getElementById('c5_image').style.opacity = "1";
-                }
-
-                function c5_stop() {
-                  document.getElementById('c5_image').style.opacity = "0";
-                }
-                c5_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2011.11890">
-                <papertitle>Cross-Camera Convolutional Color Constancy</papertitle>
-              </a>
-              <br>
-              <a href="https://sites.google.com/corp/view/mafifi">Mahmoud Afifi</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://www.chloelegendre.com/">Chloe LeGendre</a>,
-              <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
-              <a href="https://www.linkedin.com/in/fbleibel/">Francois Bleibel</a>
-              <br>
-              <em>arXiv</em>, 2020  
-              <br>
-              <p></p>
-              <p>
-                With some extra (unlabeled) test-set images, you can build a hypernetwork that calibrates itself at test time to previously-unseen cameras.
-              </p>
             </td>
           </tr> 
 
