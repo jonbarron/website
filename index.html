@@ -620,51 +620,6 @@ Under an Unknown Illumination</papertitle>
             </td>
           </tr> 
 
-
-          <tr onmouseout="lssr_stop()" onmouseover="lssr_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='lssr_image'>
-                  <img src='images/lssr_after.jpg' width="160"></div>
-                <img src='images/lssr_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function lssr_start() {
-                  document.getElementById('lssr_image').style.opacity = "1";
-                }
-
-                function lssr_stop() {
-                  document.getElementById('lssr_image').style.opacity = "0";
-                }
-                lssr_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIGA20LightstageSuperres/">
-                <papertitle>Light Stage Super-Resolution: Continuous High-Frequency Relighting</papertitle>
-              </a>
-              <br>
-              <a href="http://kevinkingo.com/">Tiancheng Sun</a>,
-              <a href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>
-              <a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
-              <a href="http://www.seanfanello.it/">Sean Fanello</a>,
-              <a href="https://scholar.google.com/citations?user=5D0_pjcAAAAJ&hl=en">Christoph Rhemann</a>,
-              <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
-              <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
-              <br>
-              <em>SIGGRAPH Asia</em>, 2020  
-              <br>
-              <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIGA20LightstageSuperres/">project page</a> / 
-              <a href="https://arxiv.org/abs/2010.08888">arXiv</a>
-              <p></p>
-              <p>
-                Scans for light stages are inherently aliased, but we can use learning to super-resolve them.
-              </p>
-            </td>
-          </tr> 
-
           <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -706,6 +661,7 @@ Under an Unknown Illumination</papertitle>
               </p>
             </td>
           </tr> 
+
 
           <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -755,6 +711,51 @@ Under an Unknown Illumination</papertitle>
               <p>Embedding a convnet within a predefined texture atlas enables simultaneous view synthesis and relighting.</p>
             </td>
           </tr> 
+
+          <tr onmouseout="lssr_stop()" onmouseover="lssr_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='lssr_image'>
+                  <img src='images/lssr_after.jpg' width="160"></div>
+                <img src='images/lssr_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function lssr_start() {
+                  document.getElementById('lssr_image').style.opacity = "1";
+                }
+
+                function lssr_stop() {
+                  document.getElementById('lssr_image').style.opacity = "0";
+                }
+                lssr_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIGA20LightstageSuperres/">
+                <papertitle>Light Stage Super-Resolution: Continuous High-Frequency Relighting</papertitle>
+              </a>
+              <br>
+              <a href="http://kevinkingo.com/">Tiancheng Sun</a>,
+              <a href="https://cseweb.ucsd.edu/~zex014/">Zexiang Xu</a>
+              <a href="http://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
+              <a href="http://www.seanfanello.it/">Sean Fanello</a>,
+              <a href="https://scholar.google.com/citations?user=5D0_pjcAAAAJ&hl=en">Christoph Rhemann</a>,
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
+              <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>
+              <br>
+              <em>SIGGRAPH Asia</em>, 2020  
+              <br>
+              <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIGA20LightstageSuperres/">project page</a> / 
+              <a href="https://arxiv.org/abs/2010.08888">arXiv</a>
+              <p></p>
+              <p>
+                Scans for light stages are inherently aliased, but we can use learning to super-resolve them.
+              </p>
+            </td>
+          </tr> 
+
 
           <tr onmouseout="ff_stop()" onmouseover="ff_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
