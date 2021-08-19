@@ -13,11 +13,12 @@
 </head>
 
 <body>
+  <div class ="background "id="vanta"></div>
   <script src="three.r119.min.js"></script>
   <script src="vanta.net.min.js"></script>
   <script>
   VANTA.NET({
-    el: "#background",
+    el: "#vanta",
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
@@ -25,11 +26,13 @@
     minWidth: 200.00,
     scale: 1.00,
     scaleMobile: 1.00,
-    color: 0xf7558d,
-    backgroundColor: 0x3c2466
+    color: 0xdedede,
+    backgroundColor: 0xffffff,
+    points: 8.00,
+    // maxDistance:15.00,
+    spacing: 20.00
   })
   </script>
-  <div id="background"> </div>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;background-color:#f9f9f9;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
