@@ -52,6 +52,93 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hypernerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/hypernerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/hypernerf_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function hypernerf_start() {
+                  document.getElementById('hypernerf_image').style.opacity = "1";
+                }
+
+                function hypernerf_stop() {
+                  document.getElementById('hypernerf_image').style.opacity = "0";
+                }
+                hypernerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://hypernerf.github.io/">
+                <papertitle>HyperNeRF: A Higher-Dimensional Representation
+for Topologically Varying Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+							<a href="https://keunhong.com">Keunhong Park</a>,
+							<a href="https://utkarshsinha.com">Utkarsh Sinha</a>, 
+							<a href="https://phogzone.com/">Peter Hedman</a>,
+              <strong>Jonathan T. Barron</strong>,
+							<a href="http://sofienbouaziz.com">Sofien Bouaziz</a>, <br>
+							<a href="https://www.danbgoldman.com">Dan B Goldman</a>,
+							<a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a>, 
+							<a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>
+              <br>
+              <em>SIGGRAPH Asia</em>, 2021 
+              <br>
+              <a href="https://hypernerf.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2106.13228">arXiv</a>
+              <p></p>
+              <p>Applying ideas from level set methods to NeRF lets you represent scenes that deform and change shape.</p>
+            </td>
+          </tr> 
+
+          <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfactor_image'>
+                  <img src='images/nerfactor_after.png' width="160"></div>
+                <img src='images/nerfactor_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfactor_start() {
+                  document.getElementById('nerfactor_image').style.opacity = "1";
+                }
+
+                function nerfactor_stop() {
+                  document.getElementById('nerfactor_image').style.opacity = "0";
+                }
+                nerfactor_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">
+              <papertitle>NeRFactor: Neural Factorization of Shape and Reflectance<br>
+Under an Unknown Illumination</papertitle>
+              </a>
+              <br>
+              <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://boyangdeng.com/">Boyang Deng</a>,<br>
+              <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
+              <a href="http://billf.mit.edu/">William T. Freeman</a>,
+							<strong>Jonathan T. Barron</strong>,
+              <br>
+              <em>SIGGRAPH Asia</em>, 2021 
+              <br>
+              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2106.01970">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a>
+              <p></p>
+              <p>By placing priors on illumination and materials, we can recover NeRF-like models of the intrinsics of a scene from a single multi-image capture.</p>
+            </td>
+
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -358,94 +445,6 @@
               </p>
             </td>
           </tr> 
-
-
-          <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='hypernerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/hypernerf_after.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/hypernerf_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function hypernerf_start() {
-                  document.getElementById('hypernerf_image').style.opacity = "1";
-                }
-
-                function hypernerf_stop() {
-                  document.getElementById('hypernerf_image').style.opacity = "0";
-                }
-                hypernerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://hypernerf.github.io/">
-                <papertitle>HyperNeRF: A Higher-Dimensional Representation
-for Topologically Varying Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-							<a href="https://keunhong.com">Keunhong Park</a>,
-							<a href="https://utkarshsinha.com">Utkarsh Sinha</a>, 
-							<a href="https://phogzone.com/">Peter Hedman</a>,
-              <strong>Jonathan T. Barron</strong>,
-							<a href="http://sofienbouaziz.com">Sofien Bouaziz</a>, <br>
-							<a href="https://www.danbgoldman.com">Dan B Goldman</a>,
-							<a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a>, 
-							<a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>
-              <br>
-              <em>arXiv</em>, 2021 
-              <br>
-              <a href="https://hypernerf.github.io/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2106.13228">arXiv</a>
-              <p></p>
-              <p>Applying ideas from level set methods to NeRF lets you represent scenes that deform and change shape.</p>
-            </td>
-          </tr> 
-
-          <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nerfactor_image'>
-                  <img src='images/nerfactor_after.png' width="160"></div>
-                <img src='images/nerfactor_before.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function nerfactor_start() {
-                  document.getElementById('nerfactor_image').style.opacity = "1";
-                }
-
-                function nerfactor_stop() {
-                  document.getElementById('nerfactor_image').style.opacity = "0";
-                }
-                nerfactor_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">
-              <papertitle>NeRFactor: Neural Factorization of Shape and Reflectance<br>
-Under an Unknown Illumination</papertitle>
-              </a>
-              <br>
-              <a href="https://people.csail.mit.edu/xiuming/">Xiuming Zhang</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://boyangdeng.com/">Boyang Deng</a>,<br>
-              <a href="https://www.pauldebevec.com/">Paul Debevec</a>,
-              <a href="http://billf.mit.edu/">William T. Freeman</a>,
-							<strong>Jonathan T. Barron</strong>,
-              <br>
-              <em>arXiv</em>, 2021 
-              <br>
-              <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2106.01970">arXiv</a>
-              /
-              <a href="https://www.youtube.com/watch?v=UUVSPJlwhPg">video</a>
-              <p></p>
-              <p>By placing priors on illumination and materials, we can recover NeRF-like models of the intrinsics of a scene from a single multi-image capture.</p>
-            </td>
 
           <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
