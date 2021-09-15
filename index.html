@@ -138,7 +138,41 @@ Under an Unknown Illumination</papertitle>
               <p></p>
               <p>By placing priors on illumination and materials, we can recover NeRF-like models of the intrinsics of a scene from a single multi-image capture.</p>
             </td>
+						
+          <tr onmouseout="dualfont_stop()" onmouseover="dualfont_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dualfont_image'><img src='images/dualfont_after.png'></div>
+                <img src='images/dualfont_before.png'>
+              </div>
+              <script type="text/javascript">
+                function dualfont_start() {
+                  document.getElementById('dualfont_image').style.opacity = "1";
+                }
 
+                function dualfont_stop() {
+                  document.getElementById('dualfont_image').style.opacity = "0";
+                }
+                dualfont_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2109.06627">
+                <papertitle>Scalable Font Reconstruction with Dual Latent Manifolds</papertitle>
+              </a>
+              <br>
+              <a href="http://www.cs.cmu.edu/~asrivats/">Nikita Srivatsan</a>,
+              <a href="http://siwu.io/">Si Wu</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="http://cseweb.ucsd.edu/~tberg/">Taylor Berg-Kirkpatrick</a>
+              <br>
+              <em>EMNLP</em>, 2021
+              <br>
+              <p></p>
+              <p>VAEs can be used to disentangle a font's style from its content, and to generalize to characters that were never observed during training.</p>
+            </td>
+          </tr>
+					
           <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -1144,7 +1178,7 @@ Under an Unknown Illumination</papertitle>
               <p>By rethinking metering, white balance, and tone mapping, we can take pictures in places too dark for humans to see clearly.</p>
             </td>
           </tr>
-          
+
           <tr onmouseout="font_stop()" onmouseover="font_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
