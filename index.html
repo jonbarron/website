@@ -349,6 +349,48 @@ Under an Unknown Illumination</papertitle>
           </tr> 
 
 
+          <tr onmouseout="dualdefocus_stop()" onmouseover="dualdefocus_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='dualdefocus_image'>
+                  <img src='images/dualdefocus_after.jpg' width="160"></div>
+                <img src='images/dualdefocus_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function dualdefocus_start() {
+                  document.getElementById('dualdefocus_image').style.opacity = "1";
+                }
+
+                function dualdefocus_stop() {
+                  document.getElementById('dualdefocus_image').style.opacity = "0";
+                }
+                dualdefocus_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openaccess.thecvf.com/content/ICCV2021/papers/Xin_Defocus_Map_Estimation_and_Deblurring_From_a_Single_Dual-Pixel_Image_ICCV_2021_paper.pdf">
+                <papertitle>Defocus Map Estimation and Deblurring from a Single Dual-Pixel Image</papertitle>
+              </a>
+              <br>
+              <a href="https://sites.google.com/corp/view/mafifi">Shumian Xin</a>,
+              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <strong>Jonathan T. Barron</strong>, <br>
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+							<a href="https://www.cs.cmu.edu/~igkioule/">Ioannis Gkioulekas</a>,
+              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>
+              <br>
+							<em>ICCV</em>, 2021
+              <br>
+              <p></p>
+              <p>
+                Multiplane images can be used to simultaneously deblur dual-pixel images, despite variable defocus due to depth variation in the scene.
+              </p>
+            </td>
+          </tr> 
+
+
           <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
