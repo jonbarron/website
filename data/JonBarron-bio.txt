@@ -5,6 +5,6 @@ Jitendra Malik, and he received a Honours BSc in Computer Science from the
 University of Toronto in 2007. He received a National Science Foundation
 Graduate Research Fellowship in 2009, the C.V. Ramamoorthy Distinguished
 Research Award in 2013, the PAMI Young Researcher Award in 2020, and the
-ECCV Best Paper Honorable Mention in both 2016 and 2020. His works have
-been selected as a focus paper for TPAMI (2016) and featured as a research
+Best Paper Honorable Mention at ECCV 2016, ECCV 2020, and ICCV 2021. His works
+have been selected as a focus paper for TPAMI (2016) and featured as a research
 highlight by the Communications of the ACM (2022).
