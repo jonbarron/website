@@ -52,6 +52,56 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+          <tr onmouseout="survey_stop()" onmouseover="survey_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='survey_image'>
+                  <img src='images/survey_after.png' width="160"></div>
+                <img src='images/survey_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function survey_start() {
+                  document.getElementById('survey_image').style.opacity = "1";
+                }
+
+                function survey_stop() {
+                  document.getElementById('survey_image').style.opacity = "0";
+                }
+                survey_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2111.05849">
+                <papertitle>Advances in Neural Rendering</papertitle>
+              </a>
+              <br>
+							<a href="https://people.mpi-inf.mpg.de/~atewari/">Ayush Tewari</a>, 
+							<a href="https://justusthies.github.io/">Justus Thies</a>, 
+							<a href="https://bmild.github.io/">Ben Mildenhall</a>, 
+							<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>, 
+							<a href="https://people.mpi-inf.mpg.de/~tretschk/">Edgar Tretschk</a>,
+							<a href="https://homes.cs.washington.edu/~yifan1/">Yifan Wang</a>,
+							<a href="https://christophlassner.de/">Christoph Lassner</a>,
+							<a href="https://vsitzmann.github.io/">Vincent Sitzmann</a>,
+							<a href="http://ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
+							<a href="https://stephenlombardi.github.io/">Stephen Lombardi</a>,
+							<a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>,
+							<a href="https://www.mpi-inf.mpg.de/departments/visual-computing-and-artificial-intelligence">Christian Theobalt</a>,
+							<a href="https://www.niessnerlab.org/">Matthias Niessner</a>,
+							<strong>Jonathan T. Barron</strong>,
+							<a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>,
+							<a href="https://zollhoefer.com/">Michael Zollhoefer</a>,
+							<a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>
+              <br>
+							<em>Arxiv</em>, 2021
+              <br>
+              <p></p>
+              <p>
+              A survey of recent progress in neural rendering.
+              </p>
+            </td>
+          </tr>
+					
           <tr onmouseout="npil_stop()" onmouseover="npil_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
