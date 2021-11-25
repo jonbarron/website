@@ -51,6 +51,53 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/rawnerf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/rawnerf.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function rawnerf_start() {
+                  document.getElementById('rawnerf_image').style.opacity = "1";
+                }
+
+                function rawnerf_stop() {
+                  document.getElementById('rawnerf_image').style.opacity = "0";
+                }
+                rawnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://bmild.github.io/rawnerf/index.html">
+                <papertitle>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</papertitle>
+              </a>
+              <br>
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>, <br>
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+							<em>arXiv</em>, 2021
+              <br>
+              <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
+<!--         /
+              <a href="https://arxiv.org/">arXiv</a> -->
+        /
+              <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
+              <p></p>
+              <p>
+								Properly training NeRF on raw camera data enables HDR view synthesis and bokeh, and outperforms multi-image denoising.</p>
+            </td>
+          </tr> 
+	
+					
+
+
           <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -93,8 +140,7 @@
               <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p>
             </td>
           </tr> 
-					
-					
+
           <tr onmouseout="survey_stop()" onmouseover="survey_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
