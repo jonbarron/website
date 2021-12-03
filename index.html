@@ -51,6 +51,94 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="clipnerf_stop()" onmouseover="clipnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='clipnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/dreamfield_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/dreamfield_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function clipnerf_start() {
+                  document.getElementById('clipnerf_image').style.opacity = "1";
+                }
+
+                function clipnerf_stop() {
+                  document.getElementById('clipnerf_image').style.opacity = "0";
+                }
+                clipnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://ajayj.com/dreamfields">
+                <papertitle>Zero-Shot Text-Guided Object Generation with Dream Fields</papertitle>
+              </a>
+              <br>
+              <a href="https://www.ajayj.com/">Ajay Jain</a>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://people.eecs.berkeley.edu/~pabbeel/">Pieter Abbeel</a>,
+              <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>
+              <br>
+        <em>arXiv</em>, 2021
+              <br>
+              <a href="https://ajayj.com/dreamfields">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2112.01455">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=1Fke6w46tv4">video</a>
+              <p></p>
+              <p>Supervising the CLIP embeddings of NeRF renderings lets us to generate 3D objects from text prompts.</p>
+            </td>
+          </tr> 
+    
+          <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/regnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/regnerf_before.jpeg' width="160">
+              </div>
+              <script type="text/javascript">
+                function regnerf_start() {
+                  document.getElementById('regnerf_image').style.opacity = "1";
+                }
+
+                function regnerf_stop() {
+                  document.getElementById('regnerf_image').style.opacity = "0";
+                }
+                regnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://m-niemeyer.github.io/regnerf/index.html">
+                <papertitle>RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs</papertitle>
+              </a>
+              <br>
+              <a href="https://m-niemeyer.github.io/">Michael Niemeyer</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
+              <a href="https://msmsajjadi.github.io/">Mehdi S. M. Sajjadi</a>, 
+              <a href="http://www.cvlibs.net/">Andreas Geiger</a>,
+              <a href="http://www2.informatik.uni-freiburg.de/~radwann/">Noha Radwan</a>
+              <br>
+        <em>arXiv</em>, 2021
+              <br>
+              <a href="https://m-niemeyer.github.io/regnerf/index.html">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2112.00724">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=QyyyvA4-Kwc">video</a>
+              <p></p>
+              <p>Regularizing unseen views during optimization enables view synthesis from as few as 3 input images.</p>
+            </td>
+          </tr> 
+
           <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -85,8 +173,8 @@
 							<em>arXiv</em>, 2021
               <br>
               <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
-<!--         /
-              <a href="https://arxiv.org/">arXiv</a> -->
+        /
+              <a href="https://arxiv.org/abs/2111.13679">arXiv</a>
         /
               <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
               <p></p>
