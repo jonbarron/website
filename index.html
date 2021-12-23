@@ -51,6 +51,48 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/mip360_sat.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/mip360_sat.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mip360_start() {
+                  document.getElementById('mip360_image').style.opacity = "1";
+                }
+
+                function mip360_stop() {
+                  document.getElementById('mip360_image').style.opacity = "0";
+                }
+                mip360_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="http://jonbarron.info/mipnerf360">
+                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
+              </a>
+              <br>
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a>
+              <br>
+							<em>arXiv</em>, 2021
+              <br>
+              <a href="http://jonbarron.info/mipnerf360">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
+              /
+              <a href="https://youtu.be/zBSH-k9GbV4">video</a>
+              <p></p>
+              <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p>
+            </td>
+          </tr> 
 
     <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -92,10 +134,143 @@
     /
           <a href="https://youtu.be/qrdRH9irAlk">video</a>
           <p></p>
-          <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets us edit materials.</p>
+          <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
         </td>
       </tr>
 
+          <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/rawnerf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/rawnerf.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function rawnerf_start() {
+                  document.getElementById('rawnerf_image').style.opacity = "1";
+                }
+
+                function rawnerf_stop() {
+                  document.getElementById('rawnerf_image').style.opacity = "0";
+                }
+                rawnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://bmild.github.io/rawnerf/index.html">
+                <papertitle>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</papertitle>
+              </a>
+              <br>
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+              <a href="https://phogzone.com/">Peter Hedman</a>,
+              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>, <br>
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <strong>Jonathan T. Barron</strong>
+              <br>
+							<em>arXiv</em>, 2021
+              <br>
+              <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2111.13679">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
+              <p></p>
+              <p>
+								Properly training NeRF on raw camera data enables HDR view synthesis and bokeh, and outperforms multi-image denoising.</p>
+            </td>
+          </tr> 
+					
+
+          <tr onmouseout="urf_stop()" onmouseover="urf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='urf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/urf.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/urf.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function urf_start() {
+                  document.getElementById('urf_image').style.opacity = "1";
+                }
+
+                function urf_stop() {
+                  document.getElementById('urf_image').style.opacity = "0";
+                }
+                urf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://urban-radiance-fields.github.io/">
+                <papertitle>Urban Radiance Fields</papertitle>
+              </a>
+              <br>
+							<a href="http://www.krematas.com/">Konstantinos Rematas</a>,
+							<a href="https://andrewhliu.github.io/">Andrew Liu</a>,
+							<a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+							<strong>Jonathan T. Barron</strong>, <br>
+							<a href="https://taiya.github.io/">Andrea Tagliasacchi</a>,
+							<a href="https://www.cs.princeton.edu/~funk/">Tom Funkhouser</a>,
+							<a href="https://sites.google.com/corp/view/vittoferrari"> Vittorio Ferrari</a>
+              <br>
+							<em>arXiv</em>, 2021
+              <br>
+              <a href="https://urban-radiance-fields.github.io/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2111.14643">arXiv</a>
+              /
+              <a href="https://www.youtube.com/watch?v=qGlq5DZT6uc">video</a>
+              <p></p>
+              <p>
+								Incorporating lidar and explicitly modeling the sky lets you reconstruct urban environments.</p>
+            </td>
+          </tr> 
+
+	
+  <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='ddp_image'>
+          <img src='images/ddp_after.jpg' width="160"></div>
+        <img src='images/ddp_before.jpg' width="160">
+      </div>
+      <script type="text/javascript">
+        function ddp_start() {
+          document.getElementById('ddp_image').style.opacity = "1";
+        }
+
+        function ddp_stop() {
+          document.getElementById('ddp_image').style.opacity = "0";
+        }
+        ddp_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://arxiv.org/abs/2112.03288">
+        <papertitle>Dense Depth Priors for Neural Radiance Fields from Sparse Input Views</papertitle>
+      </a>
+      <br>
+			<a href="https://niessnerlab.org/members/barbara_roessle/profile.html">Barbara Roessle</a>,
+			<strong>Jonathan T. Barron</strong>,
+			<a href="https://bmild.github.io/">Ben Mildenhall</a>, 
+			<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>, 
+			<a href="https://www.niessnerlab.org/">Matthias Nießner</a>
+      <br>
+			<em>Arxiv</em>, 2021
+      <br>
+      <a href="https://arxiv.org/abs/2112.03288">arXiv</a>
+      /
+      <a href="https://www.youtube.com/watch?v=zzkvvdcvksc">video</a>
+      <p></p>
+      <p>
+      Dense depth completion techniques applied to freely-available sparse stereo data can improve NeRF reconstructions in low-data regimes.
+      </p>
+    </td>
+  </tr>
+	
           <tr onmouseout="clipnerf_stop()" onmouseover="clipnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -135,7 +310,7 @@
         /
               <a href="https://www.youtube.com/watch?v=1Fke6w46tv4">video</a>
               <p></p>
-              <p>Supervising the CLIP embeddings of NeRF renderings lets us to generate 3D objects from text prompts.</p>
+              <p>Supervising the CLIP embeddings of NeRF renderings lets you to generate 3D objects from text prompts.</p>
             </td>
           </tr> 
     
@@ -183,96 +358,7 @@
             </td>
           </tr> 
 
-          <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/rawnerf.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/rawnerf.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function rawnerf_start() {
-                  document.getElementById('rawnerf_image').style.opacity = "1";
-                }
-
-                function rawnerf_stop() {
-                  document.getElementById('rawnerf_image').style.opacity = "0";
-                }
-                rawnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://bmild.github.io/rawnerf/index.html">
-                <papertitle>NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</papertitle>
-              </a>
-              <br>
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="https://phogzone.com/">Peter Hedman</a>,
-              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>, <br>
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-							<em>arXiv</em>, 2021
-              <br>
-              <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
-        /
-              <a href="https://arxiv.org/abs/2111.13679">arXiv</a>
-        /
-              <a href="https://www.youtube.com/watch?v=JtBS4KBcKVc">video</a>
-              <p></p>
-              <p>
-								Properly training NeRF on raw camera data enables HDR view synthesis and bokeh, and outperforms multi-image denoising.</p>
-            </td>
-          </tr> 
-	
 					
-
-
-          <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/mip360_sat.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/mip360_sat.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function mip360_start() {
-                  document.getElementById('mip360_image').style.opacity = "1";
-                }
-
-                function mip360_stop() {
-                  document.getElementById('mip360_image').style.opacity = "0";
-                }
-                mip360_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/mipnerf360">
-                <papertitle>Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
-              <a href="https://phogzone.com/">Peter Hedman</a>
-              <br>
-							<em>arXiv</em>, 2021
-              <br>
-              <a href="http://jonbarron.info/mipnerf360">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2111.12077">arXiv</a>
-              /
-              <a href="https://youtu.be/zBSH-k9GbV4">video</a>
-              <p></p>
-              <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p>
-            </td>
-          </tr> 
-
           <tr onmouseout="survey_stop()" onmouseover="survey_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -2746,14 +2832,16 @@ Under an Unknown Illumination</papertitle>
 
         </tbody></table>
 
+				
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
           <tr>
             <td>
-              <heading>Service</heading>
+              <heading>Misc</heading>
             </td>
           </tr>
         </tbody></table>
         <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+					
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
             <td width="75%" valign="center">
@@ -2778,6 +2866,22 @@ Under an Unknown Illumination</papertitle>
               <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
             </td>
           </tr>
+					
+
+          <tr>
+            <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+							<heading>Basically <br> Blog Posts</heading>
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
+              <br>
+              <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
+              <br>
+              <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
+            </td>
+          </tr>
+					
+					
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
