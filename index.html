@@ -149,33 +149,48 @@
       </tbody></table>
           
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="doom_stop()" onmouseover="doom_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='doom'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/doom.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/doom.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function doom_start() {
-                  document.getElementById('doom').style.opacity = "1";
-                }
-      
-                function doom_stop() {
-                  document.getElementById('doom').style.opacity = "0";
-                }
-                doom_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-            <papertitle>Deep Reinforcement Learning</papertitle>
-            [<a href="https://github.com/drv-agwl/Reinforcement-Learning">Code</a>]
-            <p>Implementation various state-of-the-art reinforcement learning algorithms to make an AI agent learn to play
-              Doom, Space Invaders, Sonic Hedgehog 2, etc.</p>
-            </td>
-          </tr>
+        <tr>
+          <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+            <img src="/images/vivit_project.png" alt="project image" style="width:auto; height:auto; max-width:100%;" />
+          </td>
+          <td style="padding:2.5%;width:75%;vertical-align:middle">
+            <papertitle>Unofficial Implementation of ViViT</papertitle>
+          [<a href="https://github.com/drv-agwl/ViViT-pytorch">Code</a>]
+          <p>The project contains an unofficial implementation of the Video Vision Transformer (ViViT) 
+            <a href="https://arxiv.org/abs/2103.15691">paper</a>. Owing to the recent success of transformers in image classification task, 
+            the paper presents a pure transformer architecture which can be exploited for video classification or for 
+            extracting rich features from videos.</p>
+          </td>
+        </tr>  
+        
+        <tr onmouseout="doom_stop()" onmouseover="doom_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+              <div class="two" id='doom'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/doom.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/doom.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function doom_start() {
+                document.getElementById('doom').style.opacity = "1";
+              }
+    
+              function doom_stop() {
+                document.getElementById('doom').style.opacity = "0";
+              }
+              doom_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+          <papertitle>Deep Reinforcement Learning</papertitle>
+          [<a href="https://github.com/drv-agwl/Reinforcement-Learning">Code</a>]
+          <p>Implementation various state-of-the-art reinforcement learning algorithms to make an AI agent learn to play
+            Doom, Space Invaders, Sonic Hedgehog 2, etc.</p>
+          </td>
+        </tr>
+
       </tbody></table>
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
