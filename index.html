@@ -51,6 +51,50 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hnerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/hnerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/hnerf_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function hnerf_start() {
+                  document.getElementById('hnerf_image').style.opacity = "1";
+                }
+
+                function hnerf_stop() {
+                  document.getElementById('hnerf_image').style.opacity = "0";
+                }
+                hnerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://grail.cs.washington.edu/projects/humannerf/">
+                <papertitle>HumanNeRF: Free-viewpoint Rendering of Moving People from Monocular Video</papertitle>
+              </a>
+              <br>
+              <a href="https://homes.cs.washington.edu/~chungyi/">Chung-Yi Weng</a>,
+              <a href="https://homes.cs.washington.edu/~curless/">Brian Curless</a>,
+              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>, <br>
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://www.irakemelmacher.com/">Ira Kemelmacher-Shlizerman </a>
+              <br>
+              <em>arXiv</em>, 2022
+              <br>
+              <a href="https://grail.cs.washington.edu/projects/humannerf/">project page</a>
+              /
+              <a href="https://arxiv.org/abs/2201.04127">arXiv</a>
+              /
+              <a href="https://youtu.be/GM-RoZEymmw">video</a>
+              <p></p>
+              <p>Combining NeRF with pose estimation lets you use a monocular video to do free-viewpoint rendering of a human.</p>
+            </td>
+          </tr>
+					
+					
           <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
