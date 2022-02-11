@@ -51,6 +51,52 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/blocknerf_after.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/blocknerf_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function blocknerf_start() {
+                  document.getElementById('blocknerf_image').style.opacity = "1";
+                }
+
+                function blocknerf_stop() {
+                  document.getElementById('blocknerf_image').style.opacity = "0";
+                }
+                blocknerf_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+							<a href="https://waymo.com/research/block-nerf/">
+                <papertitle>Block-NeRF: Scalable Large Scene Neural View Synthesis</papertitle>
+              </a>
+              <br>
+              <a href="http://matthewtancik.com/">Matthew Tancik</a>,
+              <a href="http://casser.io/">Vincent Casser</a>,
+              <a href="https://sites.google.com/site/skywalkeryxc/">Xinchen Yan</a>,
+              <a href="https://scholar.google.com/citations?user=5mJUkI4AAAAJ&hl=en">Sabeek Pradhan</a>, <br>
+              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+							<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://scholar.google.de/citations?user=pZuaUlwAAAAJ&hl=en">Henrik Kretzschmar</a>
+              <br>
+        <em>arXiv</em>, 2022
+              <br>
+              <a href="https://waymo.com/research/block-nerf/">project page</a>
+        /
+              <a href="https://arxiv.org/abs/2202.05263">arXiv</a>
+        /
+              <a href="https://www.youtube.com/watch?v=6lGMCAzBzOQ">video</a>
+              <p></p>
+              <p>We can do city-scale reconstruction by training multiple NeRFs with millions of images.</p>
+            </td>
+          </tr>
+					
           <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
