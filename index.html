@@ -94,7 +94,51 @@
               <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
             </td>
           </tr>
-					
+
+			    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
+			      <td style="padding:20px;width:25%;vertical-align:middle">
+			        <div class="one">
+			          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
+			          <source src="images/refnerf.mp4" type="video/mp4">
+			          Your browser does not support the video tag.
+			          </video></div>
+			          <img src='images/refnerf.jpg' width="160">
+			        </div>
+			        <script type="text/javascript">
+			          function refnerf_start() {
+			            document.getElementById('refnerf_image').style.opacity = "1";
+			          }
+
+			          function refnerf_stop() {
+			            document.getElementById('refnerf_image').style.opacity = "0";
+			          }
+			          refnerf_stop()
+			        </script>
+			      </td>
+			            <td style="padding:20px;width:75%;vertical-align:middle">
+			          <a href="https://dorverbin.github.io/refnerf/index.html">
+			            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
+			          </a>
+			          <br>
+			          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+			          <a href="https://phogzone.com/">Peter Hedman</a>,
+			          <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
+			          <a href="Todd Zickler">Todd Zickler</a>,
+			          <strong>Jonathan T. Barron</strong>,
+			          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+			          <br>
+			    <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
+			          <br>
+			          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
+			    /
+			          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
+			    /
+			          <a href="https://youtu.be/qrdRH9irAlk">video</a>
+			          <p></p>
+			          <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
+			        </td>
+			      </tr>
+						
           <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -137,50 +181,6 @@
               <p>mip-NeRF can be extended to produce realistic results on unbounded scenes.</p>
             </td>
           </tr> 
-
-    <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/refnerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/refnerf.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function refnerf_start() {
-            document.getElementById('refnerf_image').style.opacity = "1";
-          }
-
-          function refnerf_stop() {
-            document.getElementById('refnerf_image').style.opacity = "0";
-          }
-          refnerf_stop()
-        </script>
-      </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dorverbin.github.io/refnerf/index.html">
-            <papertitle>Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</papertitle>
-          </a>
-          <br>
-          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-          <a href="Todd Zickler">Todd Zickler</a>,
-          <strong>Jonathan T. Barron</strong>,
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-          <br>
-    <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-          <br>
-          <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
-    /
-          <a href="https://arxiv.org/abs/2112.03907">arXiv</a>
-    /
-          <a href="https://youtu.be/qrdRH9irAlk">video</a>
-          <p></p>
-          <p>Explicitly modeling reflections in NeRF produces realistic shiny surfaces and accurate surface normals, and lets you edit materials.</p>
-        </td>
-      </tr>
 
           <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
