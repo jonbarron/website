@@ -20,8 +20,8 @@
               <p style="text-align:center">
                 <name>Po-han Li (李柏翰)</name>
               </p>
-              <p>I am a PhD student in <a href="https://www.ece.utexas.edu/"> Electrical and Computer Engineering</a> at <a href="https://www.utexas.edu/">University of Texas at Austin</a>. I am co-advised by Prof. <a href="https://www.ece.utexas.edu/people/faculty/sandeep-chinchali">Sandeep Chinchali</a> and Prof. <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu">Ufuk Topcu</a>.
-              I received my BS degree in Department of Electrical Engineering, National Taiwan University. </p>
+              <p>I am a PhD student in <a href="https://www.ece.utexas.edu/"> Department of Electrical and Computer Engineering</a> at <a href="https://www.utexas.edu/">University of Texas at Austin</a>. I am co-advised by Prof. <a href="https://www.ece.utexas.edu/people/faculty/sandeep-chinchali">Sandeep Chinchali</a> and Prof. <a href="https://www.ae.utexas.edu/people/faculty/faculty-directory/topcu">Ufuk Topcu</a>.
+              I received my BS degree in Department of Electrical Engineering, National Taiwan University, where I worked with Prof. <a href="https://scholar.google.com/citations?user=QgJzCPoAAAAJ&hl=en">Wanjiun Liao</a>. </p>
 
               <p style="text-align:center">
                 <a href="mailto:pohanli@utexas.edu">Email</a> &nbsp/&nbsp
@@ -36,65 +36,64 @@
             </td>
           </tr>
         </tbody></table>
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <h1>Research</h1>
               <p>
-              My research interests include network control and optimization. In particular, my projects are related to decentralized data sharing and risk-averse optimization. 
+              My research interests include network control and optimization. In particular, my projects are related to decentralized data sharing, and convex optimization, and risk-averse optimization. 
 
               <h2>Control and Optimization</h2> 
-              Perturbation is common in control systems and it can be due to out-of-distribution (OoD) time series, natural noise, adversarial perturbations, or differential privacy mechanisms. My projects discuss how perturbations in the parameters of the optimization problem can affect the control system or the optimization results.
+              Perturbation is common in control systems and it can be due to out-of-distribution (OoD) data, natural noise, adversarial perturbations, or differential privacy mechanisms. My projects discuss how perturbations in the parameters of the optimization problem can affect the control system or the optimization results.
+
+              <p></p>
+              <h3>Publications</h3>
+
+              <a href="https://arxiv.org/abs/2207.06982">
+                <papertitle>Adversarial Examples for Model-Based Control: A Sensitivity Analysis</papertitle>
+              </a>
+              <br> 
+							<strong>Po-han Li</strong>, 
+              Ufuk Topcu, 
+              Sandeep P Chinchali, 
+              <br>
+              <em>arXiv preprint</em>, 2022
+              <br>
+              <p></p>
+              <strong>Abstract: </strong><br>
+                We propose a decentralized learning framework for robots to trade, price, and discover valuable machine learning (ML) training data. Today's robotic fleets, such as self-driving vehicles, can gather terabytes of rich video and LIDAR data in diverse, geo-distributed environments. Often, robots in one city or home might observe training data that is commonplace for them, but is actually a valuable, out-of-distribution (OoD) dataset to train robust ML models at robots elsewhere. However, simply sharing all this diverse data in cloud databases is infeasible due to limits on privacy and network bandwidth. Inspired by decentralized file sharing protocols like BitTorrent, we propose a novel system where each robot is provisioned with a learnable privacy filter and sharing model. Importantly, this sharing model attempts to predict and prioritize which sensory percepts are of high value to other robotic peers using a decentralized voting and feedback mechanism. Our scheme naturally raises timely questions on data privacy and valuation as companies start to deploy robots in our homes, hospitals, and roads.
 
               <h2>Decentralized Data Sharing</h2> 
-              
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='malle_image'>
-                  <img src='images/MalleConv_after.jpg' width="160"></div>
-                <img src='images/MalleConv_before.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function malle_start() {
-                  document.getElementById('malle_image').style.opacity = "1";
-                }
+              Federated learning (FL) is commonly used to efficiently train deep neuron networks (DNN) among a group of devices. However, one major restriction of FL is that it only applies to homogeneous neuron networks, i.e., networks with identical structure and layers. Thus, my projects focus on how to share raw data, but not gradients, among devices to retrain neuron networks, and most importantly, to avoid the previous restriction. Moreover, the projects discuss under network bandwidth constraints, how to share a limited number of valuable data without violating privacy of devices. Topics related to these projects are: out-of-distribution (OoD) detectors, data valuation, active learning, data sanitizing, differential privacy, game theory, and distributed optimization. 
 
-                function malle_stop() {
-                  document.getElementById('malle_image').style.opacity = "0";
-                }
-                malle_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://yifanjiang.net/MalleConv.html">
-                <papertitle>Fast and High-quality Image Denoising via Malleable Convolutions</papertitle>
+              <h3>Publications</h3>
+
+              <a href="https://proceedings.mlr.press/v164/geng22a.html">
+                <papertitle>Decentralized Sharing and Valuation of Fleet Robotic Data
+                </papertitle>
               </a>
               <br>
-              <a href="https://yifanjiang.net/">Yifan Jiang</a>,
-              <a href="https://bartwronski.com/">Bartlomiej Wronski</a>, 
-							<a href="https://bmild.github.io/">Ben Mildenhall</a>, <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://spark.adobe.com/page/CAdrFMJ9QeI2y/">Zhangyang Wang</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>
+              Yuchong Geng,
+              Dongyue Zhang, 
+							<strong>Po-han Li</strong>, <br>
+              Oguzhan Akcin, 
+              Ao Tang, 
+              Sandeep P Chinchali, 
               <br>
-              <em>ECCV</em>, 2022
+              <em>CoRL</em>, 2022
               <br>
-              <a href="https://yifanjiang.net/MalleConv.html">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2201.00392">arXiv</a>
               <p></p>
-              <p>
-              We denoise images efficiently by predicting spatially-varying kernels at low resolution and using a fast fused op to jointly upsample and apply these kernels at full resolution.
-              </p>
-            </td>
-          </tr>
-					
+              <strong>Abstract: </strong><br>
+                We propose a decentralized learning framework for robots to trade, price, and discover valuable machine learning (ML) training data. Today's robotic fleets, such as self-driving vehicles, can gather terabytes of rich video and LIDAR data in diverse, geo-distributed environments. Often, robots in one city or home might observe training data that is commonplace for them, but is actually a valuable, out-of-distribution (OoD) dataset to train robust ML models at robots elsewhere. However, simply sharing all this diverse data in cloud databases is infeasible due to limits on privacy and network bandwidth. Inspired by decentralized file sharing protocols like BitTorrent, we propose a novel system where each robot is provisioned with a learnable privacy filter and sharing model. Importantly, this sharing model attempts to predict and prioritize which sensory percepts are of high value to other robotic peers using a decentralized voting and feedback mechanism. Our scheme naturally raises timely questions on data privacy and valuation as companies start to deploy robots in our homes, hospitals, and roads.
+
+              
+        </tbody></table>
+
+
+
+        <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        
           <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -137,22 +136,16 @@
               <p></p>
               <p>NeRF works better than RGB-D cameras or multi-view stereo when learning object descriptors.</p>
             </td>
-          </tr>
+          </tr> -->
+        <!-- </tbody></table> -->
 
-
-					
-					
-        </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>,
-                just add a link back to my website.
-                <strong>Do not</strong> scrape the HTML from the deployed instance of this website at http://jonbarron.info,
-                as it includes analytics tags that you do not want on your own website &mdash; use the github code instead.
-                If you'd like your new page linked to from here, submit a pull request adding yourself.
+                This website is based on Jon Barron's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>.
+                His website can be found <a href="https://jonbarron.info/">here</a>.
                 <br>
               </p>
             </td>
