@@ -33,6 +33,7 @@
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
               <a href="images/Po-han Profile.jpeg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/Po-han Profile.jpeg" class="hoverZoomLink"></a>
+              <figcaption>The photo was taken on the UT campus.</figcaption>
             </td>
           </tr>
         </tbody></table>
@@ -50,13 +51,27 @@
               <p></p>
               <h3>Publications</h3>
 
+              <!-- ACC 2023 -->
+              <a href="https://arxiv.org/abs/2210.00358">
+                <papertitle>Differentially Private Timeseries Forecasts for Networked Control </papertitle>
+              </a>
+              <br> 
+							<strong>Po-han Li</strong>, 
+              Sandeep P Chinchali, 
+              Ufuk Topcu
+              <br>
+              <em>Submission to American Control Conference</em>, 2022
+              <br>
+              <p></p>
+
+
               <a href="https://arxiv.org/abs/2207.06982">
                 <papertitle>Adversarial Examples for Model-Based Control: A Sensitivity Analysis</papertitle>
               </a>
               <br> 
 							<strong>Po-han Li</strong>, 
               Ufuk Topcu, 
-              Sandeep P Chinchali, 
+              Sandeep P Chinchali
               <br>
               <em>58th Allerton Conference on Communication, Control, and Computing</em>, 2022
               <br>
@@ -69,6 +84,22 @@
               Federated learning (FL) is commonly used to efficiently train deep neuron networks (DNN) among a group of devices. However, one major restriction of FL is that it only applies to homogeneous neuron networks, i.e., networks with identical structure and layers. Thus, my projects focus on how to share raw data, but not gradients, among devices to retrain neuron networks, and most importantly, to avoid the previous restriction. Moreover, the projects discuss under network bandwidth constraints, how to share a limited number of valuable data without violating privacy of devices. Topics related to these projects are: out-of-distribution (OoD) detectors, data valuation, active learning, data sanitizing, differential privacy, game theory, and distributed optimization. 
 
               <h3>Publications</h3>
+              
+              <a href="https://openreview.net/forum?id=iM932PeUi_7&referrer=%5Bthe%20profile%20of%20Sandeep%20P.%20Chinchali%5D(%2Fprofile%3Fid%3D~Sandeep_P._Chinchali1)">
+                <papertitle>Data Games: A Game-Theoretic Approach to Swarm Robotic Data Collection</papertitle>
+              </a>
+              <br>
+              Oguzhan Akcin, 
+              <strong>Po-han Li</strong>, 
+              Shubhankar Agarwal, 
+              Sandeep P. Chinchali
+              <br>
+              <em>CoRL</em>, 2022
+              <br>
+              <p></p>
+              <!-- <strong>Abstract: </strong><br>
+              Fleets of networked autonomous vehicles (AVs) collect terabytes of sensory data, which is often transmitted to central servers (the "cloud") for training machine learning (ML) models. Ideally, these fleets should upload all their data, especially from rare operating contexts, in order to train robust ML models. However, this is infeasible due to prohibitive network bandwidth and data labeling costs. Instead, we propose a cooperative data sampling strategy where geo-distributed AVs collaborate to collect a diverse ML training dataset in the cloud. Since the AVs have a shared objective but minimal information about each other's local data distribution and perception model, we can naturally cast cooperative data collection as an N-player mathematical game. We show that our cooperative sampling strategy uses minimal information to converge to a centralized oracle policy with complete information about all AVs. Moreover, we theoretically characterize the performance benefits of our game-theoretic strategy compared to greedy sampling. Finally, we experimentally demonstrate that our method outperforms standard benchmarks by up to 21.9% on 4 perception datasets, including for autonomous driving in adverse weather conditions. Crucially, our experimental results on real-world datasets closely align with our theoretical guarantees.
+              <p></p>    -->
 
               <a href="https://proceedings.mlr.press/v164/geng22a.html">
                 <papertitle>Decentralized Sharing and Valuation of Fleet Robotic Data
@@ -80,7 +111,7 @@
 							<strong>Po-han Li</strong>, 
               Oguzhan Akcin, 
               Ao Tang, 
-              Sandeep P Chinchali, 
+              Sandeep P Chinchali
               <br>
               <em>CoRL</em>, 2021
               <br>
@@ -88,22 +119,7 @@
               <!-- <strong>Abstract: </strong><br>
                 We propose a decentralized learning framework for robots to trade, price, and discover valuable machine learning (ML) training data. Today's robotic fleets, such as self-driving vehicles, can gather terabytes of rich video and LIDAR data in diverse, geo-distributed environments. Often, robots in one city or home might observe training data that is commonplace for them, but is actually a valuable, out-of-distribution (OoD) dataset to train robust ML models at robots elsewhere. However, simply sharing all this diverse data in cloud databases is infeasible due to limits on privacy and network bandwidth. Inspired by decentralized file sharing protocols like BitTorrent, we propose a novel system where each robot is provisioned with a learnable privacy filter and sharing model. Importantly, this sharing model attempts to predict and prioritize which sensory percepts are of high value to other robotic peers using a decentralized voting and feedback mechanism. Our scheme naturally raises timely questions on data privacy and valuation as companies start to deploy robots in our homes, hospitals, and roads.
               <p></p>    -->
-              
-              <a href="https://openreview.net/forum?id=iM932PeUi_7&referrer=%5Bthe%20profile%20of%20Sandeep%20P.%20Chinchali%5D(%2Fprofile%3Fid%3D~Sandeep_P._Chinchali1)">
-                <papertitle>Data Games: A Game-Theoretic Approach to Swarm Robotic Data Collection</papertitle>
-              </a>
-              <br>
-              Oguzhan Akcin, 
-              <strong>Po-han Li</strong>, 
-              Shubhankar Agarwal, 
-              Sandeep P. Chinchali, 
-              <br>
-              <em>CoRL</em>, 2022
-              <br>
-              <p></p>
-              <!-- <strong>Abstract: </strong><br>
-              Fleets of networked autonomous vehicles (AVs) collect terabytes of sensory data, which is often transmitted to central servers (the "cloud") for training machine learning (ML) models. Ideally, these fleets should upload all their data, especially from rare operating contexts, in order to train robust ML models. However, this is infeasible due to prohibitive network bandwidth and data labeling costs. Instead, we propose a cooperative data sampling strategy where geo-distributed AVs collaborate to collect a diverse ML training dataset in the cloud. Since the AVs have a shared objective but minimal information about each other's local data distribution and perception model, we can naturally cast cooperative data collection as an N-player mathematical game. We show that our cooperative sampling strategy uses minimal information to converge to a centralized oracle policy with complete information about all AVs. Moreover, we theoretically characterize the performance benefits of our game-theoretic strategy compared to greedy sampling. Finally, we experimentally demonstrate that our method outperforms standard benchmarks by up to 21.9% on 4 perception datasets, including for autonomous driving in adverse weather conditions. Crucially, our experimental results on real-world datasets closely align with our theoretical guarantees.
-              <p></p>    -->
+
               
         </tbody></table>
 
