@@ -46,6 +46,45 @@
             </td>
           </tr>
         </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Industrial Projects</heading>
+            </td>
+          </tr>
+        </tbody></table>
+        
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <tr onmouseout="airavat_stop()" onmouseover="airavat_start()">
+          <td style="padding:2.5%;width:25%;vertical-align:middle;min-width:120px">
+            <div class="one">
+              <div class="two" id='airavat'><video  width=100% height=100% muted autoplay loop>
+              <source src="images/doom.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></div>
+              <img src='images/doom.jpg' width="160">
+            </div>
+            <script type="text/javascript">
+              function doom_start() {
+                document.getElementById('airavat').style.opacity = "1";
+              }
+    
+              function doom_stop() {
+                document.getElementById('airavat').style.opacity = "0";
+              }
+              doom_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:middle">
+          <papertitle>Airavat</papertitle>
+          [<a href="https://github.com/drv-agwl/Reinforcement-Learning">Code</a>]
+          <p>An autonomous ground vehicle capable of navigating itself in a warehouse and localizing itself using april tags.</p>
+          </td>
+        </tr>
+        </table>
+        
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
