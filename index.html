@@ -95,8 +95,90 @@
               </p>
             </td>
           </tr>
-					
-					
+		  
+          <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='samurai_image'>
+                  <img src='images/samurai_after.jpg' width="160"></div>
+                <img src='images/samurai_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function samurai_start() {
+                  document.getElementById('samurai_image').style.opacity = "1";
+                }
+
+                function samurai_stop() {
+                  document.getElementById('samurai_image').style.opacity = "0";
+                }
+                samurai_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://markboss.me/publication/2022-samurai/">
+                <papertitle>SAMURAI: Shape And Material from Unconstrained Real-world Arbitrary Image Collections</papertitle>
+              </a>
+              <br>
+              <a href="https://markboss.me">Mark Boss</a>, 
+              <a href="">Andreas Engelhardt</a>, 
+              <a href="https://abhishekkar.info/">Abhishek Kar</a>, 
+              <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, 
+              <a href="https://deqings.github.io/">Deqing Sun</a>, 
+              <strong>Jonathan T. Barron</strong>,
+              <a href="https://uni-tuebingen.de/en/faculties/faculty-of-science/departments/computer-science/lehrstuehle/computergrafik/computer-graphics/staff/prof-dr-ing-hendrik-lensch/">Hendrik P. A. Lensch</a>,
+              <a href="https://varunjampani.github.io">Varun Jampani</a>
+              <br>
+              <em>NeurIPS</em>, 2022
+              <br>
+              <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+              <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+              <a href="https://arxiv.org/abs/2205.15768">arXiv</a>
+              <p></p>
+              <p>
+A joint optimization framework for estimating shape, BRDF, camera pose, and illumination from in-the-wild image collections.
+              </p>
+            </td>
+          </tr>		
+
+          <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
+          <td style="padding:20px;width:25%;vertical-align:middle">
+          <div class="one">
+          <div class="two" id='pnf_image'>
+            <img src='images/pnf_before.jpg' width="160"></div>
+          <img src='images/pnf_after.jpg' width="160">
+          </div>
+          <script type="text/javascript">
+          function pnf_start() {
+            document.getElementById('pnf_image').style.opacity = "1";
+          }
+
+          function pnf_stop() {
+            document.getElementById('pnf_image').style.opacity = "0";
+          }
+          pnf_stop()
+          </script>
+          </td>
+          <td style="padding:0;width:40%;max-width:40%">
+          <a href="TODO">
+          <papertitle>Polynomial Neural Fields for Subband Decomposition</papertitle>
+          </a> <br>
+          <a href="https://www.guandaoyang.com/">Guandao Yang*</a>,
+          <a href="https://sagiebenaim.github.io/">Sagie Benaim*</a>,
+          <a href="https://varunjampani.github.io/">Varun Jampani</a>,
+          <a href="https://www.kylegenova.com/">Kyle Genova</a>,
+          <strong>Jonathan T. Barron</strong>,
+          <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>,
+          <a href="http://home.bharathh.info/">Bharath Hariharan</a>,
+          <a href="https://sergebelongie.github.io/">Serge Belongie</a>
+          <br>
+          <em>NeurIPS</em>, 2022
+          <p>
+          Representing neural fields as a composition of manipulable and interpretable components lets you do things like reason about frequencies and scale.
+          </p>
+          </td>
+          </tr> 
+
+
           <tr onmouseout="malle_stop()" onmouseover="malle_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
