@@ -43,10 +43,14 @@
             <td style="padding:10px;width:100%;vertical-align:middle">
               <h1>Research</h1>
               <p>
-              My research interests include network control and optimization. In particular, my projects are related to decentralized data sharing, and convex optimization, and risk-averse optimization. 
+              My research interests include network control and optimization. In particular, my projects are related to decentralized data sharing,  optimization, and task-aware communication. 
 
-              <h2>Perturbation in Control and Optimization</h2> 
-              Perturbation is common in control systems and it can be due to out-of-distribution (OoD) data, natural noise, adversarial perturbations, or differential privacy mechanisms. My projects discuss how perturbations in the parameters of the optimization problem can affect the control system or the optimization results.
+              <h2>Task-aware Data Transmission in Networked Control</h2> 
+              Data plays an important role in modern networked control systems or machine learning models. 
+              Most of the time, the data are generated in geographically distributed environments, while the tasks are centralized in a fixed location, where the tasks can be controllers or machine learning models.
+              The data needs to be transmitted from diverse sources to the centralized location, and during transmission, the data can be affected in several ways, such as adversarial attacks, anonymization (differential privacy) noise, and data compression.
+              However, the data transmission in such systems is often not optimized for the task at hand. 
+              My projects discuss how perturbations can affect the performance of control system or machine learning models, and more importantly, how to design a transmission process that is optimized for tasks in the centralized location, which we refer to as task-aware.
               
               <p></p>
               <h3>Publications</h3>
@@ -81,7 +85,7 @@
               <p></p> -->
 
               <h2>Decentralized Data Sharing</h2> 
-              Federated learning (FL) is commonly used to efficiently train deep neuron networks (DNN) among a group of devices. However, one major restriction of FL is that it only applies to homogeneous neuron networks, i.e., networks with identical structure and layers. Thus, my projects focus on how to share raw data, but not gradients, among devices to retrain neuron networks, and most importantly, to avoid the previous restriction. Moreover, the projects discuss under network bandwidth constraints, how to share a limited number of valuable data without violating privacy of devices. Topics related to these projects are: out-of-distribution (OoD) detectors, data valuation, active learning, data sanitizing, differential privacy, game theory, and distributed optimization. 
+              Federated learning (FL) is commonly used to efficiently train deep neuron networks (DNN) among a group of devices. However, one major restriction of FL is that it only applies to homogeneous neuron networks, i.e., networks with identical structure and layers. Thus, my projects focus on how to share raw data, but not gradients, among devices to retrain neuron networks, and most importantly, to avoid the previous restriction. Moreover, the projects discuss under network bandwidth constraints, how to share a limited number of valuable data without violating privacy of devices. Topics related to these projects are: out-of-distribution (OoD) detectors, data valuation, active learning, data sanitizing, differential privacy, and distributed optimization. 
 
               <h3>Publications</h3>
               
