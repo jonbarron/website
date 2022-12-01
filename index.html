@@ -50,8 +50,49 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-					
+				
+		  
+          <tr onmouseout="mira_stop()" onmouseover="mira_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mira_image'>
+                  <img src='images/mira_after.jpg' width="160"></div>
+                <img src='images/mira_before.jpg' width="160">
+              </div>
+              <script type="text/javascript">
+                function mira_start() {
+                  document.getElementById('mira_image').style.opacity = "1";
+                }
 
+                function mira_stop() {
+                  document.getElementById('mira_image').style.opacity = "0";
+                }
+                mira_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://openreview.net/forum?id=AmPeAFzU3a4">
+                <papertitle>MIRA: Mental Imagery for Robotic Affordances</papertitle>
+              </a>
+              <br>
+              <a href="https://yenchenlin.me/">Lin Yen-Chen</a>, 
+              <a href="http://www.peteflorence.com/">Pete Florence</a>, 
+              <a href="https://andyzeng.github.io/">Andy Zeng</a>, <strong>Jonathan T. Barron</strong>, 
+              <a href="https://yilundu.github.io/">Yilun Du</a>,
+              <a href="https://people.csail.mit.edu/weichium/">Wei-Chiu Ma</a>,
+              <a href="https://anthonysimeonov.github.io/">Anthony Simeonov</a>,
+              <a href="https://meche.mit.edu/people/faculty/ALBERTOR@MIT.EDU">Alberto Rodriguez</a>,
+              <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+              <br>
+              <em>CoRL</em>, 2022
+              <p></p>
+              <p>
+                NeRF lets us synthesize novel orthographic views that work well with pixel-wise algorithms for robotic manipulation.
+              </p>
+            </td>
+          </tr>		
+          
+          
           <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
