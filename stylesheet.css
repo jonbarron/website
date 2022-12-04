@@ -129,3 +129,8 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
