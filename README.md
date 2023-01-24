@@ -13,7 +13,7 @@ Data plays an important role in modern networked control systems or machine lear
 ### Publications
 * Differentially Private Timeseries Forecasts for Networked Control
     * **Po-han Li**, Sandeep P Chinchali, Ufuk Topcu
-    * Submission to American Control Conference, 2022
+    * American Control Conference, 2023
 * Adversarial Examples for Model-Based Control: A Sensitivity Analysis
     * **Po-han Li**, Ufuk Topcu, Sandeep P Chinchali
     * 58th Allerton Conference on Communication, Control, and Computing, 2022
