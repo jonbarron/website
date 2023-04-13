@@ -142,7 +142,7 @@ Neural Radiance Field training can be accelerated through the use of grid-based 
                 </div>
             </div>
         </div>
-
+<br>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -157,6 +157,22 @@ Neural Radiance Field training can be accelerated through the use of grid-based 
             </div>
         </div>
 <br>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    XY aliasing
+                </h3>
+                <div class="video-compare-container" id="xyaliasDiv">
+                    <video class="video" id="xyalias" loop playsinline autoPlay muted src="img/xy_alias_swipe_crf27.mp4" onplay="resizeAndPlay(this)"></video>
+                    <canvas height=0 class="videoMerge" id="xyaliasMerge"></canvas>
+                </div>
+                <p class="text-justify">
+                    A naive baseline (left) combining mip-NeRF 360 and Instant NGP results in aliasing as the camera moves laterally. Our full method (right) produces prefiltered renderings that do not flicker or shimmer.
+                </p>
+            </div>
+        </div>
+           
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
@@ -171,22 +187,6 @@ Neural Radiance Field training can be accelerated through the use of grid-based 
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    XY aliasing
-                </h3>
-                <div class="video-compare-container" id="xyaliasDiv">
-                    <video class="video" id="xyalias" loop playsinline autoPlay muted src="img/xy_alias_swipe_crf27.mp4" onplay="resizeAndPlay(this)"></video>
-                    
-                    <canvas height=0 class="videoMerge" id="xyaliasMerge"></canvas>
-                </div>
-                <p class="text-justify">
-                    A naive baseline (left) combining mip-NeRF 360 and Instant NGP results in aliasing as the camera moves laterally. Our full method (right) produces prefiltered renderings that do not flicker or shimmer.
-                </p>
-            </div>
-        </div>
-           
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
