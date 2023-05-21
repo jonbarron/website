@@ -157,16 +157,42 @@ Neural Radiance Field training can be accelerated through the use of grid-based 
             </div>
         </div>
 <br>
-
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Multisampling
+                </h3>
+				<table style="width: 100%; border-collapse: collapse;">
+				  <tr>
+				    <td style="text-align: center;">
+		                <video id="v0" width="100%" autoplay loop muted>
+		                  <source src="img/hexify_train.mp4" type="video/mp4" />
+		                </video>
+					</td>
+				    <td style="text-align: center;">
+		                <video id="v0" width="100%" autoplay loop muted>
+		                  <source src="img/hexify_test.mp4" type="video/mp4" />
+		                </video>
+					</td>
+				  </tr>
+				  <tr>
+				    <td style="text-align: center;">When Training</td>
+				    <td style="text-align: center;">When Rendering</td>
+				  </tr>
+				</table>
+                <p class="text-justify">
+                    We use multisampling to approximate the average NGP feature over a conical frustum, by constructing a 6-sample pattern that exactly matches the frustum's first and second moments. When training, we randomly rotate and flip (along the ray axis) each pattern, and when rendering we deterministically flip and rotate each adjacent pattern by 30 degrees.
+                </p>
+            </div>
+        </div>
+<br>
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <h3>
                     XY aliasing
                 </h3>
-                <div class="video-compare-container" id="xyaliasDiv">
-                    <video class="video" id="xyalias" loop playsinline autoPlay muted src="img/xy_alias_swipe_crf27.mp4" onplay="resizeAndPlay(this)"></video>
-                    <canvas height=0 class="videoMerge" id="xyaliasMerge"></canvas>
-                </div>
+                <video class="video" width=100% id="xyalias" loop playsinline autoplay muted src="img/xy_alias_swipe_crf27.mp4" onplay="resizeAndPlay(this)"></video>
+                <canvas height=0 class="videoMerge" id="xyaliasMerge"></canvas>
                 <p class="text-justify">
                     A naive baseline (left) combining mip-NeRF 360 and Instant NGP results in aliasing as the camera moves laterally. Our full method (right) produces prefiltered renderings that do not flicker or shimmer.
                 </p>
@@ -178,7 +204,7 @@ Neural Radiance Field training can be accelerated through the use of grid-based 
                 <h3>
                     Z aliasing
                 </h3>
-                <video id="v0" width="100%" autoplay loop muted controls>
+                <video id="v0" width="100%" autoplay loop muted>
                   <source src="img/z_alias_pdf_labeled.m4v" type="video/mp4" />
                 </video>
                 <p class="text-justify">
