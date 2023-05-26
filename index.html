@@ -51,7 +51,152 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 				
-    
+
+
+    <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bakedsdf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/bakedsdf_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/bakedsdf_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function bakedsdf_start() {
+            document.getElementById('bakedsdf_image').style.opacity = "1";
+          }
+
+          function bakedsdf_stop() {
+            document.getElementById('bakedsdf_image').style.opacity = "0";
+          }
+          bakedsdf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://bakedsdf.github.io/">
+          <papertitle>BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis</papertitle>
+        </a>
+        <br>
+        <a href="https://lioryariv.github.io/">Lior Yariv*</a>,
+        <a href="https://phogzone.com/">Peter Hedman*</a>,
+        <a href="https://creiser.github.io/">Christian Reiser</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,  <br>
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+        <strong>Jonathan T. Barron</strong>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>
+        <br>
+        <em>SIGGRAPH</em>, 2023
+        <br>
+        <a href="https://bakedsdf.github.io/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=fThKXZ6uDTk">video</a>
+        /
+        <a href="https://arxiv.org/abs/2302.14859">arXiv</a>
+        <p></p>
+        <p>
+        We use SDFs to bake a NeRF-like model into a high quality mesh and do real-time view synthesis.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="merf_stop()" onmouseover="merf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='merf_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/merf_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/merf_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function merf_start() {
+            document.getElementById('merf_image').style.opacity = "1";
+          }
+
+          function merf_stop() {
+            document.getElementById('merf_image').style.opacity = "0";
+          }
+          merf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://merf42.github.io/">
+          <papertitle>MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes</papertitle>
+        </a>
+        <br>
+        <a href="https://creiser.github.io/">Christian Reiser</a>,
+        <a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>, <br>
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://www.cvlibs.net/">Andreas Geiger</a>,
+        <strong>Jonathan T. Barron</strong>,
+        <a href="https://phogzone.com/">Peter Hedman</a>
+        <br>
+        <em>SIGGRAPH</em>, 2023
+        <br>
+        <a href="https://merf42.github.io/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=3EACM2JAcxc">video</a>
+        /
+        <a href="https://arxiv.org/abs/2302.12249">arXiv</a>
+        <p></p>
+        <p>
+        We use volumetric rendering with a sparse 3D feature grid and 2D feature planes to do real-time view synthesis.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/eclipse_after.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/eclipse_before.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function eclipse_start() {
+            document.getElementById('eclipse_image').style.opacity = "1";
+          }
+
+          function eclipse_stop() {
+            document.getElementById('eclipse_image').style.opacity = "0";
+          }
+          eclipse_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://dorverbin.github.io/eclipse">
+          <papertitle>Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</papertitle>
+        </a>
+        <br>
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <a href="https://phogzone.com/">Peter Hedman</a>, <br>
+        <strong>Jonathan T. Barron</strong>,
+        <a href="Todd Zickler">Todd Zickler</a>,
+        <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+        <br>
+        <em>arXiv</em>, 2023
+        <br>
+        <a href="https://dorverbin.github.io/eclipse">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
+        /
+        <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
+        <p></p>
+        <p>
+        Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
+        </p>
+      </td>
+    </tr>
+	
     <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
