@@ -129,3 +129,17 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+.hoverZoomLink:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.hoverZoomLink {
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0% 0% 0% 2%;
+}
