@@ -371,7 +371,44 @@
     </p>
   </td>
 </tr>
-		  
+
+<tr onmouseout="guandao_stop()" onmouseover="guandao_start()">
+<td style="padding:20px;width:25%;vertical-align:middle">
+  <div class="one">
+    <div class="two" id='guandao_image'>
+      <img src='images/guandao_after.png' width="160"></div>
+    <img src='images/guandao_before.png' width="160">
+  </div>
+  <script type="text/javascript">
+    function guandao_start() {
+      document.getElementById('guandao_image').style.opacity = "1";
+    }
+
+    function guandao_stop() {
+      document.getElementById('guandao_image').style.opacity = "0";
+    }
+    guandao_stop()
+  </script>
+</td>
+<td style="padding:20px;width:75%;vertical-align:middle">
+  <a href="https://arxiv.org/abs/2304.14473">
+    <papertitle>Learning a Diffusion Prior for NeRFs</papertitle>
+  </a>
+  <br>
+  <a href="https://www.guandaoyang.com/">Guandao Yang</a>, 
+  <a href="https://abhijitkundu.info/">Abhijit Kundu</a>, 
+  <a href="https://geometry.stanford.edu/member/guibas/index.html">Leonidas J. Guibas</a>, 
+  <strong>Jonathan T. Barron</strong>, 
+  <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>
+  <br>
+  <em>ICLR Workshop</em>, 2023
+  <p></p>
+  <p>
+	  Training a diffusion model on grid-based NeRFs lets you (conditionally) sample NeRFs.
+  </p>
+</td>
+</tr>
+
           <tr onmouseout="mira_stop()" onmouseover="mira_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
