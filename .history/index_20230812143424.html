@@ -32,6 +32,7 @@
                 <p style="text-align:center">
                   <a href="styj@connect.hku.hk">Email</a> &nbsp;/&nbsp;
                   <a href="https://scholar.google.com/citations?user=oIrYzk8AAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                  <a href="https://www.zhihu.com/people/stland">zhihu</a> &nbsp;/&nbsp;
                   <a href="https://github.com/STLAND-admin">Github</a>
                 </p>
               </td>
@@ -53,14 +54,14 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
     
-      <tr onmouseout="DynE_stop()" onmouseover="DynE_start()" >
-        <td style="padding:20px;width:25%;vertical-align:baseline">
+      <tr onmouseout="DynE_stop()" onmouseover="DynE_start()"  bgcolor="#ffffd0">
+        <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='DynE_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/DynE.mp4" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/DynE.png' width="160" style="padding-top: 35px;">  <!-- algin in this case --> 
+            <img src='images/DynE.jpg' width="160">
           </div>
           <script type="text/javascript">
             function DynE_start() {
@@ -73,28 +74,27 @@
             DynE_stop()
           </script>
         </td>
-        <td style="padding:0px;width:75%;vertical-align:middle">
-          <a href="https://dyn-e.github.io/">
-            <span class="papertitle">Dyn-E: Local Appearance Editing of Dynamic Neural Radiance Fields</span>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+          <a href="http://jonbarron.info/zipnerf">
+            <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
           </a>
           <br>
-          <a href="https://zhanghe3z.github.io/">Shangzhan Zhang</a>,
-          <a href="https://pengsida.net/">Sida Peng</a>,
-          <strong>Yinji ShenTu</strong>,
-          <a href="https://chingswy.github.io/">Shuai Qing</a>,
-          <a href="https://tianrun-chen.github.io/">Tianrun Chen</a>,
-          <a href="https://www.yukaicheng.cn/">Kaicheng Yu</a>,
-          <a href="https://scholar.google.com/citations?user=AZCcDmsAAAAJ">Hujun Bao</a>,
-          <a href="https://xzhou.me/">Xiaowei Zhou</a>
+          <strong>Jonathan T. Barron</strong>,
+          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+          <a href="https://scholar.harvard.edu/dorverbin/home">Dor Verbin</a>,
+          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+          <a href="https://phogzone.com/">Peter Hedman</a>
           <br>
-          <a href="https://dyn-e.github.io/">project page</a>
+          <em>ICCV</em>, 2023
+          <br>
+          <a href="http://jonbarron.info/zipnerf">project page</a>
           /
-          <a href="https://dyn-e.github.io/">video</a>
+          <a href="https://www.youtube.com/watch?v=xrrhynRzC8k">video</a>
           /
-          <a href="https://arxiv.org/abs/2307.12909">arXiv</a>
+          <a href="https://arxiv.org/abs/2304.06706">arXiv</a>
           <p></p>
           <p>
-          First one try to solve dynamic appearance edit with only single-image input.
+          Combining mip-NeRF 360 and grid-based models like Instant NGP lets us reduce error rates by 8%&ndash;77% and accelerate training by 24x.
           </p>
         </td>
       </tr>
