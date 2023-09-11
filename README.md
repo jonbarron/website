@@ -4,7 +4,6 @@ Repo of my personal website source code.
 
 It is based on Jon Barron's public academic website: https://jonbarron.info/. 
 
-
 # Research
 My research interests include networked control and optimization. In particular, my projects are related to decentralized data sharing, optimization, and task-aware communication.
 
@@ -20,7 +19,7 @@ Data plays an important role in modern networked control systems or machine lear
 
 ## Decentralized Data Sharing
 Federated learning (FL) is commonly used to efficiently train deep neuron networks (DNN) among a group of devices. However, one major restriction of FL is that it only applies to homogeneous neuron networks, i.e., networks with identical structure and layers. Thus, my projects focus on how to share raw data, but not gradients, among devices to retrain neuron networks, and most importantly, to avoid the previous restriction. Moreover, the projects discuss under network bandwidth constraints, how to share a limited number of valuable data without violating privacy of devices. Topics related to these projects are: out-of-distribution (OoD) detectors, data valuation, active learning, data sanitizing, differential privacy, and distributed optimization.
-### Publications
+### Selected Publications 
 * Data Games: A Game-Theoretic Approach to Swarm Robotic Data Collection
     * Oguzhan Akcin, **Po-han Li**, Shubhankar Agarwal, Sandeep P. Chinchali
     * CoRL, 2022
