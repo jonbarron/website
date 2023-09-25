@@ -142,10 +142,10 @@ span.highlight {
     }
   .highlight {
     color: #121212;
-    background-color: #d0d0ff;
+    background-color: #d0d0ff !important;
   }
   .representative {
-  background-color: #d0ffff;
+  background-color: #d0d0ff !important;
 }
   .main {
     border: 2px solid #FAFAFA !important; /* I have no idea why it isn't automatically prefered*/
