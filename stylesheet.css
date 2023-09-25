@@ -133,3 +133,31 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Default light mode styles */
+body.light-mode {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    /* Add other light mode styles here */
+}
+
+
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #ffffff;
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--background-color);
+        color: var(--text-color);
+     
+    }
+}
