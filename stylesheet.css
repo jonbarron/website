@@ -176,7 +176,7 @@ tbody {
   width:75%;
   vertical-align:middle;
 }
-.representative > p {
+.representative > .researchPapers > p {
   color: #121212;
-  bgcolor: #ffffd0;
+  background-color: #ffffd0;
 }
