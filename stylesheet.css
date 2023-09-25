@@ -146,6 +146,10 @@ h2 {
     color: #1772d0;
     text-decoration: none;
     }
+  .strongHighlight{
+    color: red;
+    font-size: 17px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -166,6 +170,10 @@ h2 {
   a {
     color: #1772ff;
     text-decoration: none;
+  }
+    .strongHighlight{
+    color: #9904ff;
+    font-size: 17px;
   }
 }
 
