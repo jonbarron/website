@@ -148,7 +148,7 @@ span.highlight {
   background-color: #d0ffff;
 }
   .main {
-    border: 2px solid #FAFAFA;
+    border: 2px solid #FAFAFA !important; /* I have no idea why it isn't automatically prefered*/
   }
 }
 
