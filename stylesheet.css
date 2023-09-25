@@ -145,8 +145,11 @@ span.highlight {
     }
   .highlight {
     color: #121212;
-    
+    background-color: #d0d0ff;
   }
+  .representative {
+  background-color: #d0ffff;
+}
 }
 
 table {
