@@ -140,9 +140,6 @@ span.highlight {
         background-color: #121212;
         color: #ffffff;
     }
-     table {
-  border: 2px solid #FAFAFA !important;
-    }
   .highlight {
     color: #121212;
     background-color: #d0d0ff;
@@ -150,13 +147,12 @@ span.highlight {
   .representative {
   background-color: #d0ffff;
 }
+  .main {
+    border: 2px solid #FAFAFA;
+  }
 }
 
-table {
-  border: 2px solid #121212;
-  border-spacing: 2px;
-  border-radius: 2px;
-}
+
 tbody {
   margin-right: 5px;
   
@@ -188,4 +184,14 @@ tbody {
 
 .representative {
   background-color: #ffffd0;
+}
+
+.main {
+  width:100%;
+  max-width:800px;
+  border:2px solid #121212;
+  border-spacing:0px;
+  border-collapse:separate;
+  margin-right:auto;
+  margin-left:auto;"
 }
