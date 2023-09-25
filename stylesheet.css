@@ -138,6 +138,18 @@ span.highlight {
     body {
         background-color: #121212;
         color: #ffffff;
-     
     }
+     table {
+  border: 2px solid #FAFAFA;
+    }
+}
+
+table {
+  border: 2px solid #121212;
+  border-spacing: 2px;
+  border-radius: 2px;
+}
+tbody {
+  margin-right: 5px;
+  
 }
