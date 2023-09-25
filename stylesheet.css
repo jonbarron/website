@@ -181,7 +181,7 @@ tbody {
   width:75%;
   vertical-align:middle;
 }
-.representative > .researchPapers > p {
+.representative > .researchPapers > p strong em {
   color: #121212;
   
 }
