@@ -142,6 +142,9 @@ span.highlight {
      table {
   border: 2px solid #FAFAFA;
     }
+  .highlight {
+    color: #121212;
+  }
 }
 
 table {
