@@ -168,3 +168,12 @@ tbody {
   margin-right:auto;
   margin-left:auto;
 }
+
+researchPapers {
+  padding:20px;
+  width:75%;
+  vertical-align:middle;
+}
+researchPapers > p {
+  color: #121212;
+}
