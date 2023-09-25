@@ -132,6 +132,7 @@ h2 {
 
 span.highlight {
   background-color: #ffffd0;
+  font-weight: bold;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -144,6 +145,7 @@ span.highlight {
     }
   .highlight {
     color: #121212;
+    
   }
 }
 
@@ -178,5 +180,9 @@ tbody {
 }
 .representative > .researchPapers > p {
   color: #121212;
+  
+}
+
+.representative {
   background-color: #ffffd0;
 }
