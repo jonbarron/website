@@ -63,10 +63,6 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-a {
-  color: #1772d0;
-  text-decoration: none;
-}
 
 a:focus,
 a:hover {
@@ -106,7 +102,7 @@ h2 {
   padding-top: 20px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  text-align:center;
 }
 
 .one {
@@ -130,6 +126,94 @@ h2 {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
-span.highlight {
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #f9f9f0;
+        color: #121212;
+    }
+  span.highlight {
+    background-color: #ffffd0;
+    font-weight: bold;
+  }
+  .representative {
   background-color: #ffffd0;
+}
+  .main {
+    border: 2px solid #121212; 
+  }
+  a {
+    color: #1772d0;
+    text-decoration: none;
+    }
+  .strongHighlight{
+    color: red;
+    font-size: 17px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #ffffff;
+    }
+  .highlight {
+    color: #121212;
+    background-color: #d0d0ff;
+  }
+  .representative {
+  background-color: #d0d0ff;
+}
+  .main {
+    border: 2px solid #FAFAFA; 
+  }
+  a {
+    color: #1772ff;
+    text-decoration: none;
+  }
+    .strongHighlight{
+    color: #9904ff;
+    font-size: 17px;
+  }
+}
+
+
+tbody {
+  margin-right: 5px;
+  
+}
+.imageContainer {
+  padding:20px;
+  width:25%;
+  vertical-align:middle;
+}
+
+.tableQuartet {
+  width:100%;
+  border:0px;
+  border-spacing:0px;
+  border-collapse:separate;
+  margin-right:auto;
+  margin-left:auto;
+}
+
+.researchPapers {
+  padding:20px;
+  width:75%;
+  vertical-align:middle;
+}
+.representative > .researchPapers {
+  color: #121212;
+  
+}
+
+
+.main {
+  width:100%;
+  max-width:800px;
+  border-spacing:0px;
+  border-collapse:separate;
+  margin-right:auto;
+  margin-left:auto;"
+  border-radius: 3px;
 }

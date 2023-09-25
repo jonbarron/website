@@ -13,13 +13,13 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table class="main"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="tableQuartet"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
+                <p class="name" style="font-size:32px;">
                   Jon Barron
                 </p>
                 <p>I am a senior staff research scientist at <a href="https://ai.google/research">Google Research</a> in <a href="https://en.wikipedia.org/wiki/One_Market_Plaza">San Francisco</a>, where I work on computer vision and machine learning.
@@ -27,7 +27,7 @@
                 <p>
                   At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://www.matthewtancik.com/nerf">NeRF</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've received the <a href="https://www2.eecs.berkeley.edu/Students/Awards/15/">C.V. Ramamoorthy Distinguished Research Award</a> and the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
                 </p>
-                <p style="text-align:center">
+                <p class="name">
                   <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp;/&nbsp;
                   <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
                   <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
@@ -41,7 +41,7 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="tableQuartet"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
@@ -51,11 +51,11 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="tableQuartet"><tbody>
           
     
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  class="representative" >
+        <td class="imageContainer">
           <div class="one">
             <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/zipnerf.mp4" type="video/mp4">
@@ -74,7 +74,7 @@
             zipnerf_stop()
           </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td class="researchPapers">
           <a href="http://jonbarron.info/zipnerf">
             <span class="papertitle">Zip-NeRF: Anti-Aliased Grid-Based Neural Radiance Fields</span>
           </a>
@@ -85,7 +85,7 @@
           <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
           <a href="https://phogzone.com/">Peter Hedman</a>
           <br>
-          <em>ICCV</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+          <em>ICCV</em>, 2023 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
           <br>
           <a href="http://jonbarron.info/zipnerf">project page</a>
           /
@@ -101,7 +101,7 @@
       
       
       <tr onmouseout="db3d_stop()" onmouseover="db3d_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td class="imageContainer">
           <div class="one">
             <div class="two" id='db3d_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/owl.mp4" type="video/mp4">
@@ -120,7 +120,7 @@
             db3d_stop()
           </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td class="researchPapers">
           <a href="https://dreambooth3d.github.io/">
             <span class="papertitle">DreamBooth3D: Subject-Driven Text-to-3D Generation</span>
           </a>
@@ -142,7 +142,7 @@
       
 
       <tr onmouseout="bakedsdf_stop()" onmouseover="bakedsdf_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td class="imageContainer">
           <div class="one">
             <div class="two" id='bakedsdf_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/bakedsdf_after.mp4" type="video/mp4">
@@ -161,7 +161,7 @@
             bakedsdf_stop()
           </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td class="researchPapers">
           <a href="https://bakedsdf.github.io/">
             <span class="papertitle">BakedSDF: Meshing Neural SDFs for Real-Time View Synthesis</span>
           </a>
@@ -191,7 +191,7 @@
 
 
       <tr onmouseout="merf_stop()" onmouseover="merf_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td class="imageContainer">
           <div class="one">
             <div class="two" id='merf_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/merf_after.mp4" type="video/mp4">
@@ -210,7 +210,7 @@
             merf_stop()
           </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td class="researchPapers">
           <a href="https://merf42.github.io/">
             <span class="papertitle">MERF: Memory-Efficient Radiance Fields for Real-time View Synthesis in Unbounded Scenes</span>
           </a>
@@ -240,7 +240,7 @@
 
 
       <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td class="imageContainer">
           <div class="one">
             <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
             <source src="images/eclipse_after.mp4" type="video/mp4">
@@ -259,7 +259,7 @@
             eclipse_stop()
           </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td class="researchPapers">
           <a href="https://dorverbin.github.io/eclipse">
             <span class="papertitle">Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</span>
           </a>
@@ -287,7 +287,7 @@
     
 
       <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td class="imageContainer">
           <div class="one">
             <div class="two" id='alignerf_image'>
               <img src='images/alignerf_after.jpg' width="160"></div>
@@ -304,7 +304,7 @@
             alignerf_stop()
           </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td class="researchPapers">
           <a href="https://yifanjiang19.github.io/alignerf">
             <span class="papertitle">AligNeRF: High-Fidelity Neural Radiance Fields via Alignment-Aware Training</span>
           </a>
@@ -329,8 +329,8 @@
         </td>
       </tr>
       
-  <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
-    <td style="padding:20px;width:25%;vertical-align:middle">
+  <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  class="representative" >
+    <td class="imageContainer">
       <div class="one">
         <div class="two" id='dreamfusion_image'><video  width=100% height=100% muted autoplay loop>
         <source src="images/dreamfusion.mp4" type="video/mp4">
@@ -349,7 +349,7 @@
         dreamfusion_stop()
       </script>
     </td>
-    <td style="padding:20px;width:75%;vertical-align:middle">
+    <td class="researchPapers">
       <a href="https://dreamfusion3d.github.io/">
         <span class="papertitle">DreamFusion: Text-to-3D using 2D Diffusion</span>
       </a>
@@ -359,7 +359,7 @@
       <strong>Jonathan T. Barron</strong>,
       <a href="https://bmild.github.io/">Ben Mildenhall</a>
       <br>
-      <em>ICLR</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation, Outstanding Paper Award)</strong></font>
+      <em>ICLR</em>, 2023 &nbsp <font class="strongHighlight"><strong>(Oral Presentation, Outstanding Paper Award)</strong></font>
       <br>
       <a href="https://dreamfusion3d.github.io/">project page</a>
       /
@@ -374,7 +374,7 @@
   </tr>
 
   <tr onmouseout="guandao_stop()" onmouseover="guandao_start()">
-  <td style="padding:20px;width:25%;vertical-align:middle">
+  <td class="imageContainer">
     <div class="one">
       <div class="two" id='guandao_image'>
         <img src='images/guandao_after.png' width="160"></div>
@@ -391,7 +391,7 @@
       guandao_stop()
     </script>
   </td>
-  <td style="padding:20px;width:75%;vertical-align:middle">
+  <td class="researchPapers">
     <a href="https://arxiv.org/abs/2304.14473">
       <span class="papertitle">Learning a Diffusion Prior for NeRFs</span>
     </a>
@@ -411,7 +411,7 @@
   </tr>
 
             <tr onmouseout="mira_stop()" onmouseover="mira_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='mira_image'>
                     <img src='images/mira_after.jpg' width="160"></div>
@@ -428,7 +428,7 @@
                   mira_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://openreview.net/forum?id=AmPeAFzU3a4">
                   <span class="papertitle">MIRA: Mental Imagery for Robotic Affordances</span>
                 </a>
@@ -451,7 +451,7 @@
             </tr>		
             
             <tr onmouseout="samurai_stop()" onmouseover="samurai_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='samurai_image'>
                     <img src='images/samurai_after.jpg' width="160"></div>
@@ -468,7 +468,7 @@
                   samurai_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://markboss.me/publication/2022-samurai/">
                   <span class="papertitle">SAMURAI: Shape And Material from Unconstrained Real-world Arbitrary Image Collections</span>
                 </a>
@@ -495,7 +495,7 @@
             </tr>		
 
             <tr onmouseout="pnf_stop()" onmouseover="pnf_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td class="imageContainer">
             <div class="one">
             <div class="two" id='pnf_image'>
               <img src='images/pnf_before.jpg' width="160"></div>
@@ -512,7 +512,7 @@
             pnf_stop()
             </script>
             </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
+            <td class="researchPapers">
             <a href="TODO">
             <span class="papertitle">Polynomial Neural Fields for Subband Decomposition</span>
             </a> <br>
@@ -534,7 +534,7 @@
 
 
             <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='malle_image'>
                     <img src='images/MalleConv_after.jpg' width="160"></div>
@@ -551,7 +551,7 @@
                   malle_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://yifanjiang.net/MalleConv.html">
                   <span class="papertitle">Fast and High-Quality Image Denoising via Malleable Convolutions</span>
                 </a>
@@ -576,7 +576,7 @@
             </tr>
             
             <tr onmouseout="nerfsuper_stop()" onmouseover="nerfsuper_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerfsuper_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/nerf_supervision.mp4" type="video/mp4">
@@ -595,7 +595,7 @@
                   nerfsuper_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://yenchenlin.me/nerf-supervision/">
                   <span class="papertitle">NeRF-Supervision: Learning Dense Object Descriptors from Neural Radiance Fields</span>
                 </a>
@@ -619,8 +619,8 @@
               </td>
             </tr>
 
-            <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/refnerf.mp4" type="video/mp4">
@@ -639,7 +639,7 @@
                   refnerf_stop()
                 </script>
               </td>
-                    <td style="padding:20px;width:75%;vertical-align:middle">
+                    <td class="researchPapers">
                   <a href="https://dorverbin.github.io/refnerf/index.html">
                     <span class="papertitle">Ref-NeRF: Structured View-Dependent Appearance for Neural Radiance Fields</span>
                   </a>
@@ -651,7 +651,7 @@
                   <strong>Jonathan T. Barron</strong>,
                   <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
                   <br>
-            <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
+            <em>CVPR</em>, 2022 &nbsp <font class="strongHighlight"><strong>(Oral Presentation, Best Student Paper Honorable Mention)</strong></font>
                   <br>
                   <a href="https://dorverbin.github.io/refnerf/index.html">project page</a>
             /
@@ -663,8 +663,8 @@
                 </td>
               </tr>
               
-            <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/mip360_sat.mp4" type="video/mp4">
@@ -683,7 +683,7 @@
                   mip360_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://jonbarron.info/mipnerf360">
                   <span class="papertitle">Mip-NeRF 360: Unbounded Anti-Aliased Neural Radiance Fields</span>
                 </a>
@@ -694,7 +694,7 @@
                 <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
                 <a href="https://phogzone.com/">Peter Hedman</a>
                 <br>
-                <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2022 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="http://jonbarron.info/mipnerf360">project page</a>
                 /
@@ -706,8 +706,8 @@
               </td>
             </tr> 
 
-            <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()"  bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()"  class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/rawnerf.mp4" type="video/mp4">
@@ -726,7 +726,7 @@
                   rawnerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://bmild.github.io/rawnerf/index.html">
                   <span class="papertitle">NeRF in the Dark: High Dynamic Range View Synthesis from Noisy Raw Images</span>
                 </a>
@@ -737,7 +737,7 @@
                 <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
                 <strong>Jonathan T. Barron</strong>
                 <br>
-                <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2022 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://bmild.github.io/rawnerf/index.html">project page</a>
           /
@@ -752,7 +752,7 @@
             
     
             <tr onmouseout="regnerf_stop()" onmouseover="regnerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='regnerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/regnerf_after.mp4" type="video/mp4">
@@ -771,7 +771,7 @@
                   regnerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://m-niemeyer.github.io/regnerf/index.html">
                   <span class="papertitle">RegNeRF: Regularizing Neural Radiance Fields for View Synthesis from Sparse Inputs</span>
                 </a>
@@ -783,7 +783,7 @@
                 <a href="http://www.cvlibs.net/">Andreas Geiger</a>,
                 <a href="http://www2.informatik.uni-freiburg.de/~radwann/">Noha Radwan</a>
                 <br>
-          <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+          <em>CVPR</em>, 2022 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://m-niemeyer.github.io/regnerf/index.html">project page</a>
           /
@@ -797,7 +797,7 @@
 
 
             <tr onmouseout="blocknerf_stop()" onmouseover="blocknerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='blocknerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/blocknerf_after.mp4" type="video/mp4">
@@ -816,7 +816,7 @@
                   blocknerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://waymo.com/research/block-nerf/">
                   <span class="papertitle">Block-NeRF: Scalable Large Scene Neural View Synthesis</span>
                 </a>
@@ -830,7 +830,7 @@
                 <strong>Jonathan T. Barron</strong>,
                 <a href="https://www.henrikkretzschmar.com/">Henrik Kretzschmar</a>
                 <br>
-          <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+          <em>CVPR</em>, 2022 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://waymo.com/research/block-nerf/">project page</a>
           /
@@ -843,7 +843,7 @@
             </tr>
             
             <tr onmouseout="hnerf_stop()" onmouseover="hnerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='hnerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/hnerf_after.mp4" type="video/mp4">
@@ -862,7 +862,7 @@
                   hnerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://grail.cs.washington.edu/projects/humannerf/">
                   <span class="papertitle">HumanNeRF: Free-viewpoint Rendering of Moving People from Monocular Video</span>
                 </a>
@@ -873,7 +873,7 @@
                 <strong>Jonathan T. Barron</strong>,
                 <a href="https://www.irakemelmacher.com/">Ira Kemelmacher-Shlizerman </a>
                 <br>
-                <em>CVPR</em>, 2022 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2022 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://grail.cs.washington.edu/projects/humannerf/">project page</a>
                 /
@@ -886,7 +886,7 @@
             </tr>
             
             <tr onmouseout="urf_stop()" onmouseover="urf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='urf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/urf.mp4" type="video/mp4">
@@ -905,7 +905,7 @@
                   urf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://urban-radiance-fields.github.io/">
                   <span class="papertitle">Urban Radiance Fields</span>
                 </a>
@@ -933,7 +933,7 @@
 
     
     <tr onmouseout="ddp_stop()" onmouseover="ddp_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
+      <td class="imageContainer">
         <div class="one">
           <div class="two" id='ddp_image'>
             <img src='images/ddp_after.jpg' width="160"></div>
@@ -950,7 +950,7 @@
           ddp_stop()
         </script>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
+      <td class="researchPapers">
         <a href="https://arxiv.org/abs/2112.03288">
           <span class="papertitle">Dense Depth Priors for Neural Radiance Fields from Sparse Input Views</span>
         </a>
@@ -974,7 +974,7 @@
     </tr>
     
             <tr onmouseout="clipnerf_stop()" onmouseover="clipnerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='clipnerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/dreamfield_after.mp4" type="video/mp4">
@@ -993,7 +993,7 @@
                   clipnerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://ajayj.com/dreamfields">
                   <span class="papertitle">Zero-Shot Text-Guided Object Generation with Dream Fields</span>
                 </a>
@@ -1017,7 +1017,7 @@
             </tr> 
       
             <tr onmouseout="survey_stop()" onmouseover="survey_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='survey_image'>
                     <img src='images/survey_after.png' width="160"></div>
@@ -1034,7 +1034,7 @@
                   survey_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2111.05849">
                   <span class="papertitle">Advances in Neural Rendering</span>
                 </a>
@@ -1067,7 +1067,7 @@
             </tr>
             
             <tr onmouseout="npil_stop()" onmouseover="npil_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='npil_image'>
                     <img src='images/npil_after.jpg' width="160"></div>
@@ -1084,7 +1084,7 @@
                   npil_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://markboss.me/publication/2021-neural-pil/">
                   <span class="papertitle">Neural-PIL: Neural Pre-Integrated Lighting for Reflectance Decomposition</span>
                 </a>
@@ -1111,7 +1111,7 @@
             
             
             <tr onmouseout="hypernerf_stop()" onmouseover="hypernerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='hypernerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/hypernerf_after.mp4" type="video/mp4">
@@ -1130,7 +1130,7 @@
                   hypernerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://hypernerf.github.io/">
                   <span class="papertitle">HyperNeRF: A Higher-Dimensional Representation
 for Topologically Varying Neural Radiance Fields</span>
@@ -1156,7 +1156,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr> 
 
             <tr onmouseout="nerfactor_stop()" onmouseover="nerfactor_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerfactor_image'>
                     <img src='images/nerfactor_after.png' width="160"></div>
@@ -1173,7 +1173,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nerfactor_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://people.csail.mit.edu/xiuming/projects/nerfactor/">
                 <span class="papertitle">NeRFactor: Neural Factorization of Shape and Reflectance<br>
   Under an Unknown Illumination</span>
@@ -1198,7 +1198,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
               
             <tr onmouseout="dualfont_stop()" onmouseover="dualfont_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='dualfont_image'><img src='images/dualfont_after.png'></div>
                   <img src='images/dualfont_before.png'>
@@ -1214,7 +1214,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   dualfont_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2109.06627">
                   <span class="papertitle">Scalable Font Reconstruction with Dual Latent Manifolds</span>
                 </a>
@@ -1231,8 +1231,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
             
-            <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
@@ -1251,7 +1251,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   mipnerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://jonbarron.info/mipnerf">
                   <span class="papertitle">Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</span>
                 </a>
@@ -1263,7 +1263,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
                 <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
                 <br>
-                <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention)</strong></font>
+                <em>ICCV</em>, 2021 &nbsp <font class="strongHighlight"><strong>(Oral Presentation, Best Paper Honorable Mention)</strong></font>
                 <br>
                 <a href="http://jonbarron.info/mipnerf">project page</a>
                 /
@@ -1278,7 +1278,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr> 
 
             <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/nerfbake_15.mp4" type="video/mp4">
@@ -1297,7 +1297,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nerfbake_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://nerf.live">
                 <span class="papertitle">Baking Neural Radiance Fields for Real-Time View Synthesis</span>
                 </a>
@@ -1308,7 +1308,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <strong>Jonathan T. Barron</strong>,
                 <a href="https://www.pauldebevec.com/">Paul Debevec</a>
                 <br>
-                <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>ICCV</em>, 2021 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="http://nerf.live">project page</a>
                 /
@@ -1324,7 +1324,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="nerfie_stop()" onmouseover="nerfie_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerfie_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/nerfie_after.mp4" type="video/mp4">
@@ -1342,7 +1342,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nerfie_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://nerfies.github.io/">
                   <span class="papertitle">Nerfies: Deformable Neural Radiance Fields</span>
                 </a>
@@ -1356,7 +1356,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="https://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>,
                 <a href="http://www.ricardomartinbrualla.com">Ricardo-Martin Brualla</a>
                 <br>
-                <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>ICCV</em>, 2021 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://nerfies.github.io/">project page</a> /
                 <a href="https://arxiv.org/abs/2011.12948">arXiv</a> /
@@ -1369,7 +1369,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="c5_stop()" onmouseover="c5_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='c5_image'>
                     <img src='images/c5_after.jpg' width="160"></div>
@@ -1386,7 +1386,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   c5_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2011.11890">
                   <span class="papertitle">Cross-Camera Convolutional Color Constancy</span>
                 </a>
@@ -1397,7 +1397,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="https://research.google/people/105312/">Yun-Ta Tsai</a>,
                 <a href="https://www.linkedin.com/in/fbleibel/">Francois Bleibel</a>
                 <br>
-                <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>ICCV</em>, 2021 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <p></p>
                 <p>
@@ -1408,7 +1408,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="dualdefocus_stop()" onmouseover="dualdefocus_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='dualdefocus_image'>
                     <img src='images/dualdefocus_after.jpg' width="160"></div>
@@ -1425,7 +1425,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   dualdefocus_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://imaging.cs.cmu.edu/dual_pixels/">
                   <span class="papertitle">Defocus Map Estimation and Deblurring from a Single Dual-Pixel Image</span>
                 </a>
@@ -1439,7 +1439,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="https://www.cs.cmu.edu/~igkioule/">Ioannis Gkioulekas</a>,
                 <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>
                 <br>
-                <em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>ICCV</em>, 2021 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://imaging.cs.cmu.edu/dual_pixels/">project page</a> /
                 <a href="https://github.com/cmu-ci-lab/dual_pixel_defocus_estimation_deblurring">code</a>
@@ -1453,7 +1453,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="nerd_stop()" onmouseover="nerd_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerd_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/nerd_160.mp4" type="video/mp4">
@@ -1472,7 +1472,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nerd_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://markboss.me/publication/2021-nerd/">
                   <span class="papertitle">NeRD: Neural Reflectance Decomposition from Image Collections</span>
                 </a>
@@ -1499,7 +1499,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="flare_stop()" onmouseover="flare_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='flare_image'>
                     <img src='images/flare_after.jpg' width="160"></div>
@@ -1516,7 +1516,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   flare_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2011.12485">
                   <span class="papertitle">How to Train Neural Networks for Flare Removal</span>
                 </a>
@@ -1542,7 +1542,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="inerf_stop()" onmouseover="inerf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='inerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/inerf_after.mp4" type="video/mp4">
@@ -1560,7 +1560,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   inerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://yenchenlin.me/inerf/">
                   <span class="papertitle">iNeRF: Inverting Neural Radiance Fields for Pose Estimation</span>
                 </a>
@@ -1584,7 +1584,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr> 
 
             <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='ibrnet_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/ibrnet_after.mp4" type="video/mp4">
@@ -1603,7 +1603,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   ibrnet_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://ibrnet.github.io/">
                   <span class="papertitle">IBRNet: Learning Multi-View Image-Based Rendering</span>
                 </a>
@@ -1630,7 +1630,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerv_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/hotdog.mp4" type="video/mp4">
@@ -1649,7 +1649,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nerv_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://pratulsrinivasan.github.io/nerv/">
                   <span class="papertitle">NeRV: Neural Reflection and Visibility Fields for Relighting and View Synthesis</span>
                 </a>
@@ -1673,7 +1673,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="winr_stop()" onmouseover="winr_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='winr_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/notre_160.mp4" type="video/mp4">
@@ -1691,7 +1691,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   winr_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://www.matthewtancik.com/learnit">
                   <span class="papertitle">Learned Initializations for Optimizing Coordinate-Based Neural Representations</span>
                 </a>
@@ -1704,7 +1704,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <strong>Jonathan T. Barron</strong>,
                 <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
                 <br>
-                <em>CVPR</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2021 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="http://www.matthewtancik.com/learnit">project page</a> /
                 <a href="https://www.youtube.com/watch?v=A-r9itCzcyo">video</a> /
@@ -1715,7 +1715,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="nerfw_stop()" onmouseover="nerfw_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerfw_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/nerfw_after.mp4" type="video/mp4">
@@ -1734,7 +1734,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nerfw_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://nerf-w.github.io/">
                   <span class="papertitle">NeRF in the Wild: Neural Radiance Fields for Unconstrained Photo Collections</span>
                 </a>
@@ -1746,7 +1746,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="https://scholar.google.com/citations?user=FXNJRDoAAAAJ&hl=en">Alexey Dosovitskiy</a>,
                 <a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth</a>
                 <br>
-                <em>CVPR</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2021 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://nerf-w.github.io/">project page</a> /
                 <a href="https://arxiv.org/abs/2008.02268">arXiv</a> /
@@ -1757,7 +1757,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr> 
 
             <tr onmouseout="dualrefl_stop()" onmouseover="dualrefl_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='dualrefl_image'>
                     <img src='images/dualrefl_after.jpg' width="160"></div>
@@ -1774,7 +1774,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   dualrefl_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://sniklaus.com/dualref">
                   <span class="papertitle">Learned Dual-View Reflection Removal</span>
                 </a>
@@ -1800,7 +1800,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="nlt_stop()" onmouseover="nlt_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nlt_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/nlt_after.mp4" type="video/mp4">
@@ -1819,7 +1819,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nlt_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://nlt.csail.mit.edu/">
                   <span class="papertitle">Neural Light Transport for Relighting and View Synthesis</span>
                 </a>
@@ -1849,7 +1849,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr> 
 
             <tr onmouseout="lssr_stop()" onmouseover="lssr_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='lssr_image'>
                     <img src='images/lssr_after.jpg' width="160"></div>
@@ -1866,7 +1866,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   lssr_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIGA20LightstageSuperres/">
                   <span class="papertitle">Light Stage Super-Resolution: Continuous High-Frequency Relighting</span>
                 </a>
@@ -1894,7 +1894,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
 
             <tr onmouseout="ff_stop()" onmouseover="ff_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='ff_image'>
                     <img src='images/lion_ff.jpg' width="160"></div>
@@ -1911,7 +1911,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   ff_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://bmild.github.io/fourfeat/index.html">
                   <span class="papertitle">Fourier Features Let Networks Learn High Frequency Functions in Low Dimensional Domains</span>
                 </a>
@@ -1939,7 +1939,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
       
             <tr onmouseout="thresh_stop()" onmouseover="thresh_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='thresh_image'>
                     <img src='images/thresh_after.png' width="160"></div>
@@ -1956,7 +1956,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   thresh_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2007.07350">
                   <span class="papertitle">A Generalization of Otsu's Method and Minimum Error Thresholding</span>
                 </a>
@@ -1978,7 +1978,7 @@ for Topologically Varying Neural Radiance Fields</span>
       
       
             <tr onmouseout="uflow_stop()" onmouseover="uflow_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='uflow_image'>
                     <img src='images/uflow_after.png' width="160"></div>
@@ -1995,7 +1995,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   uflow_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2006.04902">
                   <span class="papertitle">What Matters in Unsupervised Optical Flow</span>
                 </a>
@@ -2007,7 +2007,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="https://www.linkedin.com/in/kurt-konolige/">Kurt Konolige</a>,
                 <a href="https://research.google/people/AneliaAngelova/">Anelia Angelova</a>
                 <br>
-                <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>ECCV</em>, 2020 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://github.com/google-research/google-research/tree/master/uflow">code</a>
                 <br>
@@ -2018,8 +2018,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>  
       
-            <tr onmouseout="nerf_stop()" onmouseover="nerf_start()"  bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="nerf_stop()" onmouseover="nerf_start()"  class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nerf_image'><video  width=100% height=100% muted autoplay loop>
                   <source src="images/vase_small.mp4" type="video/mp4">
@@ -2038,7 +2038,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nerf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://www.matthewtancik.com/nerf">
                   <span class="papertitle">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</span>
                 </a>
@@ -2050,7 +2050,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
                 <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>
                 <br>
-                <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention, CACM Research Highlight)</strong></font>
+                <em>ECCV</em>, 2020 &nbsp <font class="strongHighlight"><strong>(Oral Presentation, Best Paper Honorable Mention, CACM Research Highlight)</strong></font>
                 <br>
                 <a href="http://www.matthewtancik.com/nerf">project page</a>
                 /
@@ -2070,7 +2070,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr> 
 
             <tr onmouseout="porshadmanip_stop()" onmouseover="porshadmanip_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='porshadmanip_image'>
                     <img src='images/porshadmanip_after.jpg' width="160"></div>
@@ -2087,7 +2087,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   porshadmanip_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2005.08925">
                   <span class="papertitle">Portrait Shadow Manipulation</span>
                 </a>
@@ -2110,7 +2110,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>  
 
             <tr onmouseout="learnaf_stop()" onmouseover="learnaf_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='learnaf_image'>
                     <img src='images/learnaf_after.jpg' width="160"></div>
@@ -2127,7 +2127,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   learnaf_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2004.12260">
                   <span class="papertitle">Learning to Autofocus</span>
                 </a>
@@ -2152,7 +2152,7 @@ for Topologically Varying Neural Radiance Fields</span>
 
       
             <tr onmouseout="lighthouse_stop()" onmouseover="lighthouse_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='lh_image'><video width=100% height=100% muted autoplay loop>
                   <source src="images/rings_crop.mp4" type="video/mp4">
@@ -2171,7 +2171,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   lighthouse_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://pratulsrinivasan.github.io/lighthouse/">
                   <span class="papertitle">Lighthouse: Predicting Lighting Volumes for Spatially-Coherent Illumination</span>
                 </a>
@@ -2198,7 +2198,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>  
 
             <tr onmouseout="skyopt_stop()" onmouseover="skyopt_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='skyopt_image'>
                     <img src='images/skyopt_after.jpg' width="160"></div>
@@ -2215,7 +2215,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   skyopt_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/2006.10172">
                   <span class="papertitle">Sky Optimization: Semantically Aware Image Processing of Skies in Low-Light Photography</span>
                 </a>
@@ -2238,7 +2238,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>  
 
             <tr onmouseout="nightsight_stop()" onmouseover="nightsight_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='nightsight_image'><img src='images/nightsight_after.jpg'></div>
                   <img src='images/nightsight_before.jpg'>
@@ -2254,7 +2254,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   nightsight_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/1910.11336">
                   <span class="papertitle">Handheld Mobile Photography in Very Low Light</span>
                 </a>
@@ -2283,7 +2283,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="font_stop()" onmouseover="font_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='font_image'><img src='images/font_after.png'></div>
                   <img src='images/font_before.png'>
@@ -2299,7 +2299,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   font_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/1910.00748">
                   <span class="papertitle">A Deep Factorization of Style and Structure in Fonts</span>
                 </a>
@@ -2309,7 +2309,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="https://people.eecs.berkeley.edu/~klein/">Dan Klein</a>,
                 <a href="http://cseweb.ucsd.edu/~tberg/">Taylor Berg-Kirkpatrick</a>
                 <br>
-                <em>EMNLP</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>EMNLP</em>, 2019 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <p></p>
                 <p>Variational auto-encoders can be used to disentangle a characters style from its content.</p>
@@ -2317,7 +2317,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
             
             <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='dpzlearn_image'><img src='images/dpzlearn_after.jpg'></div>
                   <img src='images/dpzlearn_before.jpg'>
@@ -2333,7 +2333,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   dpzlearn_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/1904.05822">
                   <span class="papertitle">Learning Single Camera Depth Estimation using Dual-Pixels</span>
                 </a>
@@ -2343,7 +2343,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="">Sameer Ansari</a>,
                 <strong>Jonathan T. Barron</strong>
                 <br>
-                <em>ICCV</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>ICCV</em>, 2019 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://github.com/google-research/google-research/tree/master/dual_pixels">code</a> /
                 <a href="data/GargICCV2019.bib">bibtex</a>
@@ -2353,7 +2353,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
             
             <tr onmouseout="porlight_stop()" onmouseover="porlight_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='porlight_image'><img src='images/porlight_after.jpg'></div>
                   <img src='images/porlight_before.jpg'>
@@ -2369,7 +2369,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   porlight_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="http://cseweb.ucsd.edu/~viscomp/projects/SIG19PortraitRelighting/">
                   <span class="papertitle">Single Image Portrait Relighting</span>
                 </a>
@@ -2395,8 +2395,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="loss_stop()" onmouseover="loss_start()" class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
                   <img src='images/loss_before.png'>
@@ -2412,14 +2412,14 @@ for Topologically Varying Neural Radiance Fields</span>
                   loss_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/open?id=1xpZ0fL9h1y9RfcTyPgVkxUrF3VwdkBvq">
                   <span class="papertitle">A General and Adaptive Robust Loss Function</span>
                 </a>
                 <br>
                 <strong>Jonathan T. Barron</strong>
                 <br>
-                <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Award Finalist)</strong></font>
+                <em>CVPR</em>, 2019 &nbsp <font class="strongHighlight"><strong>(Oral Presentation, Best Paper Award Finalist)</strong></font>
                 <br>
                 <a href="https://arxiv.org/abs/1701.03077">arxiv</a> /
                 <a href="https://drive.google.com/open?id=1HNveL7xSNh6Ss7sxLK8Mw2L1Fc-rRhL4">supplement</a> /
@@ -2435,7 +2435,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='mpi_image'><img src='images/mpi_after.jpg'></div>
                   <img src='images/mpi_before.jpg'>
@@ -2451,7 +2451,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   mpi_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1TU5L6fnt4Kd49IUOU7aNxor5NIgdHuNG/view?usp=sharing">
                   <span class="papertitle">Pushing the Boundaries of View Extrapolation with Multiplane Images</span>
                 </a>
@@ -2462,7 +2462,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
                 <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
                 <br>
-                <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Award Finalist)</strong></font>
+                <em>CVPR</em>, 2019 &nbsp <font class="strongHighlight"><strong>(Oral Presentation, Best Paper Award Finalist)</strong></font>
                 <br>
                 <a href="https://drive.google.com/file/d/1GUW_n-BAn9Q4VntEA_OTHNJiHO7XfC62/view?usp=sharing">supplement</a> /
                 <a href="https://www.youtube.com/watch?v=aJqAaMNL2m4">video</a> /
@@ -2473,7 +2473,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='unprocessing_image'><img src='images/unprocessing_after.jpg'></div>
                   <img src='images/unprocessing_before.jpg'>
@@ -2489,7 +2489,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   unprocessing_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1H0Wtd--un2JN76dUJN8iC9fWfkA16n8D/view?usp=sharing">
                   <span class="papertitle">Unprocessing Images for Learned Raw Denoising</span>
                 </a>
@@ -2501,7 +2501,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
                 <strong>Jonathan T. Barron</strong>
                 <br>
-                <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2019 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://arxiv.org/abs/1811.11127">arxiv</a> /
                 <a href="http://timothybrooks.com/tech/unprocessing/">project page</a> /
@@ -2513,7 +2513,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='motionblur_image'><img src='images/motionblur_after.jpg'></div>
                   <img src='images/motionblur_before.jpg'>
@@ -2529,7 +2529,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   motionblur_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1hWpA4f6iLVcOkZI3zEAAWKARSQhnVgbY/view?usp=sharing">
                   <span class="papertitle">Learning to Synthesize Motion Blur</span>
                 </a>
@@ -2537,7 +2537,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="http://timothybrooks.com/">Tim Brooks</a>,
                 <strong>Jonathan T. Barron</strong>
                 <br>
-                <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2019 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://arxiv.org/abs/1811.11745">arxiv</a> /
                 <a href="https://drive.google.com/file/d/1dUQwBMmQdYYIP0zHR_nDQY-uQbaMdcSN/view?usp=sharing">supplement</a> /
@@ -2551,7 +2551,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="darkflash_stop()" onmouseover="darkflash_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='darkflash_image'><img src='images/darkflash_after.png'></div>
                   <img src='images/darkflash_before.png'>
@@ -2567,7 +2567,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   darkflash_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/1901.01370">
                   <span class="papertitle">Stereoscopic Dark Flash for Low-light Photography</span>
                 </a>
@@ -2587,7 +2587,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="motionstereo_stop()" onmouseover="motionstereo_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='motionstereo_image'><img src='images/motionstereo_after.png'></div>
                   <img src='images/motionstereo_before.png'>
@@ -2603,7 +2603,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   motionstereo_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1AABFJ3NgD5DAo5JEpEjWZrcQNzjZnvW9/view?usp=sharing">
                   <span class="papertitle">Depth from Motion for Smartphone AR</span>
                 </a>
@@ -2622,7 +2622,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='portrait_image'><img src='images/portrait_after.jpg'></div>
                   <img src='images/portrait_before.jpg'>
@@ -2638,7 +2638,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   portrait_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/13i6DlS9UhGVKmwslLUFnKBwdxFRVQeQj/view?usp=sharing">
                   <span class="papertitle">Synthetic Depth-of-Field with a Single-Camera Mobile Phone</span>
                 </a>
@@ -2662,7 +2662,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='aperture_image'><img src='images/aperture_after.jpg'></div>
                   <img src='images/aperture_before.jpg'>
@@ -2678,7 +2678,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   aperture_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1MpvxcW7OTJP321QL_q4ZLQ8D653bZZzy/view?usp=sharing">
                   <span class="papertitle">Aperture Supervision for Monocular Depth Estimation</span>
                 </a>
@@ -2699,7 +2699,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="deepburst_stop()" onmouseover="deepburst_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='deepburst_image'><img src='images/deepburst_after.png'></div>
                   <img src='images/deepburst_before.png'>
@@ -2715,7 +2715,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   deepburst_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1GAH8ijyZ7GnoBnQFANEzdXinHrE4vvXn/view?usp=sharing">
                   <span class="papertitle">Burst Denoising with Kernel Prediction Networks</span>
                 </a>
@@ -2737,7 +2737,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="friendly_stop()" onmouseover="friendly_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='friendly_image'><img src='images/friendly_after.png'></div>
                   <img src='images/friendly_before.png'>
@@ -2753,7 +2753,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   friendly_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1w_0djhL0QgC_fbehnJ0c-J23_kW_420p/view?usp=sharing">
                   <span class="papertitle">A Hardware-Friendly Bilateral Solver for Real-Time Virtual Reality Video</span>
                 </a>
@@ -2769,7 +2769,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='hdrnet_image'><img src='images/hdrnet_after.jpg'></div>
                   <img src='images/hdrnet_before.jpg'>
@@ -2785,7 +2785,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   hdrnet_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1jQY3CTMnLX7PeGUzYLso9H1eCsZyWbwg/view?usp=sharing">
                   <span class="papertitle">Deep Bilateral Learning for Real-Time Image Enhancement</span>
                 </a>
@@ -2804,7 +2804,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="ffcc_stop()" onmouseover="ffcc_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='ffcc_image'><img src='images/ffcc_after.jpg'></div>
                   <img src='images/ffcc_before.jpg'>
@@ -2820,7 +2820,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   ffcc_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://arxiv.org/abs/1611.07596">
                   <span class="papertitle">Fast Fourier Color Constancy</span>
                 </a>
@@ -2842,8 +2842,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="jump_stop()" onmouseover="jump_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="jump_stop()" onmouseover="jump_start()" class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='jump_image'><img src='images/jump_anim.gif'></div>
                   <img src='images/jump_still.png'>
@@ -2859,7 +2859,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   jump_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1RBnTrtzqmuO8uj3GQaR5vBJZjIC3Jxjn/view?usp=sharing">
                   <span class="papertitle">Jump: Virtual Reality Video</span>
                 </a>
@@ -2879,7 +2879,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="hdrp_stop()" onmouseover="hdrp_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='hdrp_image'><img src='images/hdrp_after.jpg'></div>
                   <img src='images/hdrp_before.jpg'>
@@ -2895,7 +2895,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   hdrp_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1SSSmVHWbMQ7sZMOredSVWVJXbXobkyzA/view?usp=sharing">
                   <span class="papertitle">Burst Photography for High Dynamic Range and Low-Light Imaging on Mobile Cameras</span>
                 </a>
@@ -2913,8 +2913,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="bs_stop()" onmouseover="bs_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="bs_stop()" onmouseover="bs_start()" class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='bs_image'><img src='images/BS_after.jpg'></div>
                   <img src='images/BS_before.jpg'>
@@ -2930,7 +2930,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   bs_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1zFzCaFwkGK1EGmJ_KEqb-ZsRJhfUKN2S/view?usp=sharing">
                   <span class="papertitle">The Fast Bilateral Solver</span>
                 </a>
@@ -2938,7 +2938,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <strong>Jonathan T. Barron</strong>,
                 <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>
                 <br>
-                <em>ECCV</em>, 2016 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention)</strong></font>
+                <em>ECCV</em>, 2016 &nbsp <font class="strongHighlight"><strong>(Oral Presentation, Best Paper Honorable Mention)</strong></font>
                 <br>
                 <a href="http://arxiv.org/abs/1511.03296">arXiv</a> /
                 <a href="data/BarronPooleECCV2016.bib">bibtex</a> /
@@ -2953,7 +2953,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="diverdi_stop()" onmouseover="diverdi_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='diverdi_image'><img src='images/diverdi_after.jpg'></div>
                   <img src='images/diverdi_before.jpg'>
@@ -2969,7 +2969,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   diverdi_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1mmT-LuK_eBZsl3qp4-fAshEPdgfbgvNE/view?usp=sharing">
                   <span class="papertitle">Geometric Calibration for Mobile, Stereo, Autofocus Cameras</span>
                 </a>
@@ -2986,7 +2986,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="dt_stop()" onmouseover="dt_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='dt_image'><img src='images/DT_edge.jpg'></div>
                   <img src='images/DT_image.jpg'>
@@ -3002,7 +3002,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   dt_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/178Xj2PZ1w6hZJpucU-TiZOoCemJmvsVQ/view?usp=sharing">
                   <span class="papertitle">Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform</span>
                 </a>
@@ -3019,8 +3019,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="ccc_stop()" onmouseover="ccc_start()" bgcolor="#ffffd0">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr onmouseout="ccc_stop()" onmouseover="ccc_start()" class="representative" >
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='ccc_image'><img src='images/ccc_after.jpg'></div>
                   <img src='images/ccc_before.jpg'>
@@ -3036,7 +3036,7 @@ for Topologically Varying Neural Radiance Fields</span>
                   ccc_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1id74VNDL8ACrrWf6vYgN2M4kS8gd4n7w/view?usp=sharing">
                   <span class="papertitle">Convolutional Color Constancy</span>
                 </a>
@@ -3052,10 +3052,10 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src='images/Shelhamer2015.jpg'>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1stygV71uBruD7Ck9CaAQr7nREvr3DtUL/view?usp=sharing">
                   <span class="papertitle">Scene Intrinsics and Depth from a Single Image</span>
                 </a>
@@ -3070,8 +3070,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr bgcolor="#ffffd0" onmouseout="defocus_stop()" onmouseover="defocus_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="representative"  onmouseout="defocus_stop()" onmouseover="defocus_start()">
+              <td class="imageContainer">
                 <div id='lens_blurry' class='hidden'><img src="images/BarronCVPR2015_anim.gif"></div>
                 <div id='lens_sharp'>
                   <a href="images/BarronCVPR2015_anim.gif"><img src="images/BarronCVPR2015_still.jpg"></a>
@@ -3089,14 +3089,14 @@ for Topologically Varying Neural Radiance Fields</span>
                   defocus_stop()
                 </script>
               </td>
-              <td style="padding:20px;width:75%;vertical-align:middle">
+              <td class="researchPapers">
                 <a href="https://drive.google.com/file/d/1R4RdaBZIs-uJobhIFs9yKf3jIsaHQNH0/view?usp=sharing">
                   <span class="papertitle">Fast Bilateral-Space Stereo for Synthetic Defocus</span>
                 </a>
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://people.csail.mit.edu/abadams/">Andrew Adams</a>, <a href="http://people.csail.mit.edu/yichangshih/">YiChang Shih</a>, <a href="http://carlos-hernandez.org/">Carlos Hern&aacutendez</a>
                 <br>
-                <em>CVPR</em>, 2015 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2015 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://drive.google.com/file/d/125qgMdqeT1vojMIijIKcOF099LjUgUOL/view?usp=sharing">abstract</a> /
                 <a href="https://drive.google.com/file/d/1HGGvVOGxmPjvgdK5q3UD1Qb5Nttg6kq9/view?usp=sharing">supplement</a> /
@@ -3110,7 +3110,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/PABMM2015.jpg" alt="PontTuset" width="160" style="border-style: none">
               </td>
               <td width="75%" valign="middle">
@@ -3131,8 +3131,8 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr bgcolor="#ffffd0" onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+            <tr class="representative"  onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
+              <td class="imageContainer">
                 <div class="one">
                   <div class="two" id='sirfs_image'>
                     <a href="images/Estee.png"><img src='images/Estee_160.png' style="border-style: none"></a>
@@ -3172,7 +3172,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/ArbalaezCVPR2014.jpg" alt="ArbalaezCVPR2014" width="160" height="120" style="border-style: none">
               </td>
               <td width="75%" valign="middle">
@@ -3191,7 +3191,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="flyspin_stop()" onmouseover="flyspin_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div id='flyspin' class='hidden'><img src="images/BarronICCV2013_160.gif"></div>
                 <div id='flystill'>
                   <a href="images/BarronICCV2013.gif"><img src="images/BarronICCV2013_160.jpg"></a>
@@ -3229,7 +3229,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/3DSP_160.jpg" alt="3DSP" width="160" height="120" style="border-style: none">
               </td>
               <td width="75%" valign="middle">
@@ -3247,7 +3247,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="rgbd_stop()" onmouseover="rgbd_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div id='rgbd_anim' class='hidden'><img src="images/SceneSIRFS.gif"></div>
                 <div id='rgbd_still'><img src="images/SceneSIRFS-still.jpg"></div>
                 <script type="text/javascript">
@@ -3270,7 +3270,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <br>
                 <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
                 <br>
-                <em>CVPR</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+                <em>CVPR</em>, 2013 &nbsp <font class="strongHighlight"><strong>(Oral Presentation)</strong></font>
                 <br>
                 <a href="https://drive.google.com/file/d/1cLUw72WpgdZ_3TQAjJABdgywqjBfn_Mq/view?usp=sharing">supplement</a> / <a href="data/BarronMalikCVPR2013.bib">bibtex</a> / <a href="http://techtalks.tv/talks/intrinsic-scene-properties-from-a-single-rgb-d-image/58614/">talk</a> / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmWW1CZGJPbi12R0k/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/file/d/19q3EFf6GIb4UFcCN2DVU2jVKpxRj5kxf/view?usp=sharing">powerpoint</a>, <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmMzQ4ZVp1SWdnVkk/view?usp=sharing">PDF</a>) / <a href="https://drive.google.com/open?id=1ZbPScVA6Efqd-ESvojl92sw8K-82Xxry">code &amp; data</a>
                 <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
@@ -3281,7 +3281,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/Boundary.jpg" alt="Boundary_png" style="border-style: none">
               </td>
               <td width="75%" valign="middle">
@@ -3303,7 +3303,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="eccv12_stop()" onmouseover="eccv12_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div id='eccv12_anim' class='hidden'>
                   <a href="https://drive.google.com/file/d/1brxb58CfRPe7KEER4Q_fYS9B_J-hiS0t/view?usp=sharing"><img src="images/ECCV2012_small.gif"></a>
                 </div>
@@ -3339,7 +3339,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr onmouseout="cvpr12_stop()" onmouseover="cvpr12_start()">
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <div class="one" style="height: 120px">
                   <div class="two" id='cvpr12_image' style="height: 120px">
                     <img src='images/BarronCVPR2012_after.jpg' style="border-style: none">
@@ -3374,7 +3374,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/B3DO.jpg" alt="b3do" width="160" style="border-style: none">
               </td>
               <td width="75%" valign="middle">
@@ -3399,7 +3399,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/safs.jpg" alt="safs_small" width="160" height="160" style="border-style: none">
               </td>
               <td width="75%" valign="middle">
@@ -3417,7 +3417,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/fast_texture.jpg" alt="fast-texture" width="160" height="160">
               </td>
               <td width="75%" valign="middle">
@@ -3436,7 +3436,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/prl.jpg" alt="prl" width="160" height="160">
               </td>
               <td width="75%" valign="middle">
@@ -3454,7 +3454,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/bd_promo.jpg" alt="blind-date" width="160" height="160">
               </td>
               <td width="75%" valign="middle">
@@ -3470,7 +3470,7 @@ for Topologically Varying Neural Radiance Fields</span>
             </tr>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160">
               </td>
               <td width="75%" valign="middle">
@@ -3499,7 +3499,7 @@ for Topologically Varying Neural Radiance Fields</span>
           <table width="100%" align="center" border="0" cellpadding="20"><tbody>
             
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/cvf.jpg"></td>
+              <td class="imageContainer"><img src="images/cvf.jpg"></td>
               <td width="75%" valign="center">
                 <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
           <br>
@@ -3513,7 +3513,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
+              <td class="imageContainer">
                 <img src="images/cs188.jpg" alt="cs188">
               </td>
               <td width="75%" valign="center">
@@ -3527,7 +3527,7 @@ for Topologically Varying Neural Radiance Fields</span>
             
 
             <tr>
-              <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+              <td align="center" class="imageContainer">
                 <h2>Basically <br> Blog Posts</h2>
               </td>
               <td width="75%" valign="middle">
@@ -3543,11 +3543,11 @@ for Topologically Varying Neural Radiance Fields</span>
             
             
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="tableQuartet"><tbody>
             <tr>
               <td style="padding:0px">
                 <br>
-                <p style="text-align:right;font-size:small;">
+                <p style="text-align: center;font-size: small;width:95%;margin:2% auto;">
                   Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>. <strong>Do not</strong> scrape the HTML from this page itself, as it includes analytics tags that you do not want on your own website &mdash; use the github code instead. Also, consider using <a href="https://leonidk.com/">Leonid Keselman</a>'s <a href="https://github.com/leonidk/new_website">Jekyll fork</a> of this page.
                 </p>
               </td>
