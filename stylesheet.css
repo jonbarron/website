@@ -169,11 +169,11 @@ tbody {
   margin-left:auto;
 }
 
-researchPapers {
+.researchPapers {
   padding:20px;
   width:75%;
   vertical-align:middle;
 }
-researchPapers > p {
+.researchPapers > p {
   color: #121212;
 }
