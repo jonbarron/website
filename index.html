@@ -53,6 +53,50 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+
+    <tr onmouseout="camp_stop()" onmouseover="camp_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='camp_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/camp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/camp.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function camp_start() {
+            document.getElementById('camp_image').style.opacity = "1";
+          }
+
+          function camp_stop() {
+            document.getElementById('camp_image').style.opacity = "0";
+          }
+          camp_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://camp-nerf.github.io/">
+          <span class="papertitle">CamP: Camera Preconditioning for Neural Radiance Fields</span>
+        </a>
+        <br>
+        <a href="https://keunhong.com/">Keunhong Park</a>,
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+        <strong>Jonathan T. Barron</strong>,
+        <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>
+        <br>
+        <em>SIGGRAPH Asia</em>, 2023
+        <br>
+        <a href="https://camp-nerf.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2308.10902">arXiv</a>
+        <p></p>
+        <p>
+        Preconditioning based on camera parameterization helps NeRF and camera extrinsics/intrinsics optimize better together.
+        </p>
+      </td>
+    </tr>
+
     
       <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
