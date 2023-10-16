@@ -52,7 +52,58 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
+
+<tr onmouseout="difsurvey_stop()" onmouseover="difsurvey_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='difsurvey_image'>
+        <img src='images/difsurvey_after.jpg' width="160"></div>
+      <img src='images/difsurvey_before.jpg' width="160">
+    </div>
+    <script type="text/javascript">
+      function difsurvey_start() {
+        document.getElementById('difsurvey_image').style.opacity = "1";
+      }
+
+      function difsurvey_stop() {
+        document.getElementById('difsurvey_image').style.opacity = "0";
+      }
+      difsurvey_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2310.07204">
+      <span class="papertitle">State of the Art on Diffusion Models for Visual Computing
+</span>
+    </a>
+    <br>
+	<a href="https://ryanpo.com/">Ryan Po</a>,
+	<a href="https://yifita.netlify.app/">Wang Yifan</a>,
+	<a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>,
+	<a href="https://kfiraberman.github.io/">Kfir Aberman</a>,
+	<strong>Jonathan T. Barron</strong>,
+	<a href="https://www.cs.tau.ac.il/~amberman/">Amit H. Bermano</a>,
+	<a href="https://ericryanchan.github.io/">Eric Ryan Chan</a>,
+	<a href="https://www.weizmann.ac.il/math/dekel/home">Tali Dekel</a>,
+	<a href="https://holynski.org/">Aleksander Holynski</a>,
+	<a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>,
+	<a href="https://tml.stanford.edu/">C. Karen Liu</a>,
+	<a href="https://lingjie0206.github.io/">Lingjie Liu</a>,
+	<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+    <a href="https://www.niessnerlab.org/">Matthias Nießner</a>
+	<a href="https://ommer-lab.com/people/ommer/">Björn Ommer</a>,
+	<a href="https://people.mpi-inf.mpg.de/~theobalt/">Christian Theobalt</a>,
+	<a href="https://peterwonka.net/">Peter Wonka</a>,
+    <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>
+    <br>
+	<em>arXiv<em>, 2023
+    <br>
+    <p></p>
+    <p>
+    A survey of recent progress in diffusion models for images, videos, and 3D.
+    </p>
+  </td>
+</tr>          
 
     <tr onmouseout="camp_stop()" onmouseover="camp_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -1101,7 +1152,7 @@
                 <a href="https://zollhoefer.com/">Michael Zollhoefer</a>,
                 <a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>
                 <br>
-                <em>Arxiv</em>, 2021
+				<em>State of the Art Report at EUROGRAPHICS<em>, 2022
                 <br>
                 <p></p>
                 <p>
