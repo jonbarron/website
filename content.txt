@@ -1,0 +1,133 @@
+# Notes
+
+
+1. Replace Project section with Research Experience & Selected Projects
+2. After RE&SP, add section Professional Experience
+	+ Actuate AI: I built the vision pipeline for weapon detection. When I left Actuate, my models were deployed for 10000+ CCTV cameras at 800+ schools and facilities. Amazing environment with amazing people.
+	+ Logo: assets/actuate.png
+	
+	+ Vega Grace Inc: I built image processing pipeline and model for skin disease detection, advised by Dr.Vinay Rawlani, the most thoughtful mentor ever.
+	+ Logo: assets/veda.jpeg
+
+3. Add link to intro
+	+ Github: https://github.com/minhtcai
+	+ Google Scholar: https://scholar.google.com/citations?authuser=1&user=k4t5_hEAAAAJ
+	+ Resume: cv.pdf
+	+ Email: minh@viai.io
+
+4. I am a graduate student of the Master of Science in Computer Vision at Carnegie Mellon University, advised by Prof.O'Toole, where I work on imaging, camera and machine learning.
+
+Link to Prof.Jacob Furst: https://www.cdm.depaul.edu/Faculty-and-Staff/pages/faculty-info.aspx?fid=365
+Link to Prof.O'Toole: https://www.cs.cmu.edu/~motoole2/
+
+PROJECTS.
+
+# Project 1: Hard Example Mining for Multi-View Part Segmentation
++ Image: OK
++ Content: OK
++ Github: https://github.com/MSCV-2023/AL
++ Report: https://docs.google.com/presentation/u/1/d/1Vw--ETSGbOeRyZrrYJSOZ6YKgWl6weSIeFCBLsHp-ZI/edit#slide=id.p
++ Archive: TBD
+
+# Project 2: CubeSat Localization 
++ Image: assets/cube.jpg
++ Content: Classify Region and Detect Landmark for Localization
++ Github: https://github.com/cmu-spacecraft-design-build-fly-2023/vision
++ Report: 
++ Archive: 
+
+# Project 3: MLMF: Multi-modal Meta-Learning for Federated Tasks
++ Image: assets/fed.png
++ Content: Improve learning from missing modalites in federated settings.
++ Github: https://github.com/minhtcai/MLMF
++ Report: https://docs.google.com/presentation/d/1MwLl7O0FB1ggzywZUPWjlDJ6JFL5KK5cUmluIcyVNBc/edit#slide=id.g2a309d2eb40_0_0
++ Archive: TBD
+
+# Project 4: Pose Estimation for Stereo Visual Odometry - Updating
++ Image: assets/odometry.jpeg
++ Content: Optical Flow and Depth for Pose Estimation on TartanAir
++ Github: https://github.com/minhtcai/iStereoVO
++ Report: https://docs.google.com/presentation/d/1OclG_DjVSUWer8Il-_WNDMO6jF75jfnPFaVCFgNX8RY/edit
++ Archive:
+
+# Project 5: Structured Light for Fruit Freshness Prediction
++ Image: assets/fruit.png
++ Content: Is structured light better?
++ Github: https://github.com/minhtcai/fruit_freshness
++ Report: https://docs.google.com/presentation/d/1U7qYeAOosmj36D6bmybok-jwUEahBSwIgsE5ZTu4PPo/edit#slide=id.g21238f436ba_0_633
++ Archive:
+
+# Project 6: Fine-tuning 2D Segmentation for 3D Vision - Updating
++ Image: assets/sam3d.jpeg
++ Content: Fine-tune SAM model for 3D inputs.
++ Github: https://github.com/minhtcai/SAM3D
++ Report: https://docs.google.com/presentation/d/1A8nDw6mRxrCmrL6xTCyuhMGYQotg3jcR4qrCwmoyu14/edit#slide=id.g23dd7b1c6e6_0_2
++ Archive:
+
+# Project 7: Meta Learning for Few-Shot Medical Text Classification
++ Image: assets/meta.png
++ Content: Meta Learning with Distributionally Robust Optimization for Medical Text
++ Github: https://github.com/minhtcai/meta-mimic
++ Report:
++ Archive: https://arxiv.org/pdf/2212.01552.pdf
+
+# Project 8: Camera Next Door - Updating
++ Image: assets/camera.png
++ Content: A home-made pipeline of incremental learning for object detection
++ Github: https://github.com/minhtcai/camera-next-door
++ Report:
++ Archive:
+
+# Project 9: YOLOv4+SORT 
++ Image: assets/sort.jpeg
++ Content: Add object tracker to YOLOv4 Darknet
++ Github: https://github.com/minhtcai/darknet
++ Report:
++ Archive:
+
+# Project 10: PrismRanger Localization - Updating
++ Image: assets/moon.webp
++ Content: Localization on the Moon using ground image
++ Github: 
++ Report: 
++ Archive:
+
+HONORS & AWARDS.
+
+1.
+# First Prize & Best in Show - hackAuton CMU (Team: Patient Safety) - 2023 
+# https://docs.google.com/presentation/d/1U9HUG89AFapU0Pz71Q3tZr5lgBnSF4tqZ3lJitQnjI4/edit#slide=id.g27f50e000bb_0_42
+
+2.
+# McKinsey Digital Hackathon New York (Team: CPC4) - 2023
+# https://hackathon-nyc2023.mckinsey.com/
+
+3.
+# AWAP CMU Algorithms Hackathon (Team: IDC) - 2023
+# https://challonge.com/ii3qtozf
+
+4.
+# Edward L. Kaplan, ’71, New Venture Challenge (Employer: Aegis AI) - 2019
+# https://polsky.uchicago.edu/2019-companies/
+
+5.
+# MARS Hackathon Chicago (Team: DePaul) - 2018
+# https://www.marshackathon.com/
+
+6.
+# Bosch & KPMG Mobility Hackathon Chicago (Team: Amber) - 2018
+# https://www.linkedin.com/pulse/tackling-urban-mobility-challenges-chicago-steve-hill
+
+7 
+# Computer Training Institute of Chicago Full Scholarship - 2018
+
+8.
+# Young Entrepreneurs & Sustainability Education Hack (Team: Pupa) - 2015
+# https://www.facebook.com/yese.vn
+
+9.
+# FTU Excellence Student Scholarship - 2015 
+
+10.
+# Hanoi Startup Weekend (Team: Beeketing) - 2014
+# http://gktagroup.com/startup-weekend-hanoi-2014/
