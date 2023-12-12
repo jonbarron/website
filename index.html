@@ -50,7 +50,7 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-      <tr onmouseout="contact_stop()" onmouseover="contact_start()">
+      <tr onmouseout="aisdf_stop()" onmouseover="aisdf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='contact_image'><video  width=100% height=100% muted autoplay loop>
@@ -60,36 +60,70 @@
             <img src='images/ContactGen.png' width="160">
           </div>
           <script type="text/javascript">
-            function contact_start() {
-              document.getElementById('contact_image').style.opacity = "1";
+            function aisdf_start() {
+              document.getElementById('aisdf_image').style.opacity = "1";
             }
 
-            function contact_stop() {
-              document.getElementById('contact_image').style.opacity = "0";
+            function aisdf_stop() {
+              document.getElementById('aisdf_image').style.opacity = "0";
             }
-            contact_stop()
+            aisdf_stop()
           </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:20px;width:80%;vertical-align:middle">
           <a href="https://arxiv.org/abs/">
-        <span class="papertitle">ContactGen: Contact-Guided Interactive 3D Human Generation for Partners</span>
+        <span class="papertitle">Structure-aware 3D scene reconstruction</span>
           </a>
-          <br>
-          Dongjun Gu,
-          <a href="https://kitsunetic.github.io/">Jaehyeok Shim</a>,
-          <b>Jaehoon Jang</b>,
-          <a href="https://github.com/Kang-ChangWoo">Changwoo Kang</a>,
-          <a href="https://scholar.google.com/citations?hl=ko&user=hNxIPzMAAAAJ&view_op=list_works&sortby=pubdate">Kyungdon Joo</a>,
-          <br>
-          <em>AAAI</em>, 2024
+          <em>Under review</em>
           <br>
           <p></p>
           <p>
-          <li>Generating a interactive 3D human avatar considering physical contact.</li>
+          <li>Reconstructing room-scale scenes in a continual manner</li>
           </p>
         </td>
       </tr>    
     </tbody></table>
+
+    <tr onmouseout="contact_stop()" onmouseover="contact_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='contact_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/ContactGen.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/ContactGen.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function contact_start() {
+            document.getElementById('contact_image').style.opacity = "1";
+          }
+
+          function contact_stop() {
+            document.getElementById('contact_image').style.opacity = "0";
+          }
+          contact_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:80%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/">
+      <span class="papertitle">ContactGen: Contact-Guided Interactive 3D Human Generation for Partners</span>
+        </a>
+        <br>
+        Dongjun Gu,
+        <a href="https://kitsunetic.github.io/">Jaehyeok Shim</a>,
+        <b>Jaehoon Jang</b>,
+        <a href="https://github.com/Kang-ChangWoo">Changwoo Kang</a>,
+        <a href="https://scholar.google.com/citations?hl=ko&user=hNxIPzMAAAAJ&view_op=list_works&sortby=pubdate">Kyungdon Joo</a>,
+        <br>
+        <em>AAAI</em>, 2024
+        <br>
+        <p></p>
+        <p>
+        <li>Generating a interactive3D human avatar considering physical contact.</li>
+        </p>
+      </td>
+    </tr>    
+  </tbody></table>
 
           
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
