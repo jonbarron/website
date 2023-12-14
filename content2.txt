@@ -1,0 +1,22 @@
+1. Prof.Matthew O'Toole
+2. Remove the description of research interest
+3. 
+4. RESEARCH EXPERIENCE AND SELECTED PROJECTS. => Research/Projects
+5. MLMF: Multi-modal Meta-Learning for Federated Tasks
+	Github: https://github.com/minhtcai/MLMF
+	Improve learning from missing modalites with meta-learning in federated settings
+6. Meta Learning for Few-Shot Medical Text Classification - Make this 2nd project
+7. MLMF third projects the others.
+8. Finalist - McKinsey Digital Hackathon New York (Team: CPC4)
+9. First Prize - AWAP CMU Algorithms Hackathon (Team: IDC)
+10. Third Prize - Edward L. Kaplan, ’71, New Venture Challenge (Employer: Aegis AI)
+11. Finalist - MARS Hackathon Chicago (Team: DePaul)
+12. Second Prize - Bosch & KPMG Mobility Hackathon Chicago (Team: Amber)
+13. First Prize - Young Entrepreneurs & Sustainability Education Hack (Team: Pupa)
+14. Second Prize - Hanoi Startup Weekend (Team: Beeketing)
+
+Courseworks:
+10-719: Federated Learning.
+15-459: Quantum Computing.
+16-822: Geometry-based Methods in Vision.
+16-873: Spacecraft Design.
