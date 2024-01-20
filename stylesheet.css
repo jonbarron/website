@@ -133,3 +133,15 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+ .footer{
+background-color: #333;
+overflow: hidden;
+margin-top: 15%;
+}
+.footer p{
+text-decoration: none;
+padding: 20px;
+text-align: center;
+float: left;
+color: #fff;
+}
