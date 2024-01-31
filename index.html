@@ -22,7 +22,7 @@
                 <name>Chung Min Kim</name>
               </p>
               <p>
-                I am a first-year PhD student in <a href="https://autolab.berkeley.edu">AUTOLab</a> at <a href="https://www.berkeley.edu/">UC Berkeley</a>, where I am advised by <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>. I received my dual B.S. degree in EECS (Electrical Engineering and Computer Science) and Mechanical Engineering from <a href="https://www.berkeley.edu/">UC Berkeley</a> in 2021.
+                I am a second-year PhD student in at <a href="https://www.berkeley.edu/">UC Berkeley</a>, where I am advised by <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a> and <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a>. I received my dual B.S. degree in EECS (Electrical Engineering and Computer Science) and Mechanical Engineering from <a href="https://www.berkeley.edu/">UC Berkeley</a> in 2021.
                 I am currently funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. 🐻
               </p>
               <p>
@@ -50,8 +50,102 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+<tr onmouseout="garfield_stop()" onmouseover="garfield_start()">
+  <td style="padding:20px;width:30%;vertical-align:middle">
+    <!-- IMAGES -->
+    <div class="one">
+      <div class="two" id='garfield_under' >
+        <img src="images/garfield_under.jpg" width=110%/>
+      </div>
+      <video  width=115% height=100% muted autoplay loop id="garfield_splash">
+        <source src="images/garfield_splash.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- SCRIPT FOR HOVERING -->
+    <script type="text/javascript">
+      function garfield_start() {
+        document.getElementById('garfield_splash').style.opacity = "0";
+        document.getElementById('garfield_under').style.opacity = "1";
+      }
+
+      function garfield_stop() {
+        document.getElementById('garfield_splash').style.opacity = "1";
+        document.getElementById('garfield_under').style.opacity = "0";
+      }
+      garfield_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:70%;vertical-align:middle">
+    <!-- TITLE -->
+    <a href="https://www.garfield.studio/"><papertitle>GARField: Group Anything with Radiance Fields
+    </papertitle></a>
+    <br>
+    <!-- AUTHORS -->
+    <b>Chung Min Kim*</b>, Mingxuan Wu*, Justin Ker*, Ken Goldberg, Matthew Tancik, Angjoo Kanazawa
+    <br>
+    *Equal contribution
+    <br>
+    <!-- CONFERENCE -->
+    <em>arXiv</em> 2023 
+    <!-- LINKS -->
+    <br>
+    <a href="https://arxiv.org/abs/2401.09419">arXiv</a> / <a href="https://www.garfield.studio/">Website</a>
+    <p></p>
+    <!-- SUMMARY -->
+    Hierarchical grouping in 3D by training a scale-conditioned affinity field from multi-level masks
+  </td>
+</tr>
 				
 <!-- Works listed here -->      
+<!-- Lerf-togo -->
+<tr onmouseout="lerftogo_stop()" onmouseover="lerftogo_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <!-- IMAGES -->
+    <div class="one">
+      <div class="two" id='lerftogo_under'>
+        <img src="images/lerftogo_under.jpg" width=100%/>
+      </div>
+      <video  width=115% height=100% muted autoplay loop id="lerftogo_splash">
+        <source src="images/lerftogo_splash.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <!-- SCRIPT FOR HOVERING -->
+    <script type="text/javascript">
+      function lerftogo_start() {
+        document.getElementById('lerftogo_splash').style.opacity = "0";
+        document.getElementById('lerftogo_under').style.opacity = "1";
+      }
+
+      function lerftogo_stop() {
+        document.getElementById('lerftogo_splash').style.opacity = "1";
+        document.getElementById('lerftogo_under').style.opacity = "0";
+      }
+      lerftogo_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <!-- TITLE -->
+    <a href="https://lerftogo.github.io"><papertitle>LERF-TOGO: Language Embedded Radiance Fields for Zero-Shot Task-Oriented Grasping
+    </papertitle></a>
+    <br>
+    <!-- AUTHORS -->
+    Adam Rashid*, Satvik Sharma*, <b>Chung Min Kim</b>, Justin Kerr, Lawrence Yunliang Chen, Angjoo Kanazawa, Ken Goldberg
+    <br>
+    *Equal contribution
+    <br>
+    <!-- CONFERENCE -->
+    <em>CoRL</em> 2023 <b>Oral, Best Paper Finalist</b>
+    <!-- LINKS -->
+    <br>
+    <a href="https://arxiv.org/abs/2309.07970">arXiv</a> / <a href="https://lerftogo.github.io/">Website</a>
+    <p></p>
+    <!-- SUMMARY -->
+    LERF's multi-scale semantics enables 0-shot language-conditioned part grasping for a wide variety of objects.
+  </td>
+</tr>
 <!-- LERF -->
 <tr onmouseout="lerf_stop()" onmouseover="lerf_start()">
   <td style="padding:20px;width:25%;vertical-align:middle">
@@ -89,7 +183,7 @@
     *Equal contribution
     <!-- <br> -->
     <!-- CONFERENCE -->
-    <!-- Submitted to <em>ICRA</em> 2023 -->
+    <em>ICCV</em> 2023 <b>Oral</b>
     <!-- LINKS -->
     <br>
     <a href="https://arxiv.org/abs/2303.09553">arXiv</a> / <a href="https://lerf.io">Website</a>
