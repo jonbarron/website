@@ -150,9 +150,55 @@
         </p>
       </td>
     </tr>
+
+  <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+        <source src="images/eclipse_after.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></div>
+        <img src='images/eclipse_before.jpg' width="160">
+      </div>
+      <script type="text/javascript">
+        function eclipse_start() {
+          document.getElementById('eclipse_image').style.opacity = "1";
+        }
+
+        function eclipse_stop() {
+          document.getElementById('eclipse_image').style.opacity = "0";
+        }
+        eclipse_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://dorverbin.github.io/eclipse">
+        <span class="papertitle">Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</span>
+      </a>
+      <br>
+      <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+      <a href="https://bmild.github.io/">Ben Mildenhall</a>,
+      <a href="https://phogzone.com/">Peter Hedman</a>, <br>
+      <strong>Jonathan T. Barron</strong>,
+      <a href="Todd Zickler">Todd Zickler</a>,
+      <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
+      <br>
+      <em>CVPR</em>, 2023 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
+      <br>
+      <a href="https://dorverbin.github.io/eclipse">project page</a>
+      /
+      <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
+      /
+      <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
+      <p></p>
+      <p>
+      Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
+      </p>
+    </td>
+  </tr>
 	
 	
-    <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+    <tr onmouseout="recon_stop()" onmouseover="recon_stopt()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
@@ -189,7 +235,7 @@
         <a href="https://poolio.github.io/">Ben Poole</a>,
         <a href="https://holynski.org/">Aleksander Holynski*</a>
         <br>
-        <em>arXiv</em>, 2023
+        <em>CVPR</em>, 2023
         <br>
         <a href="https://reconfusion.github.io/">project page</a>
         /
@@ -247,7 +293,7 @@
 	<a href="https://peterwonka.net/">Peter Wonka</a>,
     <a href="https://stanford.edu/~gordonwz/">Gordon Wetzstein</a>
     <br>
-	<em>arXiv<em>, 2023
+	<em>Eurographics State-of-the-Art Report<em>, 2024
     <br>
     <p></p>
     <p>
@@ -485,52 +531,6 @@
       </tr>
 
 
-      <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-            <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
-            <source src="images/eclipse_after.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/eclipse_before.jpg' width="160">
-          </div>
-          <script type="text/javascript">
-            function eclipse_start() {
-              document.getElementById('eclipse_image').style.opacity = "1";
-            }
-
-            function eclipse_stop() {
-              document.getElementById('eclipse_image').style.opacity = "0";
-            }
-            eclipse_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <a href="https://dorverbin.github.io/eclipse">
-            <span class="papertitle">Eclipse: Disambiguating Illumination and Materials using Unintended Shadows</span>
-          </a>
-          <br>
-          <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-          <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-          <a href="https://phogzone.com/">Peter Hedman</a>, <br>
-          <strong>Jonathan T. Barron</strong>,
-          <a href="Todd Zickler">Todd Zickler</a>,
-          <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-          <br>
-          <em>arXiv</em>, 2023
-          <br>
-          <a href="https://dorverbin.github.io/eclipse">project page</a>
-          /
-          <a href="https://www.youtube.com/watch?v=amQLGyza3EU">video</a>
-          /
-          <a href="https://arxiv.org/abs/2305.16321">arXiv</a>
-          <p></p>
-          <p>
-          Shadows cast by unobserved occluders provide a high-frequency cue for recovering illumination and materials.
-          </p>
-        </td>
-      </tr>
-    
 
       <tr onmouseout="alignerf_stop()" onmouseover="alignerf_start()">
         <td style="padding:20px;width:25%;vertical-align:middle">
