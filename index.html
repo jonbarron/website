@@ -9,14 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+    <style>
+      /* Style for the top part */
+      .top-section {
+        background-color: #ebeaca; /* Blue background color */
+        color: #000000; /* White text color */
+        padding: 20px;
+      }
+      
+      /* Style for the research section */
+      .research-section {
+        background-color: #bbbaa2; ; /* Light gray background color */
+        padding: 20px;
+      }
+      </style>
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tbody  style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"></tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table class="top-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
               <td style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
@@ -28,12 +41,22 @@
                   At Google I've worked on <a href="https://www.google.com/glass/start/">Glass</a>,  <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://blog.google/products/google-ar-vr/introducing-next-generation-jump/">VR</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, <a href="https://ai.googleblog.com/2020/12/portrait-light-enhancing-portrait.html">Portrait Light</a>, and <a href="https://blog.google/products/maps/three-maps-updates-io-2022/">Maps</a>. I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>. I've received the <a href="https://www.thecvf.com/?page_id=413#YRA">PAMI Young Researcher Award</a>.
                 </p>
                 <p style="text-align:center">
-                  <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-CV.pdf">CV</a> &nbsp;/&nbsp;
-                  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a>
+                  
+                  <div>
+                  <a href="data/JonBarron-CV.pdf" style="color: #000000;"><img src="images/cv.png" alt="" width="30" height="30">
+                    CV</a> &nbsp;|&nbsp;
+                  <a href="data/JonBarron-bio.txt" style="color: #000000;"><img src="images/bio.png" alt="" width="30" height="30">
+                    Bio</a> &nbsp;|&nbsp;
+                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ" style="color: #000000;"><img src="images/scholar.jpeg" alt="" width="30" height="30">
+                    Scholar</a>&nbsp;|&nbsp;
+                  <a href="https://twitter.com/jon_barron" style="color: #000000;"><img src="images/tweeter.png" alt="" width="30" height="30">
+                    </a>&nbsp;|&nbsp;
+                    <a href="mailto:jonbarron@gmail.com" style="color: #000000;"><img src="images/email.png" alt="" width="30" height="30">
+                    </a>&nbsp;|&nbsp;
+                  <a href="https://github.com/jonbarron/" style="color: #000000;">
+                    <img src="images/github.jpeg" alt="" width="30" height="30">
+                  </a>
+                  </div>
                 </p>
               </td>
               <td style="padding:2.5%;width:40%;max-width:40%">
@@ -41,7 +64,9 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <table class="research-section"  style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
               <tr>
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
@@ -51,7 +76,9 @@
               </td>
             </tr>
           </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+          <table class="research-section" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
 
@@ -196,7 +223,7 @@
   </tr>
 	
 	
-    <tr onmouseout="recon_stop()" onmouseover="recon_stopt()" bgcolor="#ffffd0">
+    <tr class="research-section" onmouseout="recon_stop()" onmouseover="recon_stopt()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
@@ -344,7 +371,7 @@
     </tr>
 
     
-      <tr onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
+      <tr class="research-section" onmouseout="zipnerf_stop()" onmouseover="zipnerf_start()"  bgcolor="#ffffd0">
         <td style="padding:20px;width:25%;vertical-align:middle">
           <div class="one">
             <div class="two" id='zipnerf_image'><video  width=100% height=100% muted autoplay loop>
@@ -495,7 +522,8 @@
             }
 
             function merf_stop() {
-              document.getElementById('merf_image').style.opacity = "0";
+              docume
+              nt.getElementById('merf_image').style.opacity = "0";
             }
             merf_stop()
           </script>
@@ -573,7 +601,7 @@
         </td>
       </tr>
       
-  <tr onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
+  <tr class="research-section" onmouseout="dreamfusion_stop()" onmouseover="dreamfusion_start()"  bgcolor="#ffffd0">
     <td style="padding:20px;width:25%;vertical-align:middle">
       <div class="one">
         <div class="two" id='dreamfusion_image'><video  width=100% height=100% muted autoplay loop>
@@ -863,7 +891,7 @@
               </td>
             </tr>
 
-            <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="refnerf_stop()" onmouseover="refnerf_start()"  bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='refnerf_image'><video  width=100% height=100% muted autoplay loop>
@@ -907,7 +935,7 @@
                 </td>
               </tr>
               
-            <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='mip360_image'><video  width=100% height=100% muted autoplay loop>
@@ -950,7 +978,7 @@
               </td>
             </tr> 
 
-            <tr onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()"  bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="rawnerf_stop()" onmouseover="rawnerf_start()"  bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='rawnerf_image'><video  width=100% height=100% muted autoplay loop>
@@ -1475,7 +1503,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
             
-            <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
@@ -2036,7 +2064,7 @@ for Topologically Varying Neural Radiance Fields</span>
                 <a href="http://sniklaus.com/dualref">project page</a> /
                 <a href="https://arxiv.org/abs/2010.00702">arXiv</a>
                 <p></p>
-                <p>
+                <p> 
                   Reflections and the things behind them often exhibit parallax, and this lets you remove reflections from stereo pairs.
                 </p>
               </td>
@@ -2262,7 +2290,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>  
       
-            <tr onmouseout="nerf_stop()" onmouseover="nerf_start()"  bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="nerf_stop()" onmouseover="nerf_start()"  bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='nerf_image'><video  width=100% height=100% muted autoplay loop>
@@ -2639,7 +2667,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
@@ -3086,7 +3114,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="jump_stop()" onmouseover="jump_start()" bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="jump_stop()" onmouseover="jump_start()" bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='jump_image'><img src='images/jump_anim.gif'></div>
@@ -3157,7 +3185,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="bs_stop()" onmouseover="bs_start()" bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="bs_stop()" onmouseover="bs_start()" bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='bs_image'><img src='images/BS_after.jpg'></div>
@@ -3263,7 +3291,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="ccc_stop()" onmouseover="ccc_start()" bgcolor="#ffffd0">
+            <tr class="research-section" onmouseout="ccc_stop()" onmouseover="ccc_start()" bgcolor="#ffffd0">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='ccc_image'><img src='images/ccc_after.jpg'></div>
@@ -3314,7 +3342,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr bgcolor="#ffffd0" onmouseout="defocus_stop()" onmouseover="defocus_start()">
+            <tr class="research-section" bgcolor="#ffffd0" onmouseout="defocus_stop()" onmouseover="defocus_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div id='lens_blurry' class='hidden'><img src="images/BarronCVPR2015_anim.gif"></div>
                 <div id='lens_sharp'>
@@ -3375,7 +3403,7 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr bgcolor="#ffffd0" onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
+            <tr class="research-section" bgcolor="#ffffd0" onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
               <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='sirfs_image'>
