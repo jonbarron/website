@@ -46,7 +46,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Representative papers are <span class="highlight">highlighted</span>.
+                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
                 </p>
               </td>
             </tr>
@@ -54,6 +54,104 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/cat3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/cat3d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function cat3d_start() {
+            document.getElementById('cat3d_image').style.opacity = "1";
+          }
+
+          function cat3d_stop() {
+            document.getElementById('cat3d_image').style.opacity = "0";
+          }
+          cat3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://cat3d.github.io/">
+			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
+</span>
+        </a>
+        <br>
+				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
+        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
+				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+				<strong>Jonathan T. Barron</strong>,
+        <a href="https://poolio.github.io/">Ben Poole</a>*,
+
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://cat3d.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+        <p></p>
+        <p>
+				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+        </p>
+      </td>
+    </tr>
+
+
+    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
+          <source src="images/bog.jpg" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/bog.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('bog_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('bog_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://creiser.github.io/binary_opacity_grid/">
+          <span class="papertitle">Binary Opacity Grids: Capturing Fine Geometric Detail for Mesh-Based View Synthesis
+</span>
+        </a>
+        <br>
+				<a href="https://creiser.github.io/">Christian Reiser</a>,
+				<a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
+				<a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+				<a href="https://dorverbin.github.io/">Dor Verbin</a>,
+				<a href="https://szeliski.org/RichardSzeliski.htm">Richard Szeliski</a>,
+				<a href="https://bmild.github.io/">Ben Mildenhall</a>,
+				<strong>Jonathan T. Barron</strong>,
+				<a href="https://phogzone.com/">Peter Hedman</a>*,
+				<a href="https://www.cvlibs.net/">Andreas Geiger</a>*		
+        <br>
+        <em>SIGGRAPH</em>, 2024
+        <br>
+        <a href="https://creiser.github.io/binary_opacity_grid/">project page</a>
+        /
+        <a href="https://www.youtube.com/watch?v=2TPUmGRg8bM">video</a>
+        /
+        <a href="https://arxiv.org/abs/2402.12377">arXiv</a>
+        <p></p>
+        <p>
+        Applying anti-aliasing to a discrete opacity grid lets you render a hard representation into a soft image, and this enables highly-detailed mesh recovery.
+        </p>
+      </td>
+    </tr>
 
     <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -89,7 +187,7 @@
         <a href="https://szeliski.org/">Richard Szeliski</a>,
 		<strong>Jonathan T. Barron</strong>
         <br>
-        <em>arXiv</em>, 2023
+        <em>SIGGRAPH</em>, 2024
         <br>
         <a href="https://smerf-3d.github.io/">project page</a>
         /
@@ -195,6 +293,59 @@
     </td>
   </tr>
 	
+
+  <tr onmouseout="shinobi_stop()" onmouseover="shinobi_start()">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='shinobi_image'><video  width=100% height=100% muted autoplay loop>
+        <source src="images/shinobi.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></div>
+        <img src='images/shinobi.jpg' width="160">
+      </div>
+      <script type="text/javascript">
+        function shinobi_start() {
+          document.getElementById('shinobi_image').style.opacity = "1";
+        }
+
+        function shinobi_stop() {
+          document.getElementById('shinobi_image').style.opacity = "0";
+        }
+        shinobi_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://shinobi.aengelhardt.com/">
+        <span class="papertitle">SHINOBI: Shape and Illumination using Neural Object Decomposition via BRDF Optimization In-the-Wild</span>
+      </a>
+      <br>
+			
+			<a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/andreas-engelhardt/">Andreas Engelhardt</a>, 
+			<a href="https://amitraj93.github.io/">Amit Raj</a>, 
+			<a href="https://markboss.me/">Mark Boss</a>, 
+			<a href="https://cs.stanford.edu/~yzzhang/">Yunzhi Zhang</a>, 
+			<a href="https://abhishekkar.info/">Abhishek Kar</a>, 
+			<a href="https://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, 
+			<a href="https://deqings.github.io/">Deqing Sun</a>, 
+			<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+      <strong>Jonathan T. Barron</strong>,
+			<a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/prof-dr-ing-hendrik-lensch/">Hendrik P.A. Lensch</a>, 
+			<a href="https://varunjampani.github.io/">Varun Jampani</a>
+      <br>
+      <em>CVPR</em>, 2024
+      <br>
+      <a href="https://shinobi.aengelhardt.com/">project page</a>
+      /
+      <a href="https://www.youtube.com/watch?v=m_5kvtlDnl4">video</a>
+      /
+      <a href="https://arxiv.org/abs/2401.10171">arXiv</a>
+      <p></p>
+      <p>
+      A class-agnostic inverse rendering solution for turning in-the-wild images of an object into a relightable 3D asset.
+      </p>
+    </td>
+  </tr>
+	
 	
     <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
@@ -237,7 +388,7 @@
         <br>
         <a href="https://reconfusion.github.io/">project page</a>
         /
-        <a href="https://arxiv.org/abs/">arXiv</a>
+        <a href="https://arxiv.org/abs/2312.02981">arXiv</a>
         <p></p>
         <p>
         Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
