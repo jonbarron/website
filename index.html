@@ -247,6 +247,47 @@
       </td>
     </tr>
 
+
+    <tr onmouseout="internerf_stop()" onmouseover="internerf_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='internerf_image'>
+					  <img src='images/internerf_after.jpg' width=100%>
+					</div>
+          <img src='images/internerf_before.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function internerf_start() {
+            document.getElementById('internerf_image').style.opacity = "1";
+          }
+
+          function internerf_stop() {
+            document.getElementById('internerf_image').style.opacity = "0";
+          }
+          internerf_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2406.11737">
+          <span class="papertitle">InterNeRF: Scaling Radiance Fields via Parameter Interpolation</span>
+        </a>
+        <br>
+		<a href="https://clintonjwang.github.io/">Clinton Wang</a>,
+		<a href="https://phogzone.com/">Peter Hedman</a>,
+		<a href="https://people.csail.mit.edu/polina/">Polina Golland</a>,
+		<strong>Jonathan T. Barron</strong>,
+		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth</a>
+        <br>
+        <em>CVPR Neural Rendering Intelligence</em>, 2024
+        <br>
+        <a href="https://arxiv.org/abs/2406.11737">arXiv</a>
+        <p></p>
+        <p>
+        Parameter interpolation enables high-quality large-scale scene reconstruction and out-of-core training and rendering.
+        </p>
+      </td>
+    </tr>
+
   <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
     <td style="padding:20px;width:25%;vertical-align:middle">
       <div class="one">
