@@ -19,32 +19,27 @@
             padding: 10px 0;
             text-align: center;
         }
+        header {
+            margin-bottom: 20px;
+        }
         article {
             background: #fff;
             padding: 20px;
-            margin: 20px 0;
+            margin: 0 auto;
+            margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
         }
         h1, h2, h3, h4 {
-            color: #111331;
+            color: #333;
         }
         p {
             margin: 1em 0;
         }
-        pre {
-            background: #f4f4f4;
-            border: 1px solid #ddd;
-            padding: 10px;
-            overflow: auto;
-        }
-        code {
-            font-family: "Courier New", Courier, monospace;
-            background: #f4f4f4;
-            padding: 2px 4px;
-            border-radius: 4px;
-        }
     </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
     <header>
@@ -70,11 +65,11 @@
         <section>
             <h2>The Optimization Problem</h2>
             <p>Pure Impact</p>
-            <pre><code>J =  \int_{t=0}^{T} I(t)</code></pre>
+            <p>\[ J =  \int_{t=0}^{T} I(t) \]</p>
             <p>Pure Understanding</p>
-            <pre><code>J =  \int_{t=0}^{T}  U(t)</code></pre>
+            <p>\[ J =  \int_{t=0}^{T} U(t) \]</p>
             <p>Understanding + Impact</p>
-            <pre><code>J =  \int_{t=0}^{T} I(t) + U(t)</code></pre>
+            <p>\[ J =  \int_{t=0}^{T} I(t) + U(t) \]</p>
         </section>
 
         <section>
