@@ -53,6 +53,56 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/cat3d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/cat3d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function cat3d_start() {
+            document.getElementById('cat3d_image').style.opacity = "1";
+          }
+
+          function cat3d_stop() {
+            document.getElementById('cat3d_image').style.opacity = "0";
+          }
+          cat3d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://cat3d.github.io/">
+			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
+</span>
+        </a>
+        <br>
+				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
+        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
+        <a href="https://henzler.github.io/">Philipp Henzler</a>,
+        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
+				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+				<strong>Jonathan T. Barron</strong>,
+        <a href="https://poolio.github.io/">Ben Poole</a>*
+
+        <br>
+        <em>NeurIPS</em>, 2024 &nbsp <font color="red"><strong>(Oral)</strong></font>
+        <br>
+        <a href="https://cat3d.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
+        <p></p>
+        <p>
+				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
+        </p>
+      </td>
+    </tr>
+
+
     <tr onmouseout="nerfcasting_stop()" onmouseover="nerfcasting_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -193,55 +243,6 @@
     </tr>
 
 
-    <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='cat3d_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/cat3d.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/cat3d.jpg' width="160">
-        </div>
-        <script type="text/javascript">
-          function cat3d_start() {
-            document.getElementById('cat3d_image').style.opacity = "1";
-          }
-
-          function cat3d_stop() {
-            document.getElementById('cat3d_image').style.opacity = "0";
-          }
-          cat3d_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://cat3d.github.io/">
-			<span class="papertitle">CAT3D: Create Anything in 3D with Multi-View Diffusion Models
-</span>
-        </a>
-        <br>
-				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>*,
-        <a href="https://holynski.org/">Aleksander Holynski</a>*, 
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://github.com/ArthurBrussee">Arthur Brussee</a>, 
-				<a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-				<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>*
-
-        <br>
-        <em>arXiv</em>, 2024
-        <br>
-        <a href="https://cat3d.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2405.10314">arXiv</a>
-        <p></p>
-        <p>
-				A single model built around diffusion and NeRF that does text-to-3D, image-to-3D, and few-view reconstruction, trains in 1 minute, and renders at 60FPS in a browser.
-        </p>
-      </td>
-    </tr>
-
-
     <tr onmouseout="bog_stop()" onmouseover="bog_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -342,45 +343,6 @@
 	
 
 
-    <tr onmouseout="internerf_stop()" onmouseover="internerf_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='internerf_image'>
-					  <img src='images/internerf_after.jpg' width=100%>
-					</div>
-          <img src='images/internerf_before.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function internerf_start() {
-            document.getElementById('internerf_image').style.opacity = "1";
-          }
-
-          function internerf_stop() {
-            document.getElementById('internerf_image').style.opacity = "0";
-          }
-          internerf_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2406.11737">
-          <span class="papertitle">InterNeRF: Scaling Radiance Fields via Parameter Interpolation</span>
-        </a>
-        <br>
-		<a href="https://clintonjwang.github.io/">Clinton Wang</a>,
-		<a href="https://phogzone.com/">Peter Hedman</a>,
-		<a href="https://people.csail.mit.edu/polina/">Polina Golland</a>,
-		<strong>Jonathan T. Barron</strong>,
-		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth</a>
-        <br>
-        <em>CVPR Neural Rendering Intelligence</em>, 2024
-        <br>
-        <a href="https://arxiv.org/abs/2406.11737">arXiv</a>
-        <p></p>
-        <p>
-        Parameter interpolation enables high-quality large-scale scene reconstruction and out-of-core training and rendering.
-        </p>
-      </td>
-    </tr>
 
   <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
     <td style="padding:20px;width:25%;vertical-align:middle">
@@ -427,7 +389,56 @@
       </p>
     </td>
   </tr>
-	
+
+
+  <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+    <td style="padding:20px;width:25%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
+        <source src="images/recon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video></div>
+        <img src='images/recon.png' width="160">
+      </div>
+      <script type="text/javascript">
+        function recon_start() {
+          document.getElementById('recon_image').style.opacity = "1";
+        }
+
+        function recon_stop() {
+          document.getElementById('recon_image').style.opacity = "0";
+        }
+        recon_stop()
+      </script>
+    </td>
+    <td style="padding:20px;width:75%;vertical-align:middle">
+      <a href="https://reconfusion.github.io/">
+		<span class="papertitle">ReconFusion: 3D Reconstruction with Diffusion Priors</span>
+      </a>
+      <br>
+      <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
+	<a href="https://bmild.github.io/">Ben Mildenhall*</a>,
+      <a href="https://henzler.github.io/">Philipp Henzler</a>,
+      <a href="https://keunhong.com/">Keunhong Park</a>,
+      <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+      <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
+      <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
+      <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+	<strong>Jonathan T. Barron</strong>,
+      <a href="https://poolio.github.io/">Ben Poole</a>,
+      <a href="https://holynski.org/">Aleksander Holynski*</a>
+      <br>
+      <em>CVPR</em>, 2024
+      <br>
+      <a href="https://reconfusion.github.io/">project page</a>
+      /
+      <a href="https://arxiv.org/abs/2312.02981">arXiv</a>
+      <p></p>
+      <p>
+      Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
+      </p>
+    </td>
+  </tr>
 
   <tr onmouseout="shinobi_stop()" onmouseover="shinobi_start()">
     <td style="padding:20px;width:25%;vertical-align:middle">
@@ -481,52 +492,43 @@
     </td>
   </tr>
 	
-	
-    <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
+
+    <tr onmouseout="internerf_stop()" onmouseover="internerf_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/recon.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/recon.png' width="160">
+          <div class="two" id='internerf_image'>
+					  <img src='images/internerf_after.jpg' width=100%>
+					</div>
+          <img src='images/internerf_before.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function recon_start() {
-            document.getElementById('recon_image').style.opacity = "1";
+          function internerf_start() {
+            document.getElementById('internerf_image').style.opacity = "1";
           }
 
-          function recon_stop() {
-            document.getElementById('recon_image').style.opacity = "0";
+          function internerf_stop() {
+            document.getElementById('internerf_image').style.opacity = "0";
           }
-          recon_stop()
+          internerf_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://reconfusion.github.io/">
-			<span class="papertitle">ReconFusion: 3D Reconstruction with Diffusion Priors</span>
+        <a href="https://arxiv.org/abs/2406.11737">
+          <span class="papertitle">InterNeRF: Scaling Radiance Fields via Parameter Interpolation</span>
         </a>
         <br>
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
-		<a href="https://bmild.github.io/">Ben Mildenhall*</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+		<a href="https://clintonjwang.github.io/">Clinton Wang</a>,
+		<a href="https://phogzone.com/">Peter Hedman</a>,
+		<a href="https://people.csail.mit.edu/polina/">Polina Golland</a>,
 		<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>,
-        <a href="https://holynski.org/">Aleksander Holynski*</a>
+		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth</a>
         <br>
-        <em>CVPR</em>, 2024
+        <em>CVPR Neural Rendering Intelligence</em>, 2024
         <br>
-        <a href="https://reconfusion.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2312.02981">arXiv</a>
+        <a href="https://arxiv.org/abs/2406.11737">arXiv</a>
         <p></p>
         <p>
-        Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
+        Parameter interpolation enables high-quality large-scale scene reconstruction and out-of-core training and rendering.
         </p>
       </td>
     </tr>
