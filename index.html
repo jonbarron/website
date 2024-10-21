@@ -54,6 +54,53 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+    <tr onmouseout="ever_stop()" onmouseover="ever_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='ever_image'>
+					  <img src='images/ever_after.png' width=100%>
+					</div>
+          <img src='images/ever_before.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function ever_start() {
+            document.getElementById('ever_image').style.opacity = "1";
+          }
+
+          function ever_stop() {
+            document.getElementById('ever_image').style.opacity = "0";
+          }
+          ever_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://ever.github.io/">
+			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
+</span>
+        </a>
+        <br>
+				<a href="https://half-potato.gitlab.io/">Alexander Mai</a>, 
+				<a href="https://phogzone.com/">Peter Hedman</a>,
+				<a href="https://grgkopanas.github.io/">George Kopanas</a>,
+        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+        <a href="https://scholar.google.com/citations?user=ozNFrecAAAAJ&hl=en">David Futschik</a>,
+        <a href="https://xharlie.github.io/">Qiangeng Xu</a>,
+        <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
+				<strong>Jonathan T. Barron</strong>,
+        <a href="https://www.zhangyinda.com/">Yinda Zhang</a>
+				<br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://half-potato.gitlab.io/posts/ever/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2410.01804">arXiv</a>
+        <p></p>
+        <p>
+				Raytracing constant-density ellipsoids yields more accurate and flexible radiance fields than splatting Gaussians, and still runs in real-time.
+        </p>
+      </td>
+    </tr>
+
     <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
