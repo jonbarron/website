@@ -1,0 +1,155 @@
+/* General styles */
+
+body {
+  font-family: Inter, sans-serif;
+  color: #111;
+  margin: 0 auto;
+  box-sizing: border-box;
+  line-height: 1.5em;
+  font-size: 14px;
+  font-weight: 350;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin-bottom: 0.25em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.375em;
+  font-weight: 400;
+}
+
+a:link,
+a:visited {
+  color: #18d;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+section {
+  max-width: 55em;
+  margin: 0 auto 2em auto;
+  padding: 0 2em;
+}
+
+p {
+  line-height: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Site-specific styles */
+
+#paper-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#paper-list strong {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+#paper-list li {
+  padding: 1em;
+  margin-left: -1em;
+  margin-right: -1em;
+  align-items: center;
+  gap: 1em 1.5em;
+  flex-wrap: wrap;
+  line-height: 1.3em;
+}
+
+#paper-list[data-show-recent="false"] li {
+  display: none;
+}
+#paper-list[data-show-recent="true"] li {
+  display: flex;
+}
+
+#paper-list li.paper-highlighted {
+  background: rgb(255, 255, 220);
+}
+
+#paper-list li.paper-recent {
+  display: flex;
+}
+
+#paper-list li h3 {
+  font-size: inherit;
+  font-weight: 500;
+  color: #000;
+  padding: 0;
+  margin: 0;
+}
+
+#paper-list li .paper-visual {
+  width: 13em;
+  height: 9.5em;
+  object-fit: cover;
+  overflow: hidden;
+  display: block;
+  border-radius: 1px;
+  border-radius: 0.2em;
+}
+#paper-list li .paper-visual * {
+  display: none;
+}
+
+#paper-list li .paper-textual {
+  flex-grow: 1;
+  flex-basis: 20em;
+}
+
+.image-grid {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+.image-grid > a {
+  width: 12em;
+  height: 8em;
+  display: block;
+}
+.image-grid > a:hover {
+  opacity: 1;
+}
+.image-grid > a > * {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #aaa #f1f1f1;
+}
