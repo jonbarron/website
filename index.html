@@ -55,6 +55,54 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+
+    <tr onmouseout="cat4d_stop()" onmouseover="cat4d_start()" bgcolor="#ffffd0">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='cat4d_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/cat4d.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/cat4d.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function cat4d_start() {
+            document.getElementById('cat4d_image').style.opacity = "1";
+          }
+
+          function cat4d_stop() {
+            document.getElementById('cat4d_image').style.opacity = "0";
+          }
+          cat4d_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://cat-4d.github.io/">
+			<span class="papertitle">CAT4D: Create Anything in 4D with Multi-View Video Diffusion Models
+</span>
+        </a>
+        <br>
+				<a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu</a>,
+				<a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
+				<a href="https://poolio.github.io/">Ben Poole</a>,
+				<a href="https://alextrevithick.github.io/">Alex Trevithick</a>,
+				<a href="https://www.cs.columbia.edu/~cxz/index.htm/">Changxi Zheng</a>,
+				<strong>Jonathan T. Barron</strong>,
+				<a href="https://holynski.org/">Aleksander Holynski</a>
+        <br>
+        <em>arXiv</em>, 2024
+        <br>
+        <a href="https://cat-4d.github.io/">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2411.18613">arXiv</a>
+        <p></p>
+        <p>
+				Take a video and generate 4D assets that render in real-time.
+        </p>
+      </td>
+    </tr>
+
+
     <tr onmouseout="ever_stop()" onmouseover="ever_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -75,7 +123,7 @@
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://ever.github.io/">
+        <a href="https://half-potato.gitlab.io/posts/ever/">
 			<span class="papertitle">EVER: Exact Volumetric Ellipsoid Rendering for Real-time View Synthesis
 </span>
         </a>
@@ -101,6 +149,7 @@
         </p>
       </td>
     </tr>
+
 
     <tr onmouseout="cat3d_stop()" onmouseover="cat3d_start()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
