@@ -3610,23 +3610,28 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="jump_stop()" onmouseover="jump_start()" bgcolor="#ffffd0">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <div class="two" id='jump_image'><img src='images/jump_anim.gif'></div>
-                  <img src='images/jump_still.png'>
-                </div>
-                <script type="text/javascript">
-                  function jump_start() {
-                    document.getElementById('jump_image').style.opacity = "1";
-                  }
 
-                  function jump_stop() {
-                    document.getElementById('jump_image').style.opacity = "0";
-                  }
-                  jump_stop()
-                </script>
-              </td>
+
+    <tr onmouseout="jump_stop()" onmouseover="jump_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='jump_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/jump_anim.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/jump_still.png' width="160">
+        </div>
+        <script type="text/javascript">
+          function jump_start() {
+            document.getElementById('jump_image').style.opacity = "1";
+          }
+
+          function jump_stop() {
+            document.getElementById('jump_image').style.opacity = "0";
+          }
+          jump_stop()
+        </script>
+      </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://drive.google.com/file/d/1RBnTrtzqmuO8uj3GQaR5vBJZjIC3Jxjn/view?usp=sharing">
                   <span class="papertitle">Jump: Virtual Reality Video</span>
@@ -3838,25 +3843,27 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr bgcolor="#ffffd0" onmouseout="defocus_stop()" onmouseover="defocus_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div id='lens_blurry' class='hidden'><img src="images/BarronCVPR2015_anim.gif"></div>
-                <div id='lens_sharp'>
-                  <a href="images/BarronCVPR2015_anim.gif"><img src="images/BarronCVPR2015_still.jpg"></a>
-                </div>
-                <script type="text/javascript">
-                  function defocus_start() {
-                    document.getElementById('lens_blurry').style.display = 'inline';
-                    document.getElementById('lens_sharp').style.display = 'none';
-                  }
 
-                  function defocus_stop() {
-                    document.getElementById('lens_blurry').style.display = 'none';
-                    document.getElementById('lens_sharp').style.display = 'inline';
-                  }
-                  defocus_stop()
-                </script>
-              </td>
+    <tr onmouseout="defocus_stop()" onmouseover="defocus_start()" bgcolor="#ffffd0">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='defocus_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/BarronCVPR2015_anim.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/BarronCVPR2015_still.jpg' width="160">
+        </div>
+        <script type="text/javascript">
+          function defocus_start() {
+            document.getElementById('defocus_image').style.opacity = "1";
+          }
+
+          function defocus_stop() {
+            document.getElementById('defocus_image').style.opacity = "0";
+          }
+          defocus_stop()
+        </script>
+      </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://drive.google.com/file/d/1R4RdaBZIs-uJobhIFs9yKf3jIsaHQNH0/view?usp=sharing">
                   <span class="papertitle">Fast Bilateral-Space Stereo for Synthetic Defocus</span>
@@ -3876,6 +3883,9 @@ for Topologically Varying Neural Radiance Fields</span>
                 <p>This technology is used by the <a href="http://googleresearch.blogspot.com/2014/04/lens-blur-in-new-google-camera-app.html">Google Camera "Lens Blur"</a> feature. </p>
               </td>
             </tr>
+
+
+
 
             <tr>
               <td style="padding:16px;width:20%;vertical-align:middle">
@@ -3958,25 +3968,27 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="flyspin_stop()" onmouseover="flyspin_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div id='flyspin' class='hidden'><img src="images/BarronICCV2013_160.gif"></div>
-                <div id='flystill'>
-                  <a href="images/BarronICCV2013.gif"><img src="images/BarronICCV2013_160.jpg"></a>
-                </div>
-                <script type="text/javascript">
-                  function flyspin_start() {
-                    document.getElementById('flyspin').style.display = 'inline';
-                    document.getElementById('flystill').style.display = 'none';
-                  }
+    <tr onmouseout="flyspin_stop()" onmouseover="flyspin_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='flyspin_image'>
+			  <a href="images/BarronICCV2013.mp4"><video  width=100% muted autoplay loop>
+          <source src="images/BarronICCV2013_160.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></a></div>
+          <img src='images/BarronICCV2013_160.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function flyspin_start() {
+            document.getElementById('flyspin_image').style.opacity = "1";
+          }
 
-                  function flyspin_stop() {
-                    document.getElementById('flyspin').style.display = 'none';
-                    document.getElementById('flystill').style.display = 'inline';
-                  }
-                  flyspin_stop()
-                </script>
-              </td>
+          function flyspin_stop() {
+            document.getElementById('flyspin_image').style.opacity = "0";
+          }
+          flyspin_stop()
+        </script>
+      </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://drive.google.com/file/d/1shvItvx_8Sb8QNXhrOXkuRmx2618iwNJ/view?usp=sharing">
                   <span class="papertitle">Volumetric Semantic Segmentation using Pyramid Context Features</span>
@@ -4014,23 +4026,28 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="rgbd_stop()" onmouseover="rgbd_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div id='rgbd_anim' class='hidden'><img src="images/SceneSIRFS.gif"></div>
-                <div id='rgbd_still'><img src="images/SceneSIRFS-still.jpg"></div>
-                <script type="text/javascript">
-                  function rgbd_start() {
-                    document.getElementById('rgbd_anim').style.display = 'inline';
-                    document.getElementById('rgbd_still').style.display = 'none';
-                  }
 
-                  function rgbd_stop() {
-                    document.getElementById('rgbd_anim').style.display = 'none';
-                    document.getElementById('rgbd_still').style.display = 'inline';
-                  }
-                  rgbd_stop()
-                </script>
-              </td>
+
+    <tr onmouseout="scenesirfs_stop()" onmouseover="scenesirfs_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='scenesirfs_image'><video  width=100% muted autoplay loop>
+          <source src="images/SceneSIRFS.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/SceneSIRFS-still.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function scenesirfs_start() {
+            document.getElementById('scenesirfs_image').style.opacity = "1";
+          }
+
+          function scenesirfs_stop() {
+            document.getElementById('scenesirfs_image').style.opacity = "0";
+          }
+          scenesirfs_stop()
+        </script>
+      </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://drive.google.com/file/d/1snypSLhzC0jXCchJRsWpcDZ7Es5hDmXo/view?usp=sharing">
                   <span class="papertitle">Intrinsic Scene Properties from a Single RGB-D Image</span>
@@ -4070,41 +4087,49 @@ for Topologically Varying Neural Radiance Fields</span>
               </td>
             </tr>
 
-            <tr onmouseout="eccv12_stop()" onmouseover="eccv12_start()">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div id='eccv12_anim' class='hidden'>
-                  <a href="https://drive.google.com/file/d/1brxb58CfRPe7KEER4Q_fYS9B_J-hiS0t/view?usp=sharing"><img src="images/ECCV2012_small.gif"></a>
-                </div>
-                <div id='eccv12_still'><img src="images/ECCV2012_still.jpg"></div>
-                <script type="text/javascript">
-                  function eccv12_start() {
-                    document.getElementById('eccv12_anim').style.display = 'inline';
-                    document.getElementById('eccv12_still').style.display = 'none';
-                  }
 
-                  function eccv12_stop() {
-                    document.getElementById('eccv12_anim').style.display = 'none';
-                    document.getElementById('eccv12_still').style.display = 'inline';
-                  }
-                  eccv12_stop()
-                </script>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://drive.google.com/file/d/1NczR4pJ-s0YBjCe0rCevMt8IM5JPuUrc/view?usp=sharing">
-                  <span class="papertitle">Color Constancy, Intrinsic Images, and Shape Estimation</span>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>ECCV</em>, 2012
-                <br>
-                <a href="https://drive.google.com/file/d/1zuxhWZ3i6THvuRRBeE7dM_BJfDxO72Fq/view?usp=sharing">supplement</a> /
-                <a href="data/BarronMalikECCV2012.bib">bibtex</a> /
-                <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> /
-                <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a>
-                <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p>
-              </td>
-            </tr>
+
+
+    <tr onmouseout="eccv12_stop()" onmouseover="eccv12_start()">
+      <td style="padding:16px;width:20%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='eccv12_image'>
+			  <a href="https://drive.google.com/file/d/1brxb58CfRPe7KEER4Q_fYS9B_J-hiS0t/view?usp=sharing">
+			  <video  width=100% muted autoplay loop>
+          <source src="images/ECCV2012_small.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+	  </a></div>
+          <img src='images/ECCV2012_still.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function eccv12_start() {
+            document.getElementById('eccv12_image').style.opacity = "1";
+          }
+
+          function eccv12_stop() {
+            document.getElementById('eccv12_image').style.opacity = "0";
+          }
+          eccv12_stop()
+        </script>
+      </td>
+      <td style="padding:8px;width:80%;vertical-align:middle">
+        <a href="https://drive.google.com/file/d/1NczR4pJ-s0YBjCe0rCevMt8IM5JPuUrc/view?usp=sharing">
+          <span class="papertitle">Color Constancy, Intrinsic Images, and Shape Estimation</span>
+        </a>
+        <br>
+        <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
+        <br>
+        <em>ECCV</em>, 2012
+        <br>
+        <a href="https://drive.google.com/file/d/1zuxhWZ3i6THvuRRBeE7dM_BJfDxO72Fq/view?usp=sharing">supplement</a> /
+        <a href="data/BarronMalikECCV2012.bib">bibtex</a> /
+        <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> /
+        <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a>
+        <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p>
+      </td>
+    </tr>
+
 
             <tr onmouseout="cvpr12_stop()" onmouseover="cvpr12_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
